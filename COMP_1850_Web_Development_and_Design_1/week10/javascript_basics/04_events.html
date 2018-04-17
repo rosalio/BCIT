@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>COMP 1850 | javascript events</title>
+		
+<style type="text/css">
+li{margin-bottom:20px;}
+</style>
+
+<script type="text/javascript">
+function changeColor(){
+	document.bgColor = "darkolivegreen";
+	document.fgColor = "#ffffff";
+}	
+function changeColorBack(){
+	document.bgColor = "#ffffff";
+	document.fgColor = "#000000";
+}	
+/*
+note: this function requires a parameter
+the invoking instruction must provide additional data,
+eg:	changeCustomBackgroundColor('#ababab');			
+*/
+function changeCustomBackgroundColor(color){
+	document.bgColor = color;
+	document.fgColor = "#000000";
+}	
+</script>
+	
+	
+	</head>
+
+	<body>
+	<h1 >javascript events</h1>
+
+	<p>Use <a href="http://www.devguru.com/technologies/javascript/10909.asp" target="_blank">javascript events</a> to trigger function calls.</p>
+	<p>Only the first in this list is functional. Add code to implement the functionality described by each list item!</p>
+<ul>
+	<li onclick="changeColor()" >
+		Click this list item to invoke changeColor( )
+	</li>
+	<li onclick="changeColorBack()">
+		Click this list item to invoke changeColorBack( )
+	</li>
+	<li ondblclick="changeColor()">
+		Double click to invoke changeColor( )
+	</li>
+	<li onmouseover="changeColor()" onmouseout="changeColorBack()">
+		Mouse over to invoke changeColor( ) mouse out to changeColorBack( ) 
+	</li>
+	<li onclick="changeCustomBackgroundColor('yellow');">
+		Click to invoke changeCustomColor( ) with a yellow background
+	</li>
+	<li onclick="changeCustomBackgroundColor('#ababab');")>
+		Click to invoke changeCustomColor( ) with a grey hexadecimal background
+	</li>
+	<li onclick="changeCustomBackgroundColor(prompt('Choose a color:'));">
+		Click to invoke changeCustomColor( ) with a _______ background
+	</li>
+</ul>
+	<h2>Bonus Challenge: </h2>
+	<p>Externalize the javascript into a separate document.</p>
+	</body>
+
+</html>

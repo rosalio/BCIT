@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+<title>Widgetwerks Inc. | Our Stuff | CPTs</title>
+
+<link rel="stylesheet" href="global.css" type="text/css">
+
+<script type="text/javascript">
+<!--
+
+function swapImage(someImage) {
+
+document.getElementById("mainimage").src = "images/" + someImage + ".jpg";
+
+	}
+
+//-->
+</script>
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<a href="index.html"><img src="images/wwlogo.png" width="240" height="84" alt="widgetwerks logo"></a>
+	</div>
+	<div id="container">
+	<div id="nav">
+		<p><a href="partners.html">Partners</a></p>			
+		<p class="navcurrent">Stuff</p>			
+		<p><a href="contact.html">Contact</a></p>			
+		<p><a href="index.html">Home</a></p>			
+	</div>
+	<div id="content">
+		<h1>Our Stuff | CPTs</h1>
+		
+		<div class="mainimg">
+		<img src="images/stuff.jpg" alt="" width="150" height="150" name="mainimage" id="mainimage">
+		</div>
+		<p>Our stuff is some the finest stuff now available in the industry. While we once dabbled in everything from powder blue pom-poms to purple inflated hammers, our core focus is rooted in little black doohickeys (LBDs) and chrome-plated thingamajigs (C-PTs). In addition, we have recently expanded into the bright orange squishy thing (BOST) market, and market reception has, thus far, been excellent.
+		</p>
+		
+				
+		<p>Our line of C-PTs include:</p>
+		
+		<p>
+		<img src="images/cpt1t.jpg" height="100" width="100" alt="cpt1" style="cursor:pointer;" onmouseover="swapImage('cpt1');" onmouseout="swapImage('stuff');"><br>
+		C-PT 38<br>
+		An oldy but a goody<br>
+		Price: $4.95</p>
+		
+		<p>
+		<img src="images/cpt2t.jpg" height="100" width="100" alt="cpt2" style="cursor:pointer;" onmouseover="swapImage('cpt2');" onmouseout="swapImage('stuff');"><br>
+		C-PT 6800-G<br>
+		Super-charged and ready to rock<br>
+		Price: $14.95<br>
+		Dust Cover: $6.95</p>
+		
+		<p>
+		<img src="images/cpt3t.jpg" height="100" width="100" alt="cpt3" style="cursor:pointer;"
+		onmouseover="swapImage('cpt3');" onmouseout="swapImage('stuff');><br>
+		C-PT 9800-IND<br>
+		The industrial strength model. Discounts on quantity orders above 1,000 units.<br>
+		Price: Please call</p>
+		
+
+	</div>
+	</div>
+	<div id="footer">
+		<p>Web site design by the fantasy division of runwithscissors design<br>
+		Copyleft &#169; 1999-2014 WidgetWerks Inc. All rights reserved.</p>
+	</div>
+</div>
+</body>
+</html>

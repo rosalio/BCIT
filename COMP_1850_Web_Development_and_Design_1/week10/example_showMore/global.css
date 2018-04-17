@@ -1,0 +1,175 @@
+body {
+	margin: 0;
+	background: #e1a468 url(images/bg.jpg) repeat-x;
+	text-align: center;
+	}
+	
+a:link {
+	color: #c63;
+	font-weight: bold;
+	text-decoration: none;
+	}
+	
+a:visited {
+	color: #555;
+	font-weight: bold;
+	text-decoration: none;
+	}
+	
+a:hover {
+	color: #fc6;
+	font-weight: bold;
+	text-decoration: underline;
+	}
+
+a:active {
+	color: #fc6;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+#wrapper {
+	width: 900px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #e7e4dc;
+	font-family: arial, helvetica, sans-serif;
+	font-size: .90em;
+	}
+
+#header {
+	padding-left: 15px;
+	padding-top: 20px;
+	margin-bottom: 0;
+	background-color: #c4bba8;
+	}
+	
+#container {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-color: #e7e4dc;
+}
+	
+	
+#nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 210px;
+	margin: 0;
+}
+
+#content {
+	padding: 10px;
+	padding-left: 30px;
+	margin-bottom: 0px;
+	margin-left: 210px;
+	position: relative;
+	background: #fff;
+	}
+
+#footer {
+	margin: 0;
+	padding: 10px;
+	padding-left: 20px;
+	background-color: #c4bba8;
+}
+
+#nav a:link, #nav a:visited {
+	color: #e60;
+	background-color: #d2cec3;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 20px 20px 0 20px;
+	padding: 10px;
+	display: block;
+	}
+
+#nav a:hover {
+	text-decoration: none;
+	color: #554d49;
+	background-color: #c9c5bb;
+	}
+
+#sub {
+	margin: 0;
+	}
+	
+#nav a:link.sub, #nav a:visited.sub {
+	color: #e60;
+	background-color: #f1f0ed;
+	font-size: .9em;
+	font-weight: normal;
+	text-decoration: none;
+	margin: 2px 20px 0 20px;
+	padding: 8px 8px 8px 20px;
+	display: block;
+}	
+
+.navcurrent {
+	color: #554d49;
+	background-color: #c9c5bb;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px;
+	display: block;
+}
+
+img {
+	border: 0;
+}
+
+.mainimg {
+	float: right;
+	margin: 10px;
+	padding: 7px;
+	border: 1px solid #e7e4dc;
+}
+
+/* form styles
+----------------------*/
+
+#contactform {
+	min-width: 600px;
+	margin-top: 10px;
+	}
+	
+.formrow {
+	padding: 8px 0;
+	margin: 7px 0;
+	}
+	
+.formrowoff {
+	padding: 8px 0;
+	margin: 7px 0;
+	background-color: #eee
+	}
+	
+.labelcol {
+	float: left;
+	width: 150px;
+	padding:  0 15px;
+	}
+	
+.elcol {
+	margin-left: 180px;
+	}
+
+.formsubmit {
+	margin-top: 20px;
+	margin-left: 180px;
+	}
+
+.clearleft {
+	clear: left;
+	}
+
+
+
+

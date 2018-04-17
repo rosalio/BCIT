@@ -1,0 +1,39 @@
+/* html rules
+--------------------------------------------*/
+
+body {
+	margin: 0;
+	background-color: white;
+	color: #333;
+	font-family: arial, helvetica, sans-serif;
+	}
+
+h1 {
+	background-color: #ddd;
+	padding-top: 20px;
+	padding-left: 10px;
+	}
+
+h2 {
+	background-color: #444;
+	color: #ddd;
+	margin-top: 30px;
+	background-image: url(images/wwbullet.png);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	}
+
+img {
+	border: 0;
+	}
+
+/* class rules
+--------------------------------------------*/
+
+.contentimage {
+	float: right;
+	padding: 8px;
+	border: 1px solid #777;
+	margin-left: 15px;
+	margin-bottom: 15px;
+	}

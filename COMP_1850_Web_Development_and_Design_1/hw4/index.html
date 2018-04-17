@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Music Survey</title>
+<link rel="stylesheet" href="global.css" type="text/css">
+</head>
+<body>
+	<h1>Music Survey</h1>
+
+<div id="surveyform">
+<form action="formmail.php" method="post">
+<input type="hidden" name="recipient" id="recipient" value="adai3@my.bcit.ca">
+<input type="hidden" name="subject" id="subject" value="Music Survey Feedback">
+<input type="hidden" name="sort" id="sort" value="order:name,email,type,frequency,location,role">
+
+<div class="formrow">
+<label for="name" class="labelcol">Name:</label>
+<br>
+<input type="text" name="name" id="name" size="40">	
+</div>
+
+<div>
+<label for="email" class="labelcol">E-Mail:</label>
+<br>
+<input type="text" name="email" id="email" size="40">
+</div>
+
+<div>
+<fieldset>
+<legend>Select Your Favorite Types of Music:</legend>
+	<label for="type" class="labelcol"></label>
+	<input type="checkbox" name="type1" id="type1" value="pop">Pop<br>
+	<input type="checkbox" name="type2" id="type2" value="classical">Classical<br>
+	<input type="checkbox" name="type3" id="type3" value="rock">Rock<br>
+	<input type="checkbox" name="type4" id="type4" value="folk">Folk<br>
+	<input type="checkbox" name="type5" id="type5" value="rap">Rap<br>
+	<input type="checkbox" name="type6" id="type6" value="other">Other
+</fieldset>
+</div>
+
+<div>
+<fieldset>
+<legend>Select how often you purchase Music CDs:</legend>
+	<label for="frequency" class="labelcol"></label>
+	<input type="radio" name="frequency" class="frequency" value="weekly" checked="checked">Weekly<br>
+	<input type="radio" name="frequency" class="frequency" value="afew">A few CDs each year<br>
+	<input type="radio" name="frequency" class="frequency" value="weekly">Monthly<br>
+	<input type="radio" name="frequency" class="frequency" value="weekly">Never purchase
+</fieldset>
+</div>
+
+<div>
+<b>Select the locations you listen to Music:</b><br>
+<select name="location" id="location" size="3" multiple>
+	<option value="home">At home</option>
+	<option value="car">In the car</option>   
+	<option value="mp3">Anywhere (MP3 Player)</option>
+	<option value="pub">At pub</option>
+</select>
+</div>
+
+<div>
+<label for="role" class="labelcol">What role does music play in your life?</label>
+<br>
+<textarea cols="60" rows="3" name="role" id="role"></textarea>
+</div>
+
+<div class="formsubmit">
+<input type="submit" value="Submit" class="subbutton">
+<input type="reset" value="Reset">
+</div>
+
+
+
+</form>
+</div>
+
+<hr>
+<p id="footer">Contact Alex Dai at <a href="mailto:adai3@my.bcit.ca">adai3@my.bcit.ca</a></p>  
+
+</body>
+</html>

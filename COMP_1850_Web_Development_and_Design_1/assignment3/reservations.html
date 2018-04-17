@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lilac Garden Pub</title>
+		<link rel="stylesheet" type="text/css" href="global.css">		
+	</head>
+
+<body>
+	
+<div id="wrapper">
+	<div id="header">
+		<h1>Lilac Garden Pub</h1>
+	</div>
+	
+<ul id="menu">
+    <li><a href="index.html">HOME</a></li>
+    <li>
+        <a href="#">ABOUT</a>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="hours.html">Hours</a></li>
+        </ul>
+    </li>
+    <li>
+    	<a href="#">MENU</a>
+    	<ul>
+            <li><a href="food.html">Food</a></li>
+            <li><a href="drink.html">Drink</a></li>
+        </ul>
+    </li>
+    <li><a href="reservations.html">RESERVATIONS</a></li>
+    <li>
+    	<a href="#">WORLD CUP 2014</a>
+    	<ul>
+            <li><a href="fixtures.html">Fixtures</a></li>
+            <li><a href="topstars.html">Top Stars</a></li>
+        </ul>
+    </li>
+    <li><a href="sitemap.html">SITE MAP</a></li>
+</ul>	
+
+<div id="content">	
+<h1>Reservation</h1>
+
+<div>
+<form action="formmail.php" method="post">
+<input type="hidden" name="recipient" id="recipient" value="adai3@my.bcit.ca">
+<input type="hidden" name="subject" id="subject" value="Reservation">
+<input type="hidden" name="redirect" id="redirect" value="index.html">
+<input type="hidden" name="sort" id="sort" value="order:name,email,comments">
+
+<div>
+<label for="name" class="labelcol">Name:</label>
+<input type="text" name="name" id="name" size="40">
+</div>
+
+<div>
+<label for="email" class="labelcol">Email:</label>
+<input type="text" name="email" id="email" size="40">
+</div>
+
+<div>
+<label for="comments" class="labelcol">Details:</label>
+<textarea cols="35" rows="5" name="comments" id="comments"></textarea>
+</div>
+
+<div class="formsubmit">
+<input type="submit" value=" Submit form " class="subbutton">
+<input type="reset" value=" Reset form ">
+</div>
+
+</form>
+</div>
+</div>
+
+
+
+
+
+	<div id="footer">
+		<p>Site created by Alex Dai<br>Last updated: June 2014</p>
+	</div>
+</div>
+
+</body>
+
+</html>

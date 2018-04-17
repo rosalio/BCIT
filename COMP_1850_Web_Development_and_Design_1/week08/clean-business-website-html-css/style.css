@@ -1,0 +1,63 @@
+@import "reset.css";
+
+/*-----------------Tools-----------------*/
+.horizontal-line { background: url(images/horizontal-line.png) no-repeat; width: 950px; height: 10px; }
+.vertical-line { float: left; background: url(images/vertical-line.png) no-repeat; width: 4px; height: 385px; }
+
+/*-----------------GENERAL STYLES-----------------*/
+body { background: url(images/main-bg.gif) repeat-x; font-family: arial; }
+#wrap { width: 960px; margin: 0 auto; }
+
+/*---------------------HEADER---------------------*/
+#header { height: 130px; }
+#header h1 { float: left; background: url(images/logo.png) no-repeat; width: 347px; height: 66px; text-indent: -9999px; margin: 38px 0 0 0; }
+#header #nav { float: right; margin: 72px 0 0 0; }
+#header #nav li { float: left; font-size: 16px; }
+#header #nav a { color: #eee; text-decoration: none; }
+#header #nav a:hover { color: #00aeef; }
+#header #nav .nav-divider { color: #eee; padding: 0 10px; }
+
+/*------------FEATURED CONTENT SECTION------------*/
+#featured-content { margin: 65px 0 0 0; }
+#featured-content h2 { background: url(images/featured-section-title.png) no-repeat; width: 811px; height: 66px; text-indent: -9999px; }
+#featured-content h3 { background: url(images/featured-section-subtitle.png) no-repeat; width: 720px; height: 57px; margin: -8px 0 30px 1px; text-indent: -9999px; }
+#featured-content p { background: url(images/featured-section-text.png) no-repeat; width: 957px; height: 126px; margin: 30px 0 25px 0; text-indent: -9999px; }
+
+/*--------------------SERVICES--------------------*/
+#services { padding: 40px 0; height: 355px;  }
+#services .service-box { float: left; background: url(images/service-box-bg.png) no-repeat; width: 233px; height: 301px; margin: 0 0 0 46px; padding: 22px 28px 30px 26px; }
+#services .first { margin-left: 0px; }
+#services .service-box h2 { margin: 0 auto; }
+.web-design-title { background: url(images/web-design-title.png) no-repeat; width: 186px; height: 48px; }
+.marketing-title { background: url(images/marketing-title.png) no-repeat; width: 186px; height: 48px;  }
+.optimization-title {  background: url(images/optimization-title.png) no-repeat; width: 200px; height: 48px;}
+.service-dotted-line { background: url(images/service-dotted-line.png) no-repeat; width: 237px; height: 3px; margin: 10px 0 24px 0;  }
+#services p { font-size: 14px; color: #fff; line-height: 21px; text-align: center; margin: 0 0 24px 0; }
+#services .more-details { display: block; background: url(images/get-more-details-button.jpg) no-repeat; width: 232px; height: 41px; }
+#services .view-case-studies-button { display: block; background: url(images/view-case-studies-button.jpg) no-repeat; width: 232px; height: 41px; }
+#services .learn-more-button { display: block; background: url(images/learn-more-button.jpg) no-repeat; width: 232px; height: 41px; }
+
+/*----------------ADDITIONAL INFO-----------------*/
+#additional-info { margin: 38px 0 0 0; height: 420px; }
+#additional-info #client-testimonials { float: left; width: 425px; padding: 0 45px 0 0; }
+#additional-info #client-testimonials h3 { background: url(images/client-testimonials-title.png) no-repeat; width: 180px; height: 28px; margin: 0 0 24px -5px; text-indent: -9999px; }
+.testimonial {  margin: 0 0 32px -5px;  }
+.testimonial .author-img { float: left;   background-color: #ccc; width: 84px; height: 84px; margin: 4px 28px 0 5px; }
+.testimonial img { margin: 3px 0 0 3px;  }
+.testimonial p { color: #555; font-size: 14px; line-height: 21px; margin: 0 0 12px 0; }
+.testimonial p.author-name { font-weight: bold; margin: 0;  }
+.testimonial a { color: #00aeef; font-size: 14px; text-decoration: none; }
+.testimonial a:hover { color: #555; }
+
+/*----------------FEATURED PROJECT----------------*/
+#featured-project { float: left; margin: 0 0 0 45px; width: 425px; }
+#featured-project h3 { background: url(images/featured-project-title.png) no-repeat; width: 160px; height: 32px; margin: 0 0 16px -5px; text-indent: -9999px; }
+#featured-project h4 { font-size: 20px; color: #888; font-weight: normal; margin: 0 0 8px 0; }
+#featured-project img { margin: 0 0 7px 0; }
+#featured-project p { font-size: 14px; color: #555; line-height: 21px; margin-bottom: 7px; }
+#featured-project a { color: #00aeef; font-size: 14px; text-decoration: none; }
+#featured-project a:hover { color: #555; }
+
+/*--------------------FOOTER----------------------*/
+#footer { height: 70px; padding: 0 0 30px 0; }
+#footer p { font-size: 16px; color: #888; padding: 14px 0 0 0; }

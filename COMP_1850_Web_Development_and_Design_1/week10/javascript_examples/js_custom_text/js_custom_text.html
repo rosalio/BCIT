@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Javascript Image Gallery</title>
+
+<!-- this javascript function changes the 'main_image' to whatever is specified by 'someImage' -->
+<script type="text/javascript" language="javascript">
+	function swapText(decideWhatText){
+		var textDisplayElement = document.getElementById("message");
+		switch(decideWhatText)
+		{
+		case 'tolstoy':
+		  textDisplayElement.innerHTML = "Tolstoy was a great grower of beards";
+		  break;
+		case 'dickens':
+		  textDisplayElement.innerHTML = "Dickens could cook up a mean london-rat gruel";
+		  break;
+		case 'steinbeck':
+		  textDisplayElement.innerHTML = "Steinbeck was a talented yodeler";
+		  break;
+		default:
+		}
+	}
+</script>
+
+</head>
+
+<body>
+	<h3 id="message">Clcik the text below for new message...</h3>
+	<p onclick="swapText('tolstoy')" style="cursor:pointer;">Text about tolstoy</p>
+	<p onclick="swapText('dickens')" style="cursor:pointer;">Text about dickens</p>
+	<p onclick="swapText('steinbeck')" style="cursor:pointer;">Text about steinbeck</p>
+
+	</div>
+
+</body>
+</html>

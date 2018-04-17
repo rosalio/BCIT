@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WidgetWerks Inc. - Our Partners</title>
+		<link rel="stylesheet" type="text/css" href="global.css">
+	</head>
+	<body>
+<a name="top" id="top"></a>
+<h1><img src="images/wwlogo.png" height="86" width="252" alt="widgetwerks logo" ></h1>
+
+
+
+<ul id="nav">
+	<li><a href="index.html">Home</a></li>
+	<li><span class="navoff">Partners</span></li>  
+	<li><a href="stuff.html">Stuff</a></li>  
+</ul>
+
+
+
+<h2 class="clearall">Our Partners</h2>
+
+<p>
+<img src="images/partners.jpg" width="150" height="150" alt="" class="contentimage">Our current partners are a bunch of hard-working, gullible stiffs, who really got shafted by our lawyers. Unfortunately for them, they're locked into a long-term deal that gives us the right to exploit their capabilities and intellectual property with little need for compensation. We're rolling in dough over here, I tell you.
+</p>
+
+<p>
+In any case, they should consider themselves lucky that we even deigned to mention them here on our spiffy, high-end web offering.
+</p>
+
+<table border="1">
+	<tr>
+		<td>Partners we like</td>
+		<td>Partners we don't like</td>
+	</tr>
+	<tr>
+		<td>Clammy's Fine Sprayable Cheese Products</td>
+		<td>POW! Propane Products Inc.</td>
+	</tr>
+	<tr>
+		<td>Spineridge ChromeWerks Ltd. (hey, they're name is sorta like ours...)</td>
+		<td>NuWave Meat and Meat Byproducts</td>
+	</tr>
+	<tr>
+		<td>The Beer Farm at Sprott (Bring the kids!)</td>
+		<td>Guillotine Corp.</td>
+	</tr>
+	<tr>
+		<td>Squish Inc.</td>
+		<td>London Drugstore Cowboys</dt>
+	</tr>
+	<tr>
+		<td>The Big Black Box Company (makers of fine, big black boxes)</td>
+		<td>Eek Exterminators</td>
+	</tr>
+</table>
+
+<p>
+Where possible, we have linked to our partners' web sites. If they don't have one, then they probably have something to hide. Unlike us. We're very open...really.
+</p>
+
+<hr>
+
+<p>
+Web site designed by the Fantasy Division of <a href="http://www.runwithscissors.ca/">runwithscissors</a> Design<br />
+Copyleft 1999-2014 WidgetWerks Inc. All rights reserved.<br />
+[ <a href="#top">Top</a> ]
+</p>
+
+</body>
+</html>

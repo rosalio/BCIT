@@ -1,0 +1,80 @@
+/* html rules
+--------------------------------------------*/
+
+body {
+	margin: 15px;
+	background-color: #000033;
+	color: #cccccc;
+	font-family: helvetica, arial, sans-serif;
+}
+
+.navigator {
+	color: ffffff;
+	margin: 20px;
+	font-size: 20pt;
+}
+
+#footer {
+	font-size: 12pt;
+	font-style: italic;
+}
+
+h1 {
+	background-color: #000033;
+	color: #ffffff;
+	font-family: Palatino, Georgia, serif;
+	font-style: italic;
+	font-size: 32pt;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+h2 {
+	background-color: #cc0033;
+	color: #ffffff;
+	margin-top: 30px;
+	padding-left: 30px;
+	font-size: 20pt;
+}
+
+p {
+	font-size: 16pt;
+}
+
+a {
+	color: #ffffff;
+}
+
+img {
+	float: center;
+	padding: 5px;
+	border: 0;
+}
+
+dt {
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 50px;
+	font-size: 12pt;
+}
+
+li {
+	margin-left: 10px;
+	font-size: 16pt;
+}
+
+/* class rules
+--------------------------------------------*/
+
+.contentimage {
+	float: right;
+	padding: 5px;
+	border: 0;
+	}

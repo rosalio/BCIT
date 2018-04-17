@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>COMP 1850 | javascript functions</title>
+		
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+	<h1>Javscript functions</h1>
+	<script language="JavaScript" type="text/javascript">
+/*
+functions
+aka: methods, behaviors, routines, recipes
+------------------------------------------
+a function defines one or more instructions as a single unit
+once defined, a function must be 'invoked' before it is used.
+
+functions permit the developement of
+REUSABLE blocks of code, since they are defined once,
+but may be invoked any number of times
+
+1 - define function:		function someName(){}
+
+	function	keyword used to define a function
+	someName	name of the function. developer chooses the name
+	()			parameter list. may be empty.
+	{}			defines the block of code that ecapsulates the
+				instructions related to this function
+	
+2 - invoke function:		someName();
+	
+	someName	name the function you want to invoke
+	()			supply additional data if required
+	;			all instructions end with a semicolon
+*/
+	function addNumbers()
+	{
+		var num01 = 22;
+		var num02 = 23;
+		var sum = num01 + num02;
+		document.write("The sum is " + sum);
+	}
+	/*
+	if a fucntion requires more information,
+	parameters act as variables
+		functionName(parameter01, parameter02, parameter03)
+	Parameters:
+		num01	any number
+		num02	any number
+	*/
+	function addNumbersWithParameters(num01, num02)
+	{
+		var sum = num01 + num02;
+		document.write("<br />The sum is " + sum);
+	}	
+	
+	function addNumbersWithParametersAndMessage(num01, num02, anotherVariable)
+	{
+		var sum = num01 + num02;
+		document.write("<br>The sum is " + sum);
+		document.write("Message is " + anotherVariable);
+	}		
+	
+	
+	/*
+	invoke a function
+	*/
+	addNumbers();
+	addNumbers();
+	
+	addNumbersWithParameters(45, 789);
+	addNumbersWithParameters(445, 7859);
+	addNumbersWithParameters(445, "Shania");
+	
+	addNumbersWithParametersAndMessage(789, 444, "Hello world!!");
+	
+	
+	</script>
+	
+	</body>
+
+</html>

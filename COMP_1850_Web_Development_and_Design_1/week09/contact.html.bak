@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Widgetwerks Inc. | Contact Us</title>
+<link rel="stylesheet" href="global.css" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<a href="index.html"><img src="images/wwlogo.png" width="240" height="84" alt="widgetwerks logo"></a>
+	</div>
+	<div id="container">
+	<div id="nav">
+		<p><a href="partners.html">Partners</a></p>			
+		<p><a href="stuff.html">Stuff</a></p>			
+		<p class="navcurrent">Contact</p>			
+		<p><a href="index.html">Home</a></p>			
+	</div>
+	<div id="content">
+		<h1>Contact Us</h1>
+		
+		<p>We are located at the corner of Dunderhead and Fleeb. Can't miss us, really. But in case you want to send us email or something, here's the info:</p>
+		
+		<p><b>WidgetWerks Inc.</b><br>
+		#01 - 12786 Dunderhead Ave.<br>
+		Springfield, BC<br>
+		Canada V6Y 0H0</p>
+		
+		<p><b>Tel:</b> 778.312.3212<br>
+		<b>Fax:</b> 778.312.3212<br>
+		<b>Email:</b> <a href="mailto:info@widgetwerks.com">info@widgetwerks.com</a></p>
+		
+<h2>Send us some feedback!</h2>
+
+<div id="contactform">
+<form action="formmail.php" method="post">
+<input type="hidden" name="recipient" id="recipient" value="adai3@my.bcit.ca">
+<input type="hidden" name="subject" id="subject" value="Feedback from the website">
+<input type="hidden" name="redirect" id="redirect" value="thanks.html">
+<input type="hidden" name="sort" id="sort" value="order:name,email,comments,hear,opinion,interests1,interests2,interests3,interests4">
+
+<div class="formrow">
+<label for="name" class="labelcol">Name:</label>
+<input type="text" name="name" id="name" size="40">
+</div>
+
+<div class="altrow">
+<label for="email" class="labelcol">Email:</label>
+<input type="text" name="email" id="email" size="40">
+</div>
+
+<div class="formrow">
+<label for="comments" class="labelcol">Comments:</label>
+<textarea cols="35" rows="5" name="comments" id="comments"></textarea>
+</div>
+
+<div class="altrow">
+<label for="hear" class="labelcol">Where did you hear about us?</label>
+<select name="hear" id="hear">
+	<option value="selected">Please choose...</option>
+	<option value="search">Search engine</option>
+	<option value="friend">From a friend</option>
+	<option value="wall">On a bathroom wall</option>
+</select>
+</div>
+
+<div class="formrow">
+<label for="opinion" class="labelcol">What do you think of our site?</label>
+<input type="radio" name="opinion" id="radio1" value="perfect" checked="checked">Perfect<br>
+<input type="radio" name="opinion" id="radio2" value="perfectly awful">Perfectly Auful</div>
+
+<div class="altrow">
+<label for="interest1" class="labelcol">What are you interested in?</label>
+	<div class="elcol">
+		<input type="checkbox" name="interests1" id="interests1" value="cpts">CPTs<br>
+		<input type="checkbox" name="interests2" id="interests2" value="lbds">LBDs<br>
+		<input type="checkbox" name="interests3" id="interests3" value="bosts">BoSTs<br>
+		<input type="checkbox" name="interests4" id="interests4" value="money"> How to get my money back
+	</div>
+</div>
+
+<div class="formsubmit">
+<input type="submit" value=" Submit form " class="subbutton">
+<input type="reset" value=" Reset form ">
+</div>
+
+</form>
+</div>
+
+		
+	</div>
+	</div>
+	<div id="footer">
+		<p>Web site design by the fantasy division of runwithscissors design<br>
+		Copyleft &#169; 1999-2014 WidgetWerks Inc. All rights reserved.</p>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Javascript Date</title>
+		<script language="JavaScript" type="text/javascript">
+		<!--
+		function validate(){
+
+			//prepare some variables to use
+			var message = document.getElementById("message");
+			var studentNum = document.getElementById("studentnumber").value;
+			
+			//test to ensure they input something
+			if(studentNum == null || studentNum == ""){
+				message.style.color ="red";
+				message.innerHTML = "You must enter a student number. (eg: A00123456)";
+				return false;
+			}
+
+			//test to ensure it follows BCIT student number pattern
+			//create regexp object
+			var pattern = new RegExp("^(a|A)[0-9]{8}$");
+			//test a string against the pattern
+			//returns a boolean
+			var testPassed = pattern.test(studentNum);
+			if(!testPassed){
+				message.style.color ="red";
+				message.innerHTML = "You must enter a valid student number. (eg: A00123456)";
+				return false;
+			}
+
+			//if it passed all the above tests we can permit this form to send itslef to the server
+			return true;
+		}
+		// -->
+		</script>		
+	</head>
+
+	<body>
+		<p id="message">Please identify yourself...</p>
+		<!-- 
+	the onsubmit="" attribute directs the form submission to 
+	a javascript function before allowing the form data 
+	proceed to the processing server side script
+		-->
+		<form	onsubmit="return validate();" 
+				action="some_script_that_doesnt_exist.jsp" 
+				method="get">
+
+			<label for="studentnumber">Student Number:</label>
+			<input type="text" name="studentnumber" id="studentnumber" />
+			<input type="submit" value="submit" />
+
+		</form>
+	</body>
+
+</html>

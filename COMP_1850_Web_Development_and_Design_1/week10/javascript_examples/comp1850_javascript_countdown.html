@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>COMP 1850 | javascript countdown</title>
+		
+	</head>
+
+	<body>
+
+	<script language="JavaScript" type="text/javascript">
+	<!--
+	//set your big day here:
+	var BigDay = new Date("January 01, 2014")
+		
+	var today = new Date();
+	var msPerDay = 24 * 60 * 60 * 1000 ;
+	var timeLeft = (BigDay.getTime() - today.getTime());
+	var e_daysLeft = timeLeft / msPerDay;
+	var daysLeft = Math.floor(e_daysLeft);
+	var e_hrsLeft = (e_daysLeft - daysLeft)*24;
+	var hrsLeft = Math.floor(e_hrsLeft);
+	var minsLeft = Math.floor((e_hrsLeft - hrsLeft)*60);
+	//daysLeft = daysLeft*-1;
+
+	//choose how to display the info here
+	document.write("<p>There are only <b>" + daysLeft + " days</b> " + hrsLeft +" hours and " + minsLeft + " minutes left until New Years Eve 2014<p>");
+	// -->
+	</script>
+	
+	</body>
+
+</html>

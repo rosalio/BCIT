@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>WidgetWerks: Our Stuff</title>
+
+		<style type="text/css">
+
+		dd {
+			margin-bottom: 15px;
+			}
+
+		</style>
+
+	</head>
+	<body>
+<p><a name="top" id="top" href="index.html"><img src="images/wwlogo.png" alt="widget logo"></a></p>
+
+<h1>Our Stuff</h1>
+
+<hr>
+
+<p>
+<a href="index.html"><img src="images/home_button.gif" alt="home_button"></a>
+<a href="partners.html"><img src="images/partners_button.gif" alt="partners_button"></a>
+<a href="stuff.html"><img src="images/stuff_button.gif" alt="stuff_button"></a>
+</p>
+
+<p><img src="images/stuff.jpg" alt="stuff.jpg" height="300" width="300"></p>
+
+<p>Our stuff is some the finest stuff now available in the industry. While we once dabbled in everything from powder blue pom-poms to purple inflated hammers, our core focus is rooted in little black doohickeys (LBDs) and chrome-plated thingamajigs (C-PTs). In addition, we have recently expanded into the bright orange squishy thing (BOST) market, and market reception has, thus far, been excellent.</p>
+
+<p>Current models of our LBDs include:</p>
+
+<dl>
+	<dt>LBD 2000</dt>
+	<dd>Perfect for that first date<br>
+	<strong>Price:</strong> $19.95
+	</dd>
+
+	<dt>LBD 2001</dt>
+	<dd>Originally created specifically for Stanley Kubrick, modifications to the design have made it applicable to a wide segment of the population.<br>
+	<strong>Price:</strong> $29.95<br>
+	<strong>With recharger:</strong> $45.95
+	</dd>
+
+	<dt>LBD 3210-LX</dt>
+	<dd>The deluxe model. Not for the faint of heart
+	<strong>Price:</strong> $319.95<br>
+	(includes yearly updates)
+	</dd>
+</dl>
+
+<p>Our line of C-PTs include:</p>
+
+<dl>
+	<dt>C-PT 38</dt>
+	<dd>An oldy but a goody<br>
+	<strong>Price:</strong> $4.95
+	</dd>
+
+	<dt>C-PT 6800-G</dt>
+	<dd>Super-charged and ready to rock<br>
+	<strong>Price:</strong> $14.95<br>
+	<strong>Dust Cover:</strong> $6.95
+	</dd>
+
+	<dt>C-PT 9800-IND</dt>
+	<dd>The industrial strength model. Discounts on quantity orders above 1,000 units.<br>
+	<strong>Price:</strong> Please call
+	</dd>
+</dl>
+
+<p>Our rapidly expanding BOST unit is currently offering one model only:</p>
+
+<dl>
+	<dt>BOST v.2.50b</dt>
+	<dd>It's a beta but it's still pretty awesome
+	<strong>Price:</strong> $65.95
+	<strong>Extra squish:</strong> $5.95/500ml
+	</dd>
+</dl>
+
+<p>To order any of our stuff, please call us at 1-800-WEB-CRAP or email us at sell_me_some_crap@spiderweb.com.</p>
+
+<hr>
+
+<p>
+Web site designed by the Fantasy Division of runwithscissors Design<br>
+Copyleft 1999-2014 WidgetWerks Inc. All rights reserved.<br>
+[ Top ]
+</p>
+
+	</body>
+</html>

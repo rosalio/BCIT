@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>COMP 1850 | javascript getElementById</title>
+		
+		<style type="text/css">
+
+		</style>
+	
+	<script language="JavaScript" type="text/javascript">
+	/*
+		the built in function
+			document.getElementById("idname")
+		will return the element with the specified id
+		
+		this allows javascript to get a 'hold' on any element 
+		in the body of a page. once javascript has an element,
+		it can 
+			a - query its current state
+			b - alter its current state
+		*/
+		function changeMessage(){
+			var myPtag = document.getElementById("message");
+			var myOtherPtag = document.getElementById("message2");
+			myPtag.innerHTML = "Hello from javascript";
+		}
+		
+		function changeCustomMessage(customMessage){
+			var myPtag = document.getElementById("message");
+			myPtag.innerHTML = customMessage;
+		}		
+	</script>
+	
+	
+	</head>
+
+	<body>
+<!-- 
+great javascript resource:
+http://www.devguru.com/technologies/javascript/
+-->
+	<h1 ondblclick="changeMessage();">Double Click me to activate a javsacript function.</h1>
+	
+	<h1 onclick="changeCustomMessage('Hello shania')">Click for custom message 01</h1>
+	<h1 onclick='changeCustomMessage("Hello jeff")'>Click for custom message 02</h1>
+	
+	<p id="message">This message is from HTML</p>
+	
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
