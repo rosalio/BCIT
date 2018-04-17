@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=description\ weightInKilos\ canBePickedUp
+comment0.target=Item(java.lang.String,\ double,\ boolean)
+comment0.text=\n\ Constructor\ of\ class\ Item\n\ \n\ @param\ description\n\ @param\ weightInKilos\n\ @param\ canBePickedUp\n
+comment1.params=description
+comment1.target=void\ setDescription(java.lang.String)
+comment1.text=\n\ Set\ description\n\ \n\ @param\ description\n
+comment2.params=weightInKilos
+comment2.target=void\ setWeightInKilos(double)
+comment2.text=\n\ Set\ weight\ in\ kilos\n\ \n\ @param\ weightInKilos\n
+comment3.params=canBePickedUp
+comment3.target=void\ setCanBePickedUp(boolean)
+comment3.text=\n\ Set\ can\ be\ picked\ up\n\ \n\ @param\ canBePickedUp\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\n\ toString\ method\n
+numComments=5

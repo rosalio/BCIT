@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=title
+comment0.target=Item(java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Item\r\n
+comment1.params=
+comment1.target=java.lang.String\ getTitle()
+comment1.text=\r\n\ @return\ the\ title\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ @return\ a\ String\ representing\ this\ item\r\n
+numComments=3

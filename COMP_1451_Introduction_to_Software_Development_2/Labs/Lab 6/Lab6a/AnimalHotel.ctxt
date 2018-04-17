@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AnimalHotel()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ AnimalHotel\n
+comment1.params=guest
+comment1.target=void\ addGuest(Animal)
+comment1.text=\n\ Add\ a\ guest\n\ \n\ @param\ guest\n\ \ \ \ \ \ \ \ \ \ the\ guest\n
+comment2.params=
+comment2.target=void\ displayGuestsInfo()
+comment2.text=\n\ Display\ info\n
+numComments=3

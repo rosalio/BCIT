@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=description\ weightInKilos\ costInCAD
+comment0.target=SaleItem(java.lang.String,\ double,\ double)
+comment0.text=\n\ Construtor\ of\ class\ SaleItem\n
+comment1.params=costInCAD
+comment1.target=void\ setCostInCAD(double)
+comment1.text=\n\ Set\ cost\ in\ CAD\n\ \n\ @param\ costInCAD\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\n\ toString\ method\n
+numComments=3

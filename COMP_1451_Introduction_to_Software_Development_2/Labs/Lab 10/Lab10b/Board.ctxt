@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Board()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Board\n
+comment1.params=piece
+comment1.target=void\ populateBoardWithPiece(GamePiece)
+comment1.text=\n\ Populate\ the\ board\ with\ the\ same\ piece\n\ @param\ piece\n
+comment2.params=
+comment2.target=void\ displayBoard()
+comment2.text=\n\ Display\ the\ board\n
+comment3.params=from\ to
+comment3.target=void\ movePiece(Location,\ Location)
+comment3.text=\n\ Move\ the\ piece;\ throw\ exception\ if\ the\ move\ is\ not\ valid\n\ @param\ from\ location\n\ @param\ to\ location\n
+numComments=4

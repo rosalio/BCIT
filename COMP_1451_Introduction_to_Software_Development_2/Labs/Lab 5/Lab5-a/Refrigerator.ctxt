@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Refrigerator()
+comment0.text=\n\ Default\ constructor\ for\ objects\ of\ class\ Refrigerator\n
+comment1.params=brand\ serialNumber\ interiorHeightInCentimeters\ interiorDepthInCentimeters\ interiorWidthInCentimeters\ maxDegreesInCentigrade
+comment1.target=Refrigerator(java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ double)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Refrigerator\n\ \n\ @param\ brand\n\ \ \ \ \ \ \ \ \ \ the\ brand\n\ @param\ serialNumber\n\ \ \ \ \ \ \ \ \ \ the\ serial\ number\n\ @param\ interiorHeightInCentimeters\n\ \ \ \ \ \ \ \ \ \ the\ interior\ height\ in\ centimeters\n\ @param\ interiorDepthInCentimeters\n\ \ \ \ \ \ \ \ \ \ the\ interior\ depth\ in\ centimeters\n\ @param\ interiorWidthInCentimeters\n\ \ \ \ \ \ \ \ \ \ the\ interior\ width\ in\ centimeters\n\ @param\ maxDegreesInCentigrade\n\ \ \ \ \ \ \ \ \ \ the\ maximum\ degrees\ in\ centigrade\n
+comment2.params=
+comment2.target=double\ getMaxDegreesInCentigrade()
+comment2.text=\n\ Get\ the\ maximum\ degrees\ in\ centigrade\n\ \n\ @return\ maxDegreesInCentigrade\n
+comment3.params=maxDegreesInCentigrade
+comment3.target=void\ setMaxDegreesInCentigrade(double)
+comment3.text=\n\ Set\ the\ maximum\ degrees\ in\ centigrade\n\ \n\ @param\ maxDegreesInCentigrade\n\ \ \ \ \ \ \ \ \ \ \ \ \ the\ maximum\ degees\ in\ centigrade\n
+comment4.params=
+comment4.target=int\ calculateCapacity()
+comment4.text=\n\ Calculate\ the\ capacity\ in\ cubic\ centimeters\n\ \n\ @return\ capacity\n
+numComments=5

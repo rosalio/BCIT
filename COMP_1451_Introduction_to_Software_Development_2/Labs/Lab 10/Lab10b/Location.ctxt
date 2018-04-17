@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=xPosition\ yPosition
+comment0.target=Location(int,\ int)
+comment0.text=\n\ Constructor\ of\ class\ Location\n\ @param\ xPosition\n\ @param\ yPosition\n
+comment1.params=
+comment1.target=int\ getXPosition()
+comment1.text=\n\ Get\ x\ position\n\ @return\ xPosition\n
+comment2.params=
+comment2.target=int\ getYPosition()
+comment2.text=\n\ Get\ y\ position\n\ @return\ yPosition\n
+comment3.params=xPosition
+comment3.target=void\ setXPosition(int)
+comment3.text=\n\ Set\ x\ position\n\ @param\ xPosition\n
+comment4.params=yPosition
+comment4.target=void\ setYPosition(int)
+comment4.text=\n\ Set\ y\ position\n\ @param\ yPosition\n
+numComments=5

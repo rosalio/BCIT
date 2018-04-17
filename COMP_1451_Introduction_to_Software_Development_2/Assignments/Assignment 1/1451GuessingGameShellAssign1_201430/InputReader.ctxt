@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=InputReader()
+comment0.text=\r\n\ Create\ a\ new\ InputReader\ to\ read\ a\ coordinate\ pair.\r\n
+comment1.params=
+comment1.target=CoordinatePair\ getCoordinates()
+comment1.text=\r\n\ @return\ CoordinatePair\ with\ row\ and\ column\ typed\ by\ user,\ or\ null\r\n
+numComments=2

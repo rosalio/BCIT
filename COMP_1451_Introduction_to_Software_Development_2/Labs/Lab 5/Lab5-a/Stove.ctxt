@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Stove()
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ Stove\r\n
+comment1.params=brand\ serialNumber\ interiorHeightInCentimeters\ interiorDepthInCentimeters\ interiorWidthInCentimeters\ numberOfHeatingElements
+comment1.target=Stove(java.lang.String,\ java.lang.String,\ int,\ int,\ int,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Stove\r\n\r\n\ @param\ brand\r\n\ \ \ \ \ \ \ \ \ \ the\ brand\r\n\ @param\ serialNumber\r\n\ \ \ \ \ \ \ \ \ \ the\ serial\ number\r\n\ @param\ interiorHeightInCentimeters\r\n\ \ \ \ \ \ \ \ \ \ the\ interior\ height\ in\ centimeters\r\n\ @param\ interiorDepthInCentimeters\r\n\ \ \ \ \ \ \ \ \ \ the\ interior\ depth\ in\ centimeters\r\n\ @param\ interiorWidthInCentimeters\r\n\ \ \ \ \ \ \ \ \ \ the\ interior\ width\ in\ centimeters\r\n\ @param\ numberOfHeatingElements\r\n\ \ \ \ \ \ \ \ \ \ the\ number\ of\ heating\ elements\r\n
+comment2.params=
+comment2.target=int\ getNumberOfHeatingElements()
+comment3.params=numberOfHeatingElements
+comment3.target=void\ setNumberOfHeatingElements(int)
+numComments=4

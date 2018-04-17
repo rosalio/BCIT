@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=name\ monthlySales
+comment0.target=CommissionEmployee(java.lang.String,\ double)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ CommissionEmployee\r\n
+comment1.params=
+comment1.target=double\ getMonthlySales()
+comment1.text=\r\n\ Gets\ monthly\ sales.\r\n\ @return\ monthly\ sales\r\n
+comment2.params=salesThisMonth
+comment2.target=void\ setMonthlySales(double)
+comment2.text=\r\n\ Sets\ monthly\ sales.\r\n\ @param\ salesThisMonth\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ @return\ name\ and\ sales\r\n
+comment4.params=
+comment4.target=double\ calculateMonthlyEarnings()
+comment4.text=\r\n\ Calculates\ monthly\ earnings.\r\n\ @return\ monthly\ earnings\r\n
+numComments=5

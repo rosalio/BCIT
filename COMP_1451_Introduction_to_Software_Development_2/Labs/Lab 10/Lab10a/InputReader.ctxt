@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=
+comment0.target=InputReader()
+comment1.params=
+comment1.target=int\ getNumber()
+comment1.text=\r\n\ This\ method\ returns\ the\ number\ typed\ by\ the\ user.\ If\ the\ number\ is\r\n\ not\ an\ integer\ it\ throws\ a\ custom\ checked\ exception\ that\ will\ be\r\n\ caught\ by\ the\ calling\ method.\r\n\ @throws\ InputMismatchException,\ InvalidInputException\r\n
+numComments=2

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Company()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Company\r\n
+comment1.params=anEmployee
+comment1.target=void\ addEmployee(Employee)
+comment1.text=\r\n\ Adds\ an\ employee.\r\n\ @param\ anEmployee\r\n
+comment2.params=
+comment2.target=void\ showEmployees()
+comment2.text=\r\n\ Shows\ all\ employees\ and\ their\ earnings.\r\n
+comment3.params=
+comment3.target=double\ sumWagesPaidThisMonth()
+comment3.text=\r\n\ Sums\ total\ wages\ paid\ for\ the\ month.\r\n\ @return\ total\ wages\ paid\r\n
+numComments=4

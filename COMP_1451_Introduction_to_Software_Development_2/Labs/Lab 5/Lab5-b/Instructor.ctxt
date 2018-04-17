@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Instructor()
+comment0.text=\n\ Default\ constructor\ for\ objects\ of\ class\ Instructor\n
+comment1.params=firstName\ lastName\ emailAddress\ bcitId\ hourlyWage
+comment1.target=Instructor(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ double)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Instructor\n\ \n\ @param\ firstName\n\ \ \ \ \ \ \ \ \ \ the\ first\ name\n\ @param\ lastName\n\ \ \ \ \ \ \ \ \ \ the\ last\ name\n\ @param\ emailAddress\n\ \ \ \ \ \ \ \ \ \ the\ email\ address\n\ @param\ bcitId\n\ \ \ \ \ \ \ \ \ \ the\ bcit\ id\n\ @param\ hourlyWage\n\ \ \ \ \ \ \ \ \ \ the\ hourly\ wage\n
+comment2.params=
+comment2.target=double\ getHourlyWage()
+comment2.text=\n\ Get\ hourly\ wage\n\ \n\ @return\ hourlyWage\n
+comment3.params=hourlyWage
+comment3.target=void\ setHourlyWage(double)
+comment3.text=\n\ Set\ hourly\ wage\n\ \n\ @param\ hourlyWage\n\ \ \ \ \ \ \ \ \ \ the\ hourly\ wage\n
+numComments=4

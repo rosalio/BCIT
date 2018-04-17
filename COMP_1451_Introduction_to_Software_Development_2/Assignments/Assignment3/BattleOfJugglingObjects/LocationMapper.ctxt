@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=pos
+comment0.target=Location\ getLocationByPos(java.lang.String)
+comment0.text=\n\ get\ location\ by\ position\ coordinates\n\ @param\ pos\n\ @return\ location\n
+numComments=1

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ getPieceString()
+comment0.text=\n\ Get\ piece\ string\n\ @return\ pieceString\n
+comment1.params=pieceString
+comment1.target=void\ setPieceString(java.lang.String)
+comment1.text=\n\ Set\ piece\ string\n\ @param\ pieceString\n
+comment2.params=a\ b
+comment2.target=boolean\ isLegalMove(Location,\ Location)
+comment2.text=\n\ abstract\ method\ isLegalMove\n\ @param\ location\ a\n\ @param\ location\ b\n\ @return\ true\ if\ is\ legal\ move,\ false\ if\ not\n
+numComments=3

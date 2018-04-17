@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=lastName\ firstName\ monthlyHours
+comment0.target=Volunteer(java.lang.String,\ java.lang.String,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Volunteer\r\n\ @param\ lastName\r\n\ @param\ firstName\r\n\ @param\ monthlyHours\r\n
+comment1.params=
+comment1.target=int\ reportMonthlyHours()
+comment1.text=\r\n\ Report\ monthly\ hours\r\n\ @return\ monthlyHours\r\n
+comment2.params=monthlyHours
+comment2.target=void\ setMonthlyHours(int)
+comment2.text=\r\n\ Set\ monthly\ hours\r\n\ @param\ monthlyHours\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ toString\ method\r\n\ @return\ output\r\n
+numComments=4

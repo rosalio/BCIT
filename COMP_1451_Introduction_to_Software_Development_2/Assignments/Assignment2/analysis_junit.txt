@@ -1,0 +1,46 @@
+COMP 1451 - Assignment #2
+Name: Alex Dai
+BCIT ID: A00937175
+
+1. Brief analysis of the mail-system project
+
+(1) The class MailItem includes properties of a mail. (e.g., to, from, subject, and message)
+It has a method to print all these properties.
+
+(2) MailServer has a method to count the total number of mails sent to a specific user.
+It has a method to get the next mail which are sent to a user.
+It has another method to post a mail and store it in server.
+
+(3) MailClient can be used from the client perspective.
+It has a method to get the next email for this client.
+It has a method to print the next email for this client.
+It has a method to send a mail to the server from this client.
+
+These classes seem to be loosely coupled.
+Accessing or changing properties of mail items should use methods of class MailItem.
+If the mail client wants to get or send mails, methods of class MailServer are used.
+
+Classes their methods are cohesive and each of the method is responsible for one task.
+For example: in MailServer class, there are getNextMailItem and post methods.
+
+
+2. Unit Test
+(1) MailServer class
+a. testHowManyMailItemsPositive
+test how many mails are there in the server for a recipient.
+
+b. testGetNextMailItemNegative
+test the output when the user doesn’t exit
+
+c. testPostPositive
+test if the recipient received a mail
+
+
+(2) SpamFilter
+a. testAddNonStartPositive
+test if a mail starts with “spam” is treated as spam
+
+b. testAddNonContainPositive
+test if a mail contains “online pharmacy” is treated as spam
+
+

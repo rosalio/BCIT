@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ApplianceStore()
+comment0.text=\n\ Constructor\n
+comment1.params=appliance
+comment1.target=void\ addAppliance(Appliance)
+comment1.text=\n\ Add\ an\ appliance\ to\ the\ store\n\ \n\ @param\ appliance\n\ \ \ \ \ \ \ \ \ \ the\ appliance\n
+comment2.params=
+comment2.target=int\ countAppliances()
+comment2.text=\n\ Count\ the\ number\ of\ appliances\ in\ the\ store\n\ \n\ @return\ number\ of\ appliances\n
+comment3.params=
+comment3.target=void\ display()
+comment3.text=\n\ Display\ the\ brand\ and\ serial\ number\ of\ each\ appliance\ in\ the\ store\n
+numComments=4

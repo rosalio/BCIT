@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StudentDatabase()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ StudentDatabase\r\n
+comment1.params=name
+comment1.target=java.lang.String\ formatName(java.lang.String)
+comment1.text=\r\n\ @param\ name\r\n\ \ \ \ \ \ \ \ \ \ \ student\ name\r\n\ @return\ the\ properly-formatted\ name.\r\n
+comment2.params=studentName
+comment2.target=void\ addStudent(java.lang.String)
+comment2.text=\ Add\ a\ student\ to\ the\ database\ and\ create\ a\ new\ array\ to\ hold\r\n\ that\ student's\ quiz\ marks\ (\ NUM_QUIZZES\ quizzes).\ These\ marks\r\n\ will\ by\ default\ be\ set\ to\ MIN_GRADE.\r\n\ \r\n\ @param\ studentName\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ student\ name\r\n
+comment3.params=student
+comment3.target=int[]\ getQuizzes(java.lang.String)
+comment3.text=\r\n\ @param\ student\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ student\ name\r\n\ @return\ the\ array\ of\ quiz\ marks\ for\ this\ student.\r\n
+comment4.params=studentName\ whichQuiz\ newMark
+comment4.target=void\ changeQuizMark(java.lang.String,\ int,\ int)
+comment4.text=\r\n\ Change\ the\ mark\ for\ the\ specified\ student.\ This\ method\r\n\ ensures\ the\ student\ exists\ in\ the\ database.\ It\ also\ ensures\ the\r\n\ quiz\ to\ be\ changed\ is\ valid,\ and\ the\ mark\ is\ within\ the\ range\r\n\ MIN_GRADE\ to\ MAX_GRADE.\ If\ anything\ is\ not\ valid\ it\ displays\ an\r\n\ appropriate\ error\ message.\r\n\ \r\n\ @param\ stduentName\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ student\ name\r\n\ @param\ whichQuiz\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ which\ quiz\r\n\ @param\ newMark\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ new\ mark\ \ \r\n
+comment5.params=
+comment5.target=void\ showQuizMarks()
+comment5.text=\r\n\ Display\ the\ quiz\ marks\ for\ all\ students\ in\ the\ database.\r\n
+numComments=6

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=lastName\ firstName\ hoursPerWeek
+comment0.target=Union(java.lang.String,\ java.lang.String,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Union\r\n\ @param\ lastName\r\n\ @param\ firstName\r\n\ @param\ hoursPerWeek\r\n
+comment1.params=
+comment1.target=int\ getHoursPerWeek()
+comment1.text=\r\n\ Get\ hours\ per\ week\r\n\ @return\ hoursPerWeek\r\n
+comment2.params=hoursPerWeek
+comment2.target=void\ setHoursPerWeek(int)
+comment2.text=\r\n\ Set\ hoursPerWeek\r\n\ @param\ hoursPerWeek\r\n
+comment3.params=
+comment3.target=double\ calculateMonthlyPay()
+comment3.text=\r\n\ Calculate\ Monthly\ pay\r\n\ @return\ monthly\ pay\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ toString\ method\r\n\ @return\ output\r\n
+numComments=5

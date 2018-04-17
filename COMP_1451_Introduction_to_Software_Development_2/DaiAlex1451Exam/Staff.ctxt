@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=lastName\ firstName
+comment0.target=Staff(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Staff\r\n\ @param\ lastName\r\n\ @param\ firstName\r\n
+comment1.params=
+comment1.target=double\ calculateMonthlyPay()
+comment1.text=\r\n\ Calculate\ Monthly\ pay\r\n\ @return\ monthly\ pay\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ toString\ method\r\n\ @return\ output\r\n
+numComments=3

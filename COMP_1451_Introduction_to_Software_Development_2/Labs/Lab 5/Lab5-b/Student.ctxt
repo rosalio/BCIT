@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Student()
+comment0.text=\n\ Default\ constructor\ for\ objects\ of\ class\ Student\n
+comment1.params=firstName\ lastName\ emailAddress\ bcitId\ courseList
+comment1.target=Student(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.util.HashMap)
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Student\n\ \n\ @param\ courseList\n\ \ \ \ \ \ \ \ \ \ the\ course\ list\n
+comment2.params=
+comment2.target=java.util.HashMap\ getCourseList()
+comment2.text=\n\ Get\ the\ course\ list\n\ \n\ @return\ courseList\n
+comment3.params=courseList
+comment3.target=void\ setCourseList(java.util.HashMap)
+comment3.text=\n\ Set\ the\ course\ list\n\ \n\ @param\ courseList\n\ \ \ \ \ \ \ \ \ \ the\ course\ list\n
+comment4.params=courseName\ grade
+comment4.target=void\ addCourse(java.lang.String,\ double)
+comment4.text=\n\ Put\ a\ new\ course\ into\ the\ student's\ course\ collection\n\ \n\ @param\ courseName\n\ \ \ \ \ \ \ \ \ \ the\ course\ name\n\ @param\ grade\n\ \ \ \ \ \ \ \ \ \ the\ course\ grade\n
+comment5.params=
+comment5.target=double\ calcAverage()
+comment5.text=\n\ Calculate\ and\ return\ the\ student's\ average\ grade\n\ \n\ @return\ the\ average\ grade\n
+numComments=6

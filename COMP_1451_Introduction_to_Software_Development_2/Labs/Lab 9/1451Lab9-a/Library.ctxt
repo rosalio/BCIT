@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Library()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Library\r\n
+comment1.params=
+comment1.target=void\ showAllItems()
+comment1.text=\r\n\ Show\ details\ of\ all\ the\ items\ in\ the\ library\r\n
+comment2.params=item
+comment2.target=void\ addItem(Item)
+comment2.text=\r\n\ Add\ an\ item\ to\ the\ library\r\n
+comment3.params=
+comment3.target=double\ averagePlayingTimes()
+comment3.text=\ Calculates\ and\ returns\ the\ average\ playing\ time\ of\ all\ items\r\n\ in\ the\ library\ that\ have\ a\ playing\ time\r\n
+numComments=4

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=title\ artist\ playingTime\ soundQuality
+comment0.target=Music(java.lang.String,\ java.lang.String,\ double,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Music\r\n
+comment1.params=
+comment1.target=java.lang.String\ getArtist()
+comment1.text=\r\n\ @return\ the\ music\ artist\r\n
+comment2.params=
+comment2.target=double\ specifyPlayingTime()
+comment2.text=\r\n\ @return\ the\ playing\ time\ of\ the\ music\r\n
+comment3.params=
+comment3.target=java.lang.String\ getSoundQuality()
+comment3.text=\r\n\ @return\ the\ music\ sound\ quality,\ e.g.\ "good",\ "fair"\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ @return\ a\ String\ representing\ this\ music\r\n
+numComments=5

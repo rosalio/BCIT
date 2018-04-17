@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SoccerPoints()
+comment0.text=\r\n\ Constructor\r\n
+comment1.params=teamName
+comment1.target=SoccerPoints(java.lang.String)
+comment1.text=\r\n\ Constructor\r\n\ @param\ teamname\ -\ name\ of\ the\ team\r\n
+comment2.params=
+comment2.target=java.lang.String\ getTeamName()
+comment2.text=\r\n\ Get\ name\ of\ the\ team\r\n\ @return\ team\ name\r\n
+comment3.params=
+comment3.target=int\ getTotalPoints()
+comment3.text=\r\n\ Get\ total\ points\r\n\ @return\ total\ points\r\n
+comment4.params=teamName
+comment4.target=void\ setTeamName(java.lang.String)
+comment4.text=\r\n\ Set\ team\ name\r\n\ @param\ teamName\ -\ name\ of\ the\ team\r\n
+comment5.params=
+comment5.target=void\ calculateTotalPoints()
+comment5.text=\r\n\ Method\ to\ calucate\ and\ display\ total\ points\ based\ on\ user\ input\r\n
+numComments=6

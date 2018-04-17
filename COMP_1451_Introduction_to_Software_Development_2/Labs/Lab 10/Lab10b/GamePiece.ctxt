@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=pieceString
+comment0.target=GamePiece(java.lang.String)
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ GamePiece\n
+comment1.params=
+comment1.target=java.lang.String\ getPieceString()
+comment1.text=\n\ Get\ piece\ string\n\ @return\ pieceString\n
+comment2.params=pieceString
+comment2.target=void\ setPieceString(java.lang.String)
+comment2.text=\n\ Set\ piece\ string\n\ @param\ pieceString\n
+comment3.params=a\ b
+comment3.target=boolean\ isLegalMove(Location,\ Location)
+comment3.text=\n\ Method\ isLegalMove\n\ @param\ location\ a\n\ @param\ location\ b\n\ @return\ true\ if\ is\ legal\ move,\ false\ if\ not\n
+numComments=4

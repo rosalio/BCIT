@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Board()
+comment0.text=\n\ Constructor\ for\ objects\ of\ class\ Board\n
+comment1.params=playerOne\ playerTwo
+comment1.target=void\ initBoard(Player,\ Player)
+comment1.text=\n\ Initialize\ the\ board\ with\ pieces\ at\ default\ locations\n\ @param\ playerOne\n\ @param\ playerTwo\n
+comment2.params=player
+comment2.target=boolean\ isGameOver(Player)
+comment2.text=\n\ Determine\ if\ one\ player\ lose\ the\ game\n\ @param\ player\n
+comment3.params=
+comment3.target=void\ displayBoard()
+comment3.text=\n\ Display\ the\ board\n
+comment4.params=player\ from\ to
+comment4.target=void\ movePiece(Player,\ Location,\ Location)
+comment4.text=\n\ Move\ the\ piece;\ throw\ exception\ if\ the\ move\ is\ not\ valid\n\ @param\ player\n\ @param\ from\ location\n\ @param\ to\ location\n
+comment5.params=from\ to
+comment5.target=boolean\ isPathClear(Location,\ Location)
+comment5.text=\n\ Determine\ if\ path\ is\ clear\n\ @param\ from\ location\n\ @param\ to\ location\n\ @return\ true\ if\ path\ is\ clear,\ false\ if\ not\n
+numComments=6

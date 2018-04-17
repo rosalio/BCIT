@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Grid()
+comment0.text=\n\ The\ Grid\ constructor\ creates\ a\ new\ grid\ using\ public\ constants\ ROWS\ and\ COLUMNS.\ \n\ Constructor\ also\ creates\ a\ new\ random\ number\ generator.\ \n
+comment1.params=
+comment1.target=java.lang.String[][]\ getGrid()
+comment1.text=\n\ Get\ the\ grid\n\ \n\ @return\ grid\ \n
+comment2.params=grid
+comment2.target=void\ setGrid(java.lang.String[][])
+comment2.text=\n\ Set\ the\ grid\n\ \n\ @param\ grid\n\ \ \ \ \ \ \ \ \ \ the\ grid\n
+comment3.params=
+comment3.target=java.util.Random\ getRandom()
+comment3.text=\n\ Get\ the\ random\ number\ generator\n\ \n\ @return\ random\n
+comment4.params=random
+comment4.target=void\ setRandom(java.util.Random)
+comment4.text=\n\ Set\ the\ random\ number\ generator\n\ \n\ @param\ random\n\ \ \ \ \ \ \ \ \ \ the\ random\ number\ generator\n
+comment5.params=
+comment5.target=void\ showGrid()
+comment5.text=\n\ Displays\ a\ grid\n
+comment6.params=
+comment6.target=CoordinatePair\ getRandomCoordinates()
+comment6.text=\ \n\ Generates\ random\ coordinates,\ puts\ them\ into\ a\ new\ CoordinatePair,\n\ returns\ CoordinatePair\n\ @return\ a\ randomly-generated\ pair\ of\ coordinates\ within\ the\ bounds\ of\ the\n\ grid\n
+comment7.params=coordsToSet\ valueToSet
+comment7.target=void\ setRandomCoordinatesInGrid(int,\ java.lang.String)
+comment7.text=\n\ Invokes\ getRandomCoordinates()\ to\ put\ a\ specific\ value\ into\ a\ specified\n\ number\ of\ grid\ positions.\n\ @param\ the\ number\ of\ randomly-generated\ coordinates\ to\ set\n\ @param\ the\ target\ value\ to\ set\n
+numComments=8
