@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Stock()
+comment0.text=\n\ Default\ constructor\n
+comment1.params=symbol\ price
+comment1.target=Stock(java.lang.String,\ double)
+comment1.text=\n\ Non-default\ constructor\n\ @param\ \ \ symbol\n\ @param\ \ \ price\n
+comment2.params=symbol
+comment2.target=void\ setStockSymbol(java.lang.String)
+comment2.text=\n\ Set\ stock\ symbol\n\ @param\ \ \ symbol\n
+comment3.params=price
+comment3.target=void\ setSharePrice(double)
+comment3.text=\n\ Set\ share\ price\n\ @param\ price\n
+comment4.params=
+comment4.target=java.lang.String\ getStockSymbol()
+comment4.text=\n\ Get\ stock\ symbol\n\ @return\ \ stockSymbol\n
+comment5.params=
+comment5.target=double\ getSharePrice()
+comment5.text=\n\ Get\ share\ price\n\ @return\ \ sharePrice\n
+comment6.params=
+comment6.target=void\ displayStockInfo()
+comment6.text=\n\ Display\ the\ stock's\ information\n
+numComments=7

@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=StockPurchase()
+comment0.text=\n\ Default\ constructor\n
+comment1.params=newStock\ number
+comment1.target=StockPurchase(Stock,\ int)
+comment1.text=\n\ Non-default\ constructor\n\ @param\ \ \ newStock\n\ @param\ \ \ number\n
+comment2.params=newStock
+comment2.target=void\ setStock(Stock)
+comment2.text=\n\ Set\ stock\n\ @param\ \ \ newStock\n
+comment3.params=number
+comment3.target=void\ setNumberOfShares(int)
+comment3.text=\n\ Set\ number\ of\ shares\n\ @param\ \ \ number\n
+comment4.params=
+comment4.target=Stock\ getStock()
+comment4.text=\n\ Get\ stock\n\ @return\ \ stock\n
+comment5.params=
+comment5.target=int\ getNumberOfShares()
+comment5.text=\n\ Get\ number\ of\ shares\n\ @return\ \ numberOfShares\n
+comment6.params=
+comment6.target=double\ getTotalCost()
+comment6.text=\n\ Calculate\ the\ cost\ of\ buying\ stock\ shares\n\ @return\ \ total\ cost\ of\ buying\ the\ numberOfShares\ shares\n
+comment7.params=
+comment7.target=void\ displayDetails()
+comment7.text=\n\ Display\ the\ details\ of\ stock\ and\ the\ cost\ of\ buying\ the\ numberOfShares\ shares.\ \n
+numComments=8

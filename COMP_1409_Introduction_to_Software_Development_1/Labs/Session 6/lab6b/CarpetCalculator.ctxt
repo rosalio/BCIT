@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=CarpetCalculator()
+comment0.text=\n\ Default\ constructor\n
+comment1.params=price\ theRoom
+comment1.target=CarpetCalculator(double,\ Room)
+comment1.text=\n\ Non-default\ constructor\n\ @param\ \ \ price\n\ @param\ \ \ theRoom\n
+comment2.params=price
+comment2.target=void\ setPrice(double)
+comment2.text=\n\ Set\ price\ per\ square\ foot\n\ @param\ \ \ price\n
+comment3.params=theRoom
+comment3.target=void\ setRoom(Room)
+comment3.text=\n\ Set\ the\ room\n\ @param\ \ \ theRoom\n
+comment4.params=
+comment4.target=double\ getPrice()
+comment4.text=\n\ Get\ price\ per\ square\ foot\n\ @return\ \ pricePerSquareFoot\n
+comment5.params=
+comment5.target=Room\ getRoom()
+comment5.text=\n\ Get\ the\ room\n\ @return\ room\n
+comment6.params=
+comment6.target=double\ calculateTotalCost()
+comment6.text=\n\ Calculate\ and\ return\ the\ total\ cost\ of\ the\ carpet\ of\ the\ room\n\ @return\ \ total\ cost\n
+comment7.params=
+comment7.target=void\ displayInfo()
+comment7.text=\n\ Display\ related\ information\n
+numComments=8

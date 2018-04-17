@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Employee()
+comment0.text=\r\n\ Default\ constructor\r\n
+comment1.params=name\ ageInYears\ address\ yearsEmployed\ incomeYearly\ fullTime
+comment1.target=Employee(java.lang.String,\ int,\ java.lang.String,\ int,\ double,\ boolean)
+comment1.text=\r\n\ Non-default\ constructor\r\n\ @param\ name\r\n\ @param\ ageInYears\r\n\ @param\ address\r\n\ @param\ yearsEmployed\r\n\ @param\ incomeYearly\r\n\ @param\ fullTime;\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ @return\ \ employeeName\r\n
+comment3.params=
+comment3.target=int\ getAge()
+comment3.text=\r\n\ @return\ \ employeeAgeInYears\r\n
+comment4.params=
+comment4.target=java.lang.String\ getAddress()
+comment4.text=\r\n\ @return\ \ employeeAddress\r\n
+comment5.params=
+comment5.target=int\ getYearsEmployed()
+comment5.text=\r\n\ @return\ \ numberOfYearsEmployed\r\n
+comment6.params=
+comment6.target=double\ getPayment()
+comment6.text=\r\n\ @return\ \ annualPay\r\n
+comment7.params=
+comment7.target=boolean\ getIsFullTime()
+comment7.text=\r\n\ @return\ \ isFullTime\r\n
+numComments=8

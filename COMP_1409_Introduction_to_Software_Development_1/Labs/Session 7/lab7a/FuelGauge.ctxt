@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=FuelGauge()
+comment0.text=\r\n\ Default\ constructor\r\n
+comment1.params=fuelAmount
+comment1.target=FuelGauge(int)
+comment1.text=\r\n\ Non-default\ constructor\r\n\ @param\ \ \ fuelAmount\r\n
+comment2.params=fuelAmount
+comment2.target=void\ setAmountOfFuel(int)
+comment2.text=\r\n\ Set\ the\ amount\ of\ fuel\ in\ litres\r\n\ @param\ \ \ fuelAmount\r\n
+comment3.params=
+comment3.target=int\ getAmountOfFuel()
+comment3.text=\r\n\ Get\ the\ amount\ of\ fuel\ in\ litres\r\n\ @return\ \ amountOfFuelInLitres\r\n
+comment4.params=
+comment4.target=void\ useFuel()
+comment4.text=\r\n\ Decrement\ the\ amount\ of\ fuel\ by\ 1\ litre\r\n\ Display\ warning\ message\ if\ the\ tank\ is\ empty\r\n
+comment5.params=
+comment5.target=void\ addFuel()
+comment5.text=\r\n\ Increment\ the\ amount\ of\ fuel\ by\ 1\ litre\r\n\ Display\ a\ warning\ message\ if\ the\ tank\ is\ full\r\n
+numComments=6

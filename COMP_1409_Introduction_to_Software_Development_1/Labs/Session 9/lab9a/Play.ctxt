@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Play()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Play\r\n
+comment1.params=
+comment1.target=int\ numberSum()
+comment1.text=\r\n\ Prompt\ the\ user\ for\ a\ number\r\n\ Calculate\ and\ return\ the\ sum\ of\ numbers\ from\ 1\ to\ that\ number\ inclusive\r\n\ \r\n\ @return\ sum\r\n
+comment2.params=
+comment2.target=void\ stringPlay()
+comment2.text=\r\n\ Prompt\ the\ user\ for\ a\ string\r\n\ display\ the\ string\ as\ many\ times\ as\ the\ length\ of\ that\ string\r\n\ first\ letter\ uppcase\r\n
+numComments=3

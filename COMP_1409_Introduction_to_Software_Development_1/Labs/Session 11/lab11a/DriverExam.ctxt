@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DriverExam()
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ DriverExam\r\n
+comment1.params=
+comment1.target=void\ promptStuentAnswers()
+comment1.text=\r\n\ Prompt\ the\ studdents\ to\ type\ the\ answers\ to\ each\ question\ in\ turn\r\n\ Validate\ the\ answers\ and\ put\ it\ into\ the\ array\ if\ valid\r\n\ If\ the\ students\ types\ and\ invalid\ answers,\ he/she\ will\ be\ prompted\ to\ try\ again\r\n
+comment2.params=
+comment2.target=int\ getTotalCorrectAnswers()
+comment2.text=\r\n\ Calculate\ and\ return\ the\ total\ number\ of\ correct\ answers\r\n\ @return\ total\ number\ of\ correct\ answers\r\n
+comment3.params=
+comment3.target=int\ getTotalIncorrectAnswers()
+comment3.text=\r\n\ Calculate\ and\ return\ the\ total\ number\ of\ incorrect\ answers\r\n\ @return\ total\ number\ of\ incorrect\ answers\r\n
+comment4.params=
+comment4.target=boolean\ isPassed()
+comment4.text=\r\n\ @return\ true\ if\ the\ student\ passes\ the\ exam,\ false\ if\ not\r\n
+numComments=5

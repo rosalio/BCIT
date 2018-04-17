@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Room()
+comment0.text=\n\ Default\ constructor\n
+comment1.params=length\ width
+comment1.target=Room(double,\ double)
+comment1.text=\n\ Non-default\ constructor\n\ @param\ \ \ length\n\ @param\ \ \ width\n
+comment2.params=length
+comment2.target=void\ setLength(double)
+comment2.text=\n\ Set\ length\ of\ the\ room\n\ @param\ \ \ length\n
+comment3.params=width
+comment3.target=void\ setWidth(double)
+comment3.text=\n\ Set\ width\ of\ the\ room\n\ @param\ \ \ width\n
+comment4.params=
+comment4.target=double\ getLength()
+comment4.text=\n\ Get\ length\ of\ the\ room\n\ @return\ \ lengthInFeet\n
+comment5.params=
+comment5.target=double\ getWidth()
+comment5.text=\n\ Get\ width\ of\ the\ room\n\ @return\ \ widthInFeet\n
+comment6.params=
+comment6.target=double\ calculateArea()
+comment6.text=\n\ Calcuate\ and\ return\ the\ room\ area\ in\ square\ feet\n\ @return\ \ the\ room\ area\ in\ square\ feet\n
+numComments=7
