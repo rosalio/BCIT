@@ -1,0 +1,49 @@
+<html>
+	<head>
+	<script>
+window.onload=function(){
+
+	document.forms[0].onsubmit=function()
+	{
+
+		for(i = 0; i < this.elements.length; i++)
+		{
+			if(this.elements[i].className.indexOf("required") != -1)
+			{
+				if(this.elements[i].value == "")
+				{
+					alert('missing required field');
+					this.elements[i].focus();
+					return false;
+				}
+			}
+		}
+	
+		
+		if(isNaN(document.getElementById("b").value))
+		{
+			alert("this must be a number");
+			document.getElementById("b").select();
+			return false;
+		}
+		
+	}
+}
+	</script>	
+	</head>
+	<body>
+	<form action="x.php">
+		username*: <input class="username required" type="text" id="u" name="u"/><br/>
+		
+		birth year: <input class = "number" type="text" id="b" name="b"/><br/>
+		
+		email*: <input class = "required email"type="text" id="e" name="e"/><br/>		
+		
+		url*: <input class = "required url"type="text" id="u" name="u"/><br/>		
+				
+		
+		<input type="submit"/>
+		
+	</form>
+	</body>
+	</html>

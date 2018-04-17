@@ -1,0 +1,23 @@
+<html><head>
+<script type='text/javascript'>
+window.onload=function(){
+
+	if(navigator.userAgent.indexOf("irefox") != -1){
+		for(var i = 0; i < document.getElementsByTagName("img").length; i++){;
+			document.getElementsByTagName("img")[i].style.border="1px solid green";
+		}
+	}
+		
+	for(var j = 0; j < document.images.length; j++){
+		document.images[j].width=100;
+	}
+	
+}
+</script></head>
+<body>
+
+	<img src="bird.jpg" />
+	<img src="cat.jpg" />
+	
+</body>
+</html>

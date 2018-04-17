@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+	
+	
+	<script>
+		$(document).ready(function(){
+			$('form').validate();
+		});
+	</script>
+</head>
+<body>
+<form method="get" action="fake.php">
+*username: <input class="required" id="u" type="text" name="u"/><br/>
+*year of birth: <input class="number required" id="y" type="text" name="y"/><br/>
+*email address: <input class="required email" id="e" type="text" name="e"/><br/>
+homepage: <input id="w" class="url" type="text" name="w"/><br/>
+<input type="submit"><br/>
+</form>
+
+</body>
+</html>

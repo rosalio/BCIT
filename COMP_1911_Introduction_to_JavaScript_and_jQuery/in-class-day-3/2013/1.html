@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script> 	
+			window.onload=function()
+			{
+				for(i = 0; i < document.images.length; i++)
+				{
+					document.images[i].onclick=function()
+					{
+						// alert(i); // always 3
+						//document.images[i].src = 'bird.jpg';
+						this.src = 'bird.jpg';
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<img src="cat.jpg"  /><br/>
+		<img src="turtle.jpg"  /><br/>
+		<img src="dog.jpg"  />
+	</body>
+	</html>

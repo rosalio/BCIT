@@ -1,0 +1,22 @@
+<html><head><script>
+
+	
+</script></head><body>
+	<img src='cat.jpg'    id="a"/>
+	<img src='dog.jpg'    id="b"/>
+	<p>hi</p>
+	<img src='bird.jpg'   id="c"/>
+	<img src='fish.jpg'   id="d"/> 
+	<img src='turtle.jpg' id="e"/> 	
+<script>
+	// DOM 1:
+	document.getElementById("d").width=100;
+
+	// DOM 1:
+	for(i = 0; i < document.getElementsByTagName("img").length; i++)
+	{
+		alert("changing " + document.getElementsByTagName("img")[i].src + " to  turtle");
+		document.getElementsByTagName("img")[i].src="turtle.jpg";
+	}
+	
+</script></body></html>

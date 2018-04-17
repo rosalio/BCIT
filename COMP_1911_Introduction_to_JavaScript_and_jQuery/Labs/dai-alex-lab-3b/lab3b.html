@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>COMP 1911 Lab 3a</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('img').click(function() {
+               $(this).css('border', 'solid red');
+            });
+
+            $('#div1').children('img').mouseover(function() {
+                $(this).css('width', '100px');
+            });
+
+            $('p').dblclick(function() {
+                $(this).css('color', 'blue');
+            });
+
+            $('#div3').children('p').mouseover(function() {
+                $(this).css('backgroundColor', 'yellow');
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="div1">
+    <img id="im1" src="cat.jpg" alt="" />
+    <img id="im2" src="dog.jpg" alt="" />
+    <img id="im3" src="fish.jpg" alt="" />
+</div>
+<div id="div2">
+    <p id="p1">
+        JavaScript was originally developed by Brendan Eich, while working for Netscape Communications Corporation. While competing with Microsoft for user adoption of web technologies and platforms, Netscape considered their client-server offering a distributed OS with a portable version of Sun Microsystems' Java providing an environment in which applets could be run.[citation needed] Because Java was a competitor of C++ and aimed at professional programmers, Netscape also wanted a lightweight interpreted language that would complement Java by appealing to nonprofessional programmers, like Microsoft's Visual Basic (see JavaScript and Java).
+    </p>
+    <p id="p2">
+        Although it was developed under the name Mocha, the language was officially called LiveScript when it first shipped in beta releases of Netscape Navigator 2.0 in September 1995, but it was renamed JavaScript[10] when it was deployed in the Netscape browser version 2.0B3.
+    </p>
+    <p id="p3">
+        Although it was developed under the name Mocha, the language was officially called LiveScript when it first shipped in beta releases of Netscape Navigator 2.0 in September 1995, but it was renamed JavaScript[10] when it was deployed in the Netscape browser version 2.0B3.
+    </p>
+</div>
+<div id="div3">
+    <p id="p4">
+        There is a common misconception that the JavaScript language was influenced by C-- (pronounced "See-minus-minus"), an earlier web page scripting language developed by Nombas.[14][15][16] Brendan Eich, however, had never heard of C-- before he created LiveScript.[17] Nombas did pitch their embedded web page scripting to Netscape, though web page scripting was not a new concept, as shown by ViolaWWW.[18] Nombas later switched to offering JavaScript instead of C-- in their ScriptEase product and was part of the TC39 group that standardized ECMAScript.
+    </p>
+    <p id="p5">
+        Netscape introduced an implementation of the language for server-side scripting with Netscape Enterprise Server in December, 1994, soon after releasing JavaScript for browsers.[21][22] Since the mid-2000s, there has been a resurgence of server-side JavaScript implementations, such as Node.js.
+    </p>
+    <img id="im4" src="bird.jpg" alt="" />
+    <img id="im5" src="turtle.jpg" alt="" />
+</div>
+</body>
+</html>

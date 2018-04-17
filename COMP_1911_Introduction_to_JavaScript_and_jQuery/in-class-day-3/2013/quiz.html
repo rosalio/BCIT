@@ -1,0 +1,37 @@
+<html>
+
+	<head>
+	
+		<script> 
+			
+			window.onload = function()
+			{
+				
+				for(i = 0; i < document.images.length; i++)  {
+					
+					alert(document.images[i].src);
+					document.images[i].width = "50";
+					
+				}
+				
+				if(navigator.userAgent.indexOf('Chrome') != -1 ) {
+				
+					for(i = 0; i < document.getElementsByTagName('p').length; i++)  {
+						
+						document.getElementsByTagName('p')[i].style.backgroundColor = 'pink';
+						
+						
+					}
+				}
+			}
+	
+		</script>
+	
+	</head>
+
+	<body>
+	
+		<p><img src="cat.jpg"  /></p>
+		<p><img src="dog.jpg"  /></p>
+	</body>
+	</html>

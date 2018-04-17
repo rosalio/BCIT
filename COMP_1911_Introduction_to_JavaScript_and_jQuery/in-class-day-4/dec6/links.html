@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+
+	<script>
+	window.onload=function(){
+		
+		document.links[2].onclick=function(){
+			alert("I refuse to visit " + document.links[2].href);
+			return false;
+		}
+		
+	}
+	
+	</script>
+</head>
+<body>
+
+<a href="http://nhl.com">hockey</a> | 
+<a href="http://pgatour.com">golf</a> | 
+<a href="http://nfl.com">football</a>
+
+
+</body>
+</html>

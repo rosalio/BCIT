@@ -1,0 +1,24 @@
+<html><head>
+
+<script type='text/javascript'>
+
+r = new XMLHttpRequest();
+
+window.onload=function(){
+	document.getElementById("s").onclick=function(){
+		r.open("GET", "notes.txt", true);
+		r.onreadystatechange=function(){
+			document.getElementById("t").value=r.responseText;
+		}
+		r.send(null);
+	}
+}
+
+</script></head>
+<body>
+
+<input type="text" id="t"/>
+<input type="submit" id="s"/>
+	
+</body>
+</html>

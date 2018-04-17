@@ -1,0 +1,17 @@
+<html>
+<head>
+<script>
+window.onload = function() {
+	document.getElementById("dog").onclick = function() {
+		this.width      = Math.round(this.width * 1.1);	
+		this.style.left = parseInt(this.style.left) + 100 + "px";
+	}	
+}
+
+
+</script>
+</head>
+<body>
+	<img src="dog.jpg" style="position:absolute; left:10px" id="dog">
+</body>
+</html>

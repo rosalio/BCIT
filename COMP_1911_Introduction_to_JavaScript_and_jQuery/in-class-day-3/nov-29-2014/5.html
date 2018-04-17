@@ -1,0 +1,29 @@
+<!DOCTYPE html><head><script>
+		
+	function changeSrc(){
+		//alert(x); bcit
+		//alert(y); error
+		this.src="cat.jpg";
+	}
+		
+	window.onload=function(){
+		
+		ims = document.getElementsByTagName("img");
+		
+		for(i = 0; i < ims.length; i++){
+			x = "bcit";
+			var y = "ubc";
+			ims[i].onclick=changeSrc;
+		}
+	}
+	
+</script>
+</head>
+<body>
+<img src="dog.jpg"/>
+<img src="bird.jpg"/>
+<img src="turtle.jpg"/>
+
+
+</body>
+</html>

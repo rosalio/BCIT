@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+
+	function move()
+	{
+		document.getElementById("myimage").style.left = 
+			parseInt(document.getElementById("myimage").style.left) +
+				10 + "px";
+	}
+
+	window.onload=function()
+	{
+		document.getElementById("myimage").onclick=move;
+	}
+
+</script>
+</head>
+<body>
+
+<img src="cat.jpg" id="myimage" width="200" 
+	 style="position:absolute;left:10px"/>
+</body>
+</html>

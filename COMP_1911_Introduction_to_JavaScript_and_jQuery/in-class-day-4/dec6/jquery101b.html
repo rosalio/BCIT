@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+	
+	$('#b').attr('src', 'cat.jpg');
+	
+	$(document).ready(function(){
+		$('img:odd, img:last, #a').click(function(){
+			$(this).attr('width', '200');
+			$(this).css('border-style', 'dashed');
+		});
+		
+		
+		
+		$('#a').click(function(){
+			$(this).css('border', 'solid red');
+		});
+		
+		$('#b').click(function(){
+			$(this).attr('width', '30');
+		});
+	});
+	</script>
+</head>
+<body>
+
+<img src="dog.jpg" id="a"/>
+<img src="bird.jpg" id="b" class="d"/>
+<img src="turtle.jpg" id="c" class="d"/>
+
+
+</body>
+</html>

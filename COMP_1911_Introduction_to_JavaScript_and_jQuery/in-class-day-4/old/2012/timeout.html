@@ -1,0 +1,24 @@
+<html><head>
+<style type="text/css">
+	img{width:100px}
+</style>
+<script type='text/javascript'>
+
+// setTimeout("alert('hi');", 2000);
+// setInterval("alert('hi');", 2000);
+
+window.onload=function(){
+	alert(this); // window
+	document.images[0].onclick=function(){
+		//alert(this.style.left);
+		this.style.left = parseInt(this.style.left) + 10 + "px";
+	}
+}
+
+</script></head>
+<body>
+
+<img src="dog.jpg" style="left:12px;position:absolute;"/>
+	
+</body>
+</html>

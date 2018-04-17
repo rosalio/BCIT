@@ -1,0 +1,28 @@
+<html><head>
+<script type='text/javascript'>
+
+
+
+window.onload=function(){
+
+	
+	
+	ims = document.getElementById("x").getElementsByTagName("img");
+		
+	for(i = 0; i < ims.length; i++)
+	{
+		ims[i].ondblclick=function(){
+			this.width = 100;
+		}
+	}
+}
+</script></head>
+<body>
+
+	<img src="bird.jpg" />
+	<img src="cat.jpg" />
+	<img src="dog.jpg" />
+
+	
+</body>
+</html>

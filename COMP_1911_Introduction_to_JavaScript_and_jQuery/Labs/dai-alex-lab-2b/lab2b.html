@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>COMP 1911 Lab 2b</title>
+</head>
+<body>
+    <script>
+        var teams = ['Boston Bruins', 'Buffalo Sabres', 'Detroit Red Wings', 'Florida Panthers', 'Montreal Canadiens',
+                'Ottawa Senators', 'Tampa Bay Lightning', 'Toronto Maple Leafs', 'Carolina Hurricanes', 'Columbus Blue Jackets',
+                'New Jersey Devils', 'New York Islanders', 'New York Rangers', 'Philadelphia Flyers', 'Pittsburgh Penguins',
+                'Washington Capitals', 'Anaheim Ducks', 'Arizona Coyotes', 'Calgary Flames', 'Edmonton Oilers',
+                'Los Angeles Kings', 'San Jose Sharks', 'Vancouver Canucks', 'Chicago Blackhawks', 'Colorado Avalanche',
+                'Dallas Stars', 'Minnesota Wild', 'Nashville Predators', 'St. Louis Blues', 'Winnipeg Jets'];
+
+        for (var i = 0; i < teams.length; i++) {
+            if (teams[i].indexOf('an') > -1) {
+                alert(teams[i]);
+            }
+        }
+
+        var dateOne = new Date();
+        var dateTwo = new Date(2015, 9, 31, 0, 0, 0, 0);
+
+        var diffMilliSecond = dateTwo - dateOne;
+        var diffSecond = diffMilliSecond / 1000;
+        var diffMin = diffSecond / 60;
+        var diffHour = diffMin / 60;
+        var diffDay = Math.ceil(diffHour / 24);
+
+        alert('There are ' + diffDay + ' days until October 31, 2015.');
+    </script>
+
+
+</body>
+</html>

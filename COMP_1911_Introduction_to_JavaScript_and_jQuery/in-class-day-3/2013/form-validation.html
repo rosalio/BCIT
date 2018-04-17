@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<script> 	
+
+			window.onload=function()
+			{
+				document.getElementsByTagName("form")[0].onsubmit=function()
+				{
+					if(document.getElementById("u").value.length == 0)
+					{
+						alert("missing required username");
+						document.getElementById("u").focus();
+						document.getElementById("u").style.backgroundColor = 'yellow';
+						return false;
+					}else{
+						document.getElementById("u").style.backgroundColor = 'white';
+					}
+				}
+			}
+	
+		</script>
+	</head>
+	<body>
+
+		<form action="pretend.php">
+		
+			username:<input  type="text" id="u" name="u"/><br/>
+			password:<input  type="text" id="p" name="p"/><br/>
+			shoe size:<input type="text" id="s" name="s"/><br/>
+		
+		
+			<input type="submit"/>
+		</form>
+	</body>
+	</html>

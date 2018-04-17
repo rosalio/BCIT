@@ -1,0 +1,24 @@
+<html><head>
+<script type='text/javascript'>
+
+function changeSize(){
+	this.width=200;
+}
+
+window.onload = function(){
+	ims = document.getElementsByTagName('img');
+	for(i = 0; i < ims.length; i++){
+		ims[i].onmouseover=changeSize;
+	}
+}
+
+</script></head>
+<body>
+
+	<img src="bird.jpg" />
+	<img src="cat.jpg" />
+	<img src="dog.jpg" />
+
+	
+</body>
+</html>

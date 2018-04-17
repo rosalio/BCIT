@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<script>
+now  = new Date();
+xmas = new Date(2014, 11, 25);
+
+ms    = xmas - now;
+sec   = ms/1000;
+min   = sec/60;
+hours = min/60;
+days  = hours/24;
+
+alert(Math.round(days) + " days until xmas");
+alert(days.toFixed(3)  + " days until xmas");
+</script>
+</body>
+</html>

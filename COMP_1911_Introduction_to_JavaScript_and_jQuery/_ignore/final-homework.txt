@@ -1,0 +1,8 @@
+lab 6
+lab 7
+exam
+
+assign2
+- six parts
+- change any part or use jquery noConflict
+

@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+	window.onload=function()
+	{
+		alert(document.getElementById("image3").src);
+		document.getElementsByTagName("p")[1].style.color='red';
+		
+		for(i = 0; i < document.images.length; i++)
+		{
+			document.images[i].width=50;
+		}
+	}
+</script>
+</head>
+<body>
+	<img src="cat.jpg"  id="image1">
+	<p>hi</p>
+	<img src="dog.jpg"  id="image2">
+	<p>whatever</p>
+	<img src="fish.jpg" id="image3">
+	<p>the end</p>
+	<p>bye</p>
+</body>
+</html>

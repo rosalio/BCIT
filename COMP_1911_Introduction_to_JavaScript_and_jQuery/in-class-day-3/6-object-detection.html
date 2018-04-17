@@ -1,0 +1,67 @@
+<html>
+	<head>
+
+	<script>
+	
+	window.onload=function(){
+
+		theCatImg = null;
+	
+		if(document.getElementById)
+		{
+			alert("getElementById");
+			theCatImg = document.getElementById("cat");
+		}
+		else if(document.all)
+		{
+			alert("all");
+			theCatImg = document.all["cat"];
+		}
+		else if(document.layers)
+		{
+			alert("layers");
+			theCatImg = document.layers['cat'];
+		}
+		else if(document.images)
+		{
+			alert("images");
+			theCatImg = document.images[0];
+		}
+		else if(document.cat)
+		{
+			alert("cat");
+			theCatImg = document.cat;
+		}
+		else
+		{
+			alert("no luck");
+		}
+		
+		if(theCatImg != null)
+		{
+			theCatImg.onclick=function()
+			{
+				this.src="dog.jpg";
+			}
+		}
+	
+	}
+	
+	
+	</script>
+	
+	</head>
+	<body>
+		<div id="top">
+			<img src="cat.jpg" id="cat" name="cat" class="friendly"  /><br/>
+			<img src="bird.jpg" class="clickable" /><br/>
+		</div>
+		<div id="bottom">
+		
+			<img src="turtle.jpg"  /><br/>
+			<p>hello</p>
+			<img src="dog.jpg" class="friendly clickable" />
+			<p>goodbye</p>	
+		</div>
+	</body>
+	</html>

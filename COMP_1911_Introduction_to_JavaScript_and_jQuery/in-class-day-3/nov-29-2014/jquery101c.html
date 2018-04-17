@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+
+	<script>
+	window.onload=function(){
+		myImages = document.getElementsByTagName("div")[0].
+				getElementsByTagName("img");
+		
+		for(i = 0; i < myImages.length; i++){
+			myImages[i].src="cat.jpg";
+		}
+		
+		
+	}
+	
+	</script>
+</head>
+<body>
+<div id="mydiv">
+	<img src="dog.jpg" id="a"/>
+	<img src="bird.jpg" id="b" class="d"/>
+</div>
+<img src="turtle.jpg" id="c" class="d"/>
+
+
+</body>
+</html>

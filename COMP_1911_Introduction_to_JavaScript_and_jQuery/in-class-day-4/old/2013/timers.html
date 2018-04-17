@@ -1,0 +1,38 @@
+<html><head>
+
+
+<script>
+
+	function changeImageSizes()
+	{
+		bImages = document.getElementById('b').getElementsByTagName('img');
+		
+		for(i = 0; i < bImages.length; i++)
+		{
+			bImages[i].width=100;
+		}
+	}
+
+
+	window.onload=function()
+	{
+
+		window.setTimeout('alert("hi");', 2000);
+
+
+		setTimeout('changeImageSizes();', 5000);
+
+		window.setTimeout('window.location="http://nhl.com";', 8000);
+	}
+	
+
+</script>
+
+</head><body>
+
+
+<div id='a'><img src='dog.jpg'/><img src='cat.jpg'/></div>
+<div id='b'><img src='dog.jpg'/><img src='cat.jpg'/></div>
+<div id='c'><img src='dog.jpg'/><img src='cat.jpg'/></div>
+
+</body></html>

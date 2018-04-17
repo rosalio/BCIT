@@ -1,0 +1,67 @@
+<html>
+	<head>
+
+	<script>
+	
+	window.onload = function ()
+	{
+		myImage = null;
+	
+		if(document.getElementById)
+		{
+			alert("getelementbyid");
+			myImage = document.getElementById("cat");
+		}
+		else if(document.all)
+		{
+			alert("all");		
+			myImage = document.all['cat'];
+		}
+		else if(document.layers)
+		{
+			alert("layers");		
+			myImage = document.layers['cat'];
+		}
+		else if(document.images)
+		{
+			alert("images");		
+			myImage = document.images[0];
+		}
+		else if(document.cat)
+		{
+			alert("cat");		
+			myImage = document.cat;
+		}
+		else
+		{
+			alert("no luck, bye");
+		}
+	
+		if(myImage != null)
+		{
+			myImage.src = "dog.jpg";
+		}
+	
+	
+	}
+	
+	</script>
+	</head>
+	<body>
+	
+	<div id="top">
+		<img src="cat.jpg" name="cat" id="cat" class="meow" /><br/>
+		<p>hello</p>
+		<img src="turtle.jpg" class="beach resizable" /><br/>
+	</div>	
+	
+	<div id="bottom">	
+		<img src="dog.jpg" />
+		<img src="bird.jpg"  class="resizable" />
+		<p>goodbye</p>
+		<img src="fish.jpg" />
+	</div>
+	
+	<p>the end</p>
+	</body>
+	</html>

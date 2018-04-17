@@ -1,0 +1,34 @@
+<html><head>
+<script>
+
+var timer = null;
+var dog   = null;
+
+function moveOver1Pixel()
+{
+	dog.style.left = parseInt(dog.style.left) + 1 + "px";
+}
+window.onload=function()
+{
+		dog = document.getElementById("dog");
+		
+		dog.onclick=function(){
+			if(timer == null)
+			{
+				timer = setInterval("moveOver1Pixel();", 10);
+			}else{
+				clearInterval(timer);
+				timer = null;
+			}
+		}
+			
+	
+
+
+}
+</script>
+</head><body>
+<img src="dog.jpg" id="dog" style="position:absolute;left:10px" />
+
+
+</body></html>

@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script> 	
+		
+			window.onload=function()
+			{
+				myImage = null;
+				
+				if(document.getElementById)
+				{
+					alert('getelementbyid');
+					myImage = document.getElementById('c');
+				}else if(document.all){
+					alert('all');
+					myImage = document.all('c');
+				}else if(document.layers){
+					alert('layers');
+					myImage = document.layers['c'];
+				}else if(document.images){
+					alert('images');
+					myImage = document.images[0];
+				}else if(document.c){
+					alert('c');
+					myImage = document.c;
+				}
+				
+				if(myImage != null)
+				{
+					myImage.src = 'dog.jpg';
+				}
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<img src="cat.jpg" id="c" name="c" /><br/>
+
+	</body>
+	</html>

@@ -1,0 +1,28 @@
+<html><head>
+<script>
+
+
+window.onload = function() {
+
+	var myimages = document.getElementsByTagName("img");
+
+	for(i = 0; i < myimages.length; i++) {
+	
+			myimages[i].onclick = function() {
+				this.style.height = "100px";
+			} 
+	}
+
+}
+
+	
+
+</script>
+
+</head><body>
+	<img src='cat.jpg'/> 
+	<img src='dog.jpg'/> 
+	<img src='bird.jpg'/>
+	<img src='fish.jpg'/> 
+	<img src='turtle.jpg'/> 	
+</body></html>

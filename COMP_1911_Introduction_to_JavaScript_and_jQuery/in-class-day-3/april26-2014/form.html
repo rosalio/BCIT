@@ -1,0 +1,43 @@
+<html><head>
+
+<script>
+window.onload=function(){
+	document.getElementsByTagName("form")[0].onsubmit=function()
+	{
+
+		for(i = 0; i < this.elements.length; i++)
+		{
+			if(this.elements[i].className.indexOf("required") != -1)
+			{
+				if(this.elements[i].value.length < 1)
+				{
+					alert('missing required field');
+					this.elements[i].focus();
+					this.elements[i].style.backgroundColor="pink";
+					return false;
+				}
+			}
+		}
+	
+		
+		if(isNaN(document.getElementById("y").value))
+		{
+			alert("missing number for year of birth");
+			document.getElementById("y").select();
+			return false;
+		}
+	}
+}
+
+</script>	
+</head>
+<body>
+<form action="fake.php">
+	username:<input class="required" type="text" name="u" id="u"/><br/>
+	year of birth:<input class="required numeric" type="text" name="y" id="y"/><br/>
+	email address:<input class="email required" type="text" name="e" id="e"/><br/>
+	website:<input class="url required" type="text" name="w" id="w"/><br/>	
+	<input type="submit"/>
+</form>
+</body>
+</html>

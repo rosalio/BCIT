@@ -1,0 +1,30 @@
+<html><head>
+<script>
+
+var request = new XMLHttpRequest();
+	
+window.onload=function()
+{
+	document.getElementById("b").onclick=function()
+	{
+		request.open("GET", "school.txt?a=b", true);
+		
+		request.onreadystatechange=function()
+		{
+			document.getElementById("t").value =
+				request.responseText;
+		}
+		
+		request.send(null);
+	}
+}
+	
+
+</script>
+
+</head><body>
+
+<input type="text" id="t"/><br/>
+<input type="button" id="b" value="get data from server"/>
+
+</body></html>

@@ -1,0 +1,36 @@
+<html>
+	<head>
+
+	<script>
+	
+	window.onload=function(){
+		for(i = 0; i < document.images.length; i++)
+		{
+			document.images[i].onclick=function()
+			{
+				if(this.className.indexOf("clickable") != -1)
+				{
+					this.width=50;
+				}
+			}
+		}
+	}
+	
+	
+	</script>
+	
+	</head>
+	<body>
+		<div id="top">
+			<img src="cat.jpg" class="friendly"  /><br/>
+			<img src="bird.jpg" class="clickable" /><br/>
+		</div>
+		<div id="bottom">
+		
+			<img src="turtle.jpg"  /><br/>
+			<p>hello</p>
+			<img src="dog.jpg" class="friendly clickable" />
+			<p>goodbye</p>	
+		</div>
+	</body>
+	</html>

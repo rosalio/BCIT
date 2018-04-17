@@ -1,0 +1,37 @@
+<html>
+<head>
+<script>
+
+	timerID = null;
+
+	function changeImageSrc()
+	{
+		if(document.getElementById("myimage").src.indexOf("cat.jpg") == -1)
+		{
+			document.getElementById("myimage").src = "cat.jpg";
+		}else{
+			document.getElementById("myimage").src = "dog.jpg";
+		}
+	}
+
+	window.onload=function()
+	{
+		document.getElementById("myimage").onclick=function()
+		{
+			if(timerID == null) // not running
+			{
+				timerID = setInterval("changeImageSrc()", 500);
+			}else{ // timer already running
+				clearInterval(timerID);
+				timerID = null;
+			}
+		}
+	}
+
+</script>
+</head>
+<body>
+
+<img src="cat.jpg" id="myimage" width="200"/>
+</body>
+</html>

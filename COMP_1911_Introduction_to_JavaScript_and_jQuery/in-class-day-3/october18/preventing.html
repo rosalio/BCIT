@@ -1,0 +1,39 @@
+<html><head>
+
+<script>
+window.onload=function(){
+	
+	for(var i = 0; i < document.links.length; i++){
+		document.links[i].onclick=function(){
+			if(this.href.indexOf('fifa') != -1)
+			{
+				alert('soccer sucks');
+				return false;
+			}
+		}
+		
+	}
+	
+	document.forms[0].onsubmit=function(){
+		if(document.getElementById('username').value.length == 0)
+		{
+			alert('missing username');
+			return false;
+		}
+	}
+}
+</script>
+
+</head><body>
+
+<a href="http://nhl.com">hockey</a>   |
+<a href="http://pgatour.com">golf</a> |
+<a href="http://fifa.com">soccer</a> 
+
+
+<form action="whatever.php">
+username:<input type="text" id="username"/><br/>
+<input type="submit"/>
+</form>
+	
+</body></html>

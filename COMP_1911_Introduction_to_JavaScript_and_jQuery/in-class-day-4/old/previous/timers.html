@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+
+	function makeRed()
+	{
+		 document.getElementById('p').style.color="red";
+	}
+
+	window.onload=function()
+	{
+		setTimeout("makeRed();", 3000);
+
+		setTimeout(
+		 "document.getElementById(\"p\").style.color=\"black\";",
+		 5000); 
+	}
+
+</script>
+</head>
+<body>
+
+<p id="p">Hello.</p>
+</body>
+</html>

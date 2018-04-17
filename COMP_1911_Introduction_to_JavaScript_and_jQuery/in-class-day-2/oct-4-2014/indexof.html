@@ -1,0 +1,33 @@
+<html><head><script>
+
+	string = "bcit is fifty years old today";
+	
+	alert(string.indexOf("bc"));    // 0
+	alert(string.indexOf("BC"));    // -1
+	alert(string.indexOf("jason")); // -1
+	alert(string.indexOf("ears"));  // 15
+	
+	alert(navigator.userAgent);
+	
+	if((navigator.userAgent.indexOf("Firefox")) != -1)
+	{
+		alert('you are using firefox');
+	}
+	else if((navigator.userAgent.indexOf("Chrome")) != -1)
+	{
+		alert('you are using chrome');
+	}
+	else if(((navigator.userAgent.indexOf("Trident")) != -1) ||
+	       ((navigator.userAgent.indexOf("MSIE")) != -1))
+	{
+		alert('you are using internet explorer');
+	}else{
+		alert("????");
+	}
+	
+	
+	
+	
+	
+</script>
+</head></body></html>

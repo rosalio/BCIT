@@ -1,0 +1,30 @@
+<html><head>
+<script>
+
+window.onload=function()
+{
+	for(i = 0; i < document.getElementsByTagName("p").length;i++)
+	{
+		document.getElementsByTagName("p")[i].style.fontSize="500px";
+	}
+	
+	for(j = 0; j < document.images.length; j++)
+	{
+		document.images[j].width=50;
+	}
+	
+	document.getElementById("meow").src="bird.jpg";
+}
+	
+</script>	
+</head>
+<body>
+	<img src="dog.jpg"    id="woof"/>
+	<img src="cat.jpg"    id="meow"/>
+	<p>hi there!</p>
+	<img src="fish.jpg"   id="bloop"/>
+	<img src="bird.jpg"   id="tweet"/>
+	<p>bye</p>
+	<img src="turtle.jpg" id="snap"/>
+</body>
+</html>

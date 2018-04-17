@@ -1,0 +1,42 @@
+<html><head>
+<script>
+	for(i = 0; i < 10; i++)
+	{
+		alert(i);
+	}
+</script>
+</head>
+<body>
+	<img src="dog.jpg"    id="woof"/>
+	<img src="cat.jpg"    id="meow"/>
+	<p>hi there!</p>
+	<img src="fish.jpg"   id="bloop"/>
+	<img src="bird.jpg"   id="tweet"/>
+	<p>bye</p>
+	<img src="turtle.jpg" id="snap"/>
+	
+<script>
+// dom 0:
+for(i = 0; i < document.images.length; i++)
+{
+	alert(document.images[i].id);
+}
+	
+// dom 1:
+for(i = 0; i < document.getElementsByTagName("img").length; i++)
+{
+	alert(document.getElementsByTagName("img")[i].src);
+	document.getElementsByTagName("img")[i].src = "bird.jpg";	
+}
+	
+for(j = 0; j < document.getElementsByTagName("p").length; j++)
+{
+	document.getElementsByTagName("p")[j].style.color='red';
+}
+	
+	
+</script>	
+  
+ 
+</body>
+</html>

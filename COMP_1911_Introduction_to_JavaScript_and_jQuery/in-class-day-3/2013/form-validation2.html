@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<script>	
+
+			window.onload=function()
+			{
+				document.forms[0].onsubmit=function()
+				{
+					for(i = 0; i < document.forms[0].elements.length; i++)
+					{
+						if(document.forms[0].elements[i].className.indexOf("required") != -1)
+						{
+							if(document.forms[0].elements[i].value.length == 0)
+							{
+								alert("missing required field");
+								document.forms[0].elements[i].focus();
+								document.forms[0].elements[i].style.backgroundColor = "yellow";
+								return false;
+							}else{ // required and NOT empty; no problem
+								document.forms[0].elements[i].style.backgroundColor = "white";
+							}
+						}
+						
+						if(document.forms[0].elements[i].className.indexOf("number") != -1)
+						{
+							if(isNaN(document.forms[0].elements[i].value))							
+							{
+								alert("this is not a number");
+								document.forms[0].elements[i].focus();
+								document.forms[0].elements[i].style.backgroundColor = "green";
+								return false;							
+							}else{
+								document.forms[0].elements[i].style.backgroundColor = "white";
+							}
+						}
+					}
+				}
+			}
+	
+		</script>
+	</head>
+	<body>
+
+		<form action="pretend.php">
+		
+			username:<input  class="required" type="text" id="u" name="u"/><br/>
+			password:<input  class="required" type="text" id="p" name="p"/><br/>
+			shoe size:<input class="number" type="text" id="s" name="s"/><br/>
+			birth year:<input class = "number required" type="text" id="b" name="b"/><br/>
+			email:<input class = "email required" type="text" id="e" name="e"/><br/>
+			url:<input class = "url required" type="text" id="w" name="w"/><br/>
+			
+			<input type="submit"/>
+		</form>
+	</body>
+	</html>

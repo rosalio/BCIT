@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+
+jasonsTimer = null;
+
+function move(){
+	document.images[0].style.left = 
+		parseInt(document.images[0].style.left) + 1 + "px";
+}
+
+window.onload = function() {
+
+	document.images[0].onclick=function(){
+	
+		if(jasonsTimer == null){
+			jasonsTimer = setInterval("move();", 100);
+		}else{
+			clearInterval(jasonsTimer);
+			jasonsTimer = null;
+		}
+		
+	}
+}
+
+</script>
+</head>
+<body>
+	<img src="dog.jpg" style="position:absolute; left:10px" id="dog">
+</body>
+</html>

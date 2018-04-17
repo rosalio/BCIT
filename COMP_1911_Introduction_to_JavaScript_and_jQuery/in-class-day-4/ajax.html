@@ -1,0 +1,17 @@
+<html><head><script>
+window.onload=function()
+{
+	request = new XMLHttpRequest();
+	
+	request.open("GET", "name.txt", true);
+	
+	request.onreadystatechange=function(){
+		document.getElementById("t").value=
+			request.responseText;
+	}
+	
+	request.send();
+}
+</script></head><body>
+	<input type="text" id="t"/>
+</body></html>

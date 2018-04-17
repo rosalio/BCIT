@@ -1,0 +1,36 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+	
+	<div id="top">
+		<img src="cat.jpg" name="cat" id="cat" class="meow" /><br/>
+		<p>hello</p>
+		<img src="turtle.jpg" class="beach resizable" /><br/>
+	</div>	
+	
+	<div id="bottom">	
+		<img src="dog.jpg" />
+		<img src="bird.jpg"  class="resizable" />
+		<p>goodbye</p>
+		<img src="fish.jpg" />
+	</div>
+	
+	<p>the end</p>
+	
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	
+	<script>
+	
+		$('#cat').attr('src', 'dog.jpg');
+		
+		$('img').css('border', 'red 10px solid');
+		
+	</script>
+	
+	
+	
+	
+	</body>
+	</html>

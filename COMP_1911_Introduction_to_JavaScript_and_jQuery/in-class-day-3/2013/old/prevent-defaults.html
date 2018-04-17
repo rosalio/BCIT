@@ -1,0 +1,29 @@
+<html><head>
+
+
+<script type='text/javascript'>
+window.onload=function() {
+	
+	document.forms[0].elements[0].focus();
+
+	document.links[1].onclick=function() {
+		return false;
+	}
+	document.forms[0].onsubmit=function() {
+		if(this.elements[0].value.length < 1) {
+			alert('cannot leave the textbox empty');
+			return false;
+		}else{
+			alert('thanks for typing ' + this.elements[0].value);
+}	}   }
+</script></head><body>
+	<a href="http://www.nhl.com">hockey</a> | 
+	<a href="http://www.pgatour.com">golf</a> | 
+	<a href="http://www.espn.com">espn</a> 
+	<form action="x.php">
+		username: <input type='text'/><br/>
+		<input type='submit'/>
+	</form>
+
+</body>
+</html>

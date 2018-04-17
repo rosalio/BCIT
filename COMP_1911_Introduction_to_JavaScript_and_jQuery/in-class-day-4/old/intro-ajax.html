@@ -1,0 +1,28 @@
+<html><head>
+<script>
+
+var request = new XMLHttpRequest();
+
+window.onload=function()
+{
+	document.getElementById("b").onclick=function()
+	{
+		request.open("GET", "data.txt", true);
+		
+		request.onreadystatechange=function(){
+			document.getElementById("p").childNodes[0].nodeValue = 
+				request.responseText;
+		}
+		
+		request.send(null);
+	}
+}
+
+</script>
+</head><body>
+
+<p id="p"> </p>
+<input type="button" id="b" value="click"/>
+
+
+</body></html>

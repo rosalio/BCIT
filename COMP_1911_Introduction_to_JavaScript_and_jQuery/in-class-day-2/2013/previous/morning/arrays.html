@@ -1,0 +1,53 @@
+<html>
+<head>
+<script>
+	holidays    = new Array("easter", "family day");
+	holidays[2] = "canada day";
+	alert(holidays);
+	
+	months = ['jan', 'feb', 'mar', 'apr', 12, new Date()];
+	alert(months);
+	
+	
+	
+	
+	books = ['save the pixel', 
+	         'getting real',  // by 37 signals; free online
+			 'the hobbit',
+			 'the four hour workweek',
+			 'getting things done'];
+			 
+	books[2] = 'lord of the rings'; // change from the hobbit
+			 
+	alert(books);
+	
+	
+	// AFTER THE IMAGES:
+	document.images[3].src = 'turtle.jpg';
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+</head>
+<body>
+	<img src='cat.jpg'/>
+	<img src='dog.jpg'/>
+	<img src='bird.jpg'/>
+	<img src='fish.jpg'/>
+<script>
+alert(document.images[0].src); 	// a string: the src
+document.images[3].src = 'turtle.jpg';
+alert(document.images[0]); 		// AN IMAGE OBJECT
+</script>
+</body>
+</html>

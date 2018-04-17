@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+
+window.onload=function()
+{
+	if(document.getElementById)
+	{
+		alert('getelementbyid');
+		document.getElementById("cat").src = "dog.jpg";
+	}else if(document.layers){
+		alert('layers');
+		document.layers['cat'].src = "dog.jpg";
+	}else if(document.all){
+		alert('all');
+		document.all['cat'].src = "dog.jpg";
+	}else if(document.images['cat']){
+		alert('images cat');
+		document.images['cat'].src = "dog.jpg";
+	}else if(document.images[0]){
+		alert('images 0');
+		document.images[0].src = "dog.jpg";
+	}else if(document.cat){
+		alert('cat');
+		document.cat.src = "dog.jpg";
+	}else{
+		alert(":(");
+	}
+}
+
+</script>
+</head>
+<body>
+<img src="cat.jpg" id="cat" name="cat"/>
+</body>
+</html>

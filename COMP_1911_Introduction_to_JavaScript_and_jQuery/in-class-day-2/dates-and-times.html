@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+
+today   = new Date();
+alert(today);
+
+xmas    = new Date(2014, 11, 25);
+alert(xmas);
+
+diff    = xmas - today; 
+alert(diff);
+
+seconds = diff    / 1000;
+minutes = seconds / 60;
+hours   = minutes / 60;
+days    = hours   / 24;
+
+alert(Math.round(days) + " days til xmas");
+alert(days.toFixed(2)  + " days til xmas");
+
+</script>
+</head>
+<body>
+<!--	<img src='cat.jpg'/>
+	<img src='dog.jpg'/>
+	<img src='bird.jpg'/>
+	<img src='fish.jpg'/> -->
+</body>
+</html>

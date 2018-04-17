@@ -1,0 +1,23 @@
+<html><head>
+<script> 	
+
+	window.alert(this); // window object
+		
+</script>	
+</head>
+<body>
+	<img src="cat.jpg"  /><br/>
+	<img src="turtle.jpg"  /><br/>
+	<img src="dog.jpg"  />
+	
+<script>
+
+	document.images[1].onclick=function()
+	{
+		alert(this.src); // the turtle image, which got clicked
+	}
+
+</script>	
+	
+</body>
+</html>

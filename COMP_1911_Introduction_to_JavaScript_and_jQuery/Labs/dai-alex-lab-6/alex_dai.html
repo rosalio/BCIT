@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>COMP 1911 Lab 6</title>
+
+    <script>
+        catTimer = null;
+        dogTimer = null;
+
+        function catMove() {
+            catImage = document.getElementById("catImg");
+            catImage.style.left = parseInt(catImage.style.left) + 1 + "px";
+        }
+
+        function dogMove() {
+            dogImage = document.getElementById("dogImg");
+            dogImage.style.left = parseInt(dogImage.style.left) + 10 + "px";
+        }
+
+        function stopAll() {
+            if (catTimer != null) {
+                clearInterval(catTimer);
+                catTimer = null;
+            }
+            if (dogTimer != null) {
+                clearInterval(dogTimer);
+                dogTimer = null;
+            }
+            document.getElementById("catImg").style.left = "10px";
+            document.getElementById("catImg").style.top = "10px";
+            document.getElementById("dogImg").style.left = "10px";
+            document.getElementById("dogImg").style.top = "110px";
+        }
+
+        window.onload = function() {
+            document.getElementById("catImg").onclick = function () {
+                if (catTimer == null) {
+                    catTimer = setInterval("catMove();", 100);
+                } else {
+                    clearInterval(catTimer);
+                    catTimer = null;
+                }
+            }
+
+            document.getElementById("dogImg").onclick = function () {
+                if (dogTimer == null) {
+                    dogTimer = setInterval("dogMove();", 3000);
+                } else {
+                    clearInterval(dogTimer);
+                    dogTimer = null;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <img id="catImg" src="cat.jpg" alt="" style="width:100px; position:absolute; left:10px; top:10px" />
+    <img id="dogImg" src="dog.jpg" alt="" style="width:100px; position:absolute; left:10px; top:110px" />
+    <button onclick="stopAll()" style="position:absolute; left:10px; top:220px">EVERYONE STOP</button>
+</body>
+</html>

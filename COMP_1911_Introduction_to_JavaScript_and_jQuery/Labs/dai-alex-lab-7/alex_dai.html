@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>COMP 1911 Lab 7</title>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./jquery.validate.js"></script>
+    <script>
+        $.validator.setDefaults({
+           submitHandler: function(){
+               alert("submitted!");
+           }
+        });
+
+        $(document).ready(function(){
+            $("#userForm").validate({
+                rules: {
+                    userName: {
+                        required: true,
+                        minlength: 3,
+                        maxlength: 6
+                    },
+                    birthdate: {
+                        date: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    homePage: {
+                        url: true
+                    }
+                },
+                invalidHandler: function(form, validator){
+                    var errors = validator.numberOfInvalids();
+                    if (errors) {
+                        $("input.error").css("background-color", "yellow");
+                        setTimeout(function () {
+                            $("input.error").css("background-color", "white");
+                        }, 3000);
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="userForm" method="get" action="">
+        <p>
+            <label for="userName">User name: </label>
+            <input id="userName" type="text" name="userName" />
+        </p>
+        <p>
+            <label for="birthdate">Birthdate: </label>
+            <input id="birthdate" type="text" name="birthdate" />
+        </p>
+        <p>
+            <label for="email">Email address: </label>
+            <input id="email" type="text" name="email"/>
+        </p>
+        <p>
+            <label for="homePage">Home page: </label>
+            <input id="homePage" type="text" name="homePage"/>
+        </p>
+        <p>
+            <input class="submit" type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+</html>

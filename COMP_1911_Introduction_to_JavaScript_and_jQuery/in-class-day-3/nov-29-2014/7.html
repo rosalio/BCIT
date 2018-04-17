@@ -1,0 +1,39 @@
+<!DOCTYPE html><head><script>
+		
+
+		
+	window.onload=function(){
+		
+		myImage = null;
+		
+		/*if(document.getElementById){
+			alert("getelement");
+			myImage = document.getElementById("x");
+		}else */
+		if(document.all){
+			alert("all");
+			myImage = document.all['x'];
+		}
+		/*else if(document.images['x']){
+			alert("images[x]");
+			myImage = document.images['x'];
+		}*//*else if(document.images[0]){
+			alert("images[0]");
+			myImage = document.images[0];
+		}*//*else if(document.x){
+			alert("document.x");
+			myImage = document.x;
+		}*/
+myImage = document.all['x'];
+		myImage.src="cat.jpg";
+	}
+	
+</script>
+</head>
+<body>
+<img src="dog.jpg" id="x" name="x"/>
+
+
+
+</body>
+</html>

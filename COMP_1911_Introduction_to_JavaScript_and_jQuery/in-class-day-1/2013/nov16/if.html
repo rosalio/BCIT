@@ -1,0 +1,64 @@
+<html>
+<head>
+
+<script>
+
+/*	100 - perfect
+	80  - 99 A
+	60  - 79 B
+	50  - 59 C
+	0   - 49 F
+
+	under 0: error
+	over 100: error */
+
+	percent = 105;
+
+	
+	if(isNaN(percent))
+	{
+		alert(percent + " is not even a number");
+	}
+	else if(percent > 100)
+	{
+		alert(percent + " is too high");
+	}
+	else if(percent < 0)
+	{
+		alert(percent + " is too low");
+	}
+	else if(percent == 100)
+	{
+		alert("perfect");
+	}
+	else if(percent >= 80)
+	{
+		alert("A");
+	}
+	else if(percent >= 60)
+	{
+		alert("B");
+	}
+	else if(percent >= 50)
+	{
+		alert("C");
+	}
+	else /* must be 0 - 49 */
+	{
+		alert("F");
+	}
+
+
+
+
+
+
+</script>
+
+</head>
+<body>
+
+
+
+</body>
+</html>

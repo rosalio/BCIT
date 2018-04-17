@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="jquery-1.11.0.min.js"></script>
+<script>
+
+	// click an image, it changes to a fish
+	$(document).ready(function(){
+	
+		$('img').click(function(){
+			$(this).css('border', 'blue solid 10px');
+			$(this).attr('src', 'fish.jpg');
+		});
+		
+		$('img').click(); // do the click
+	
+	});
+	
+</script>
+</head>
+<body>
+
+<img src="cat.jpg" id="c"/>
+<img src="dog.jpg" id="d"/>
+
+</body>
+</html>

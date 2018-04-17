@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+
+function borderChange()
+{
+  this.style.borderStyle= "solid";
+  this.style.borderColor = "green";
+}
+
+
+window.onload=function()
+{
+	for(i = 0; i < document.images.length; i++)
+	{
+		document.images[i].onclick=borderChange;
+	}
+}
+</script>
+</head>
+<body>
+<img src="cat.jpg"/>
+<img src="dog.jpg"/>
+<img src="turtle.jpg"/>
+</body>
+</html>

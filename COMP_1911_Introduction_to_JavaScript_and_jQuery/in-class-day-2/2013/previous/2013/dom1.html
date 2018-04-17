@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+	window.onload=function()
+	{
+		for(i = 0; i < document.getElementsByTagName('img').length; i++)
+		{
+			alert(document.getElementsByTagName('img')[i].src);
+			document.getElementsByTagName('img')[i].width = 50;
+		}	
+		
+		for(j = 0; j < document.getElementsByTagName('p').length; j++)
+		{
+			document.getElementsByTagName('p')[j].style.backgroundColor = 
+				'yellow';
+		}		
+	}
+</script>
+</head>
+<body>
+<img src="dog.jpg"/>
+<p>hi</p>
+<img src="fish.jpg"/>
+<p>bye</p>
+<p>whaterver</p>
+<img src="cat.jpg"/>
+</body>
+</html>

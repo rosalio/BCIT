@@ -1,0 +1,24 @@
+<html><head><script>
+
+window.onload=function()
+{
+	for(i = 0; i < document.images.length; i++)
+	{
+		document.images[i].style.borderStyle="solid";
+		document.images[i].width=120;	
+		
+		if(document.images[i].src.indexOf("dog") != -1)
+		{
+			document.images[i].width = 400;
+		}
+	}
+}
+</script>
+</head>
+<body>
+<img src="dog.jpg"/><br/> <!-- document.images[0] -->
+<img src="fish.jpg"/><br/><!-- document.images[1] -->
+<img src="cat.jpg"/><br/><!-- document.images[2] -->
+<img src="turtle.jpg"/><br/><!-- document.images[3] -->
+<img src="bird.jpg"/><br/><!-- document.images[4] -->
+</body></html>

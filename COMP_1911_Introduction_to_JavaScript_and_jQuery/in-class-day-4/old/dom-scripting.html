@@ -1,0 +1,35 @@
+<html><head>
+<script>
+
+window.onload=function()
+{
+	cat = document.createElement("img");
+	cat.setAttribute("src", "cat.jpg");
+	cat.width=300;
+	document.body.appendChild(cat);
+	
+	par = document.createElement("p");
+	t   = document.createTextNode("welcome");
+	
+	par.appendChild(t);
+	
+	document.body.appendChild(par);
+	
+	dog = document.createElement("img");
+	dog.setAttribute("src", "dog.jpg");
+	dog.width=300;
+	
+	dog.onclick=function()
+	{
+		this.parentNode.insertBefore(this,par);
+	}
+	
+	document.body.appendChild(dog);	
+	
+}
+
+
+</script>
+</head><body>
+
+</body></html>

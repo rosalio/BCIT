@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+
+	<script>
+	window.onload=function(){
+		document.forms[0].onsubmit=function(){
+		
+			for(i = 0; i < this.elements.length; i++){
+				if(this.elements[i].className.indexOf("required") != -1){
+					if(this.elements[i].value.length == 0){
+						this.elements[i].focus();
+						return false;
+					}
+				}
+				
+				
+				
+			}
+		
+		
+		/*
+		
+			if(this.elements[0].value.length == 0){
+				this.elements[0].focus();
+				return false;	
+			}
+			
+			if(document.getElementById("y").value == ""){
+				document.getElementById("y").focus();
+				document.getElementById("y").	
+					style.backgroundColor="yellow";
+				return false;
+			}
+			
+			if(isNaN(document.getElementById("y").value)){
+				document.getElementById("y").select();
+				alert(document.getElementById("y").value + " is not a number");
+				document.getElementById("y").	
+					style.backgroundColor="green";
+				return false;
+			}
+			*/
+			
+			
+		}
+	}
+	
+	</script>
+</head>
+<body>
+<form method="get" action="fake.php">
+*username: <input class="required" id="u" type="text" name="u"/><br/>
+*year of birth: <input class="numeric required" id="y" type="text" name="y"/><br/>
+*email address: <input class="required email" id="e" type="text" name="e"/><br/>
+homepage: <input id="w" class="url" type="text" name="w"/><br/>
+<input type="submit"><br/>
+</form>
+
+</body>
+</html>

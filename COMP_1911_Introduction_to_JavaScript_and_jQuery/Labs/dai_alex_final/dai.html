@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>COMP 1911 FINAL EXAM PART 2</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+    <script src="myjquery.js"></script>
+    <script src="dai.js"></script>
+</head>
+<body>
+    <form id="myForm" method="get" action="submitForm.php">
+        Username: <input class="required" id="userName" type="text" name="userName" />
+        <br>
+        Email Address: <input class="required email" id="email" type="text" name="email" />
+        <br>
+        Street Address: <input class="address" id="address" type="text" name="address" />
+        <br>
+        Year of Birth: <input class="required numeric" id="year" type="text" name="year" />
+        <br>
+        <input class="submit" type="submit" value="SUBMIT" />
+    </form>
+</body>
+</html>

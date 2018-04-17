@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+
+	function change()
+	{
+		document.images[0].src = 'dog.jpg';
+	}
+
+	setTimeout("alert('hi');", 2000);
+	setTimeout("change();",    5000);
+	setTimeout(function(){document.images[0].width='100'}, 7000);
+	// no timers: click the turtle; every click, it shrinks to half its width
+</script>
+</head>
+<body>
+	<img src="cat.jpg"  /><br/>
+	<img src="turtle.jpg"  /><br/>
+	
+</body>
+</html>

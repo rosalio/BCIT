@@ -1,0 +1,33 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+	
+	<a href="http://nhl.com">hockey</a> | 	
+	<a href="http://pgatour.com">golf</a> | 	
+	<a href="http://nba.com">basketball</a> | 	
+	<a href="http://tsn.ca">tv</a>
+	
+	
+	<form action="x.php">
+	username: <input type="text" name="u"/><br/>
+	<input type="submit"/>
+	
+	<script>
+	
+		document.links[2].onclick=function()
+		{
+			return false;
+		}
+	
+		document.forms[0].onsubmit=function()
+		{
+			alert("submitting form");
+			return false;
+		}
+	
+	</script>	
+	
+	</body>
+	</html>

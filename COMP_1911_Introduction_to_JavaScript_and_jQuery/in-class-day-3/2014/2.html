@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+
+y = "hello";
+
+function changeTheSrc()
+{
+	alert(x); // whatever
+	alert(y); // hello
+	this.src = "bird.jpg"; // this is the image that was clicked
+}
+
+window.onload=function()
+{
+	for(i = 0; i < document.images.length; i++)
+	{
+		x = "whatever";
+		document.images[i].onclick=changeTheSrc;
+	}
+}
+</script>
+</head>
+<body>
+<img src="cat.jpg"/>
+<img src="dog.jpg"/>
+<img src="turtle.jpg"/>
+</body>
+</html>

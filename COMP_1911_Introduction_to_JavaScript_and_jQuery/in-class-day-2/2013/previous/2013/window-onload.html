@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+	window.onload=function()
+	{
+		for(i = 0; i < document.images.length; i++)
+		{
+			alert(document.images[i].src);
+			document.images[i].width = 50;
+		}	
+	}
+</script>
+</head>
+<body>
+<img src="dog.jpg"/>
+<img src="fish.jpg"/>
+<img src="cat.jpg"/>
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+Objects:	Properties:	 	Methods:
+(nouns)		(adjectives)	(verbs)
+====================================
+window		src				alert()
+document	href			focus()
+navigator	id				write()
+style		class			getElementById()
+images		width
+			background-color
+			
+
+DOM0:     document.a.b.c
+IE DOM:	  document.all
+NN DOM:	  document.layers
+W3C DOM1: document.getElementById()

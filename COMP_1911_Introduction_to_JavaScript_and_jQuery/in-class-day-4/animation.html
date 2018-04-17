@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+
+function moveImage(){
+	document.images[0].style.left = 
+		parseInt(document.images[0].style.left) + 1 + "px";
+}
+
+window.onload=function(){
+	setInterval("moveImage();", 10);
+}
+
+
+</script>
+</head>
+<body>
+	<img src="cat.jpg" style="position:absolute;left:12px"/>
+	
+	<!--<input type="button" value="start" id="start"/>
+	<input type="button" value="stop"  id="stop"/>-->
+	
+</body>
+</html>

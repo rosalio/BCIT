@@ -1,0 +1,31 @@
+<html><head>
+<script>
+
+function changeHeight()
+{
+	alert(x); // x is not defined
+	this.style.height = "100px";
+}
+
+window.onload = function() {
+
+	var myimages = document.images;
+
+	for(i = 0; i < myimages.length; i++) {
+		var x = 13; // local access only
+		myimages[i].onclick=changeHeight; // callback function: NO PARENTHESES!
+	}
+
+}
+
+	
+
+</script>
+
+</head><body>
+	<img src='cat.jpg'/> 
+	<img src='dog.jpg'/> 
+	<img src='bird.jpg'/>
+	<img src='fish.jpg'/> 
+	<img src='turtle.jpg'/> 	
+</body></html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+
+jasonsRequest = new XMLHttpRequest();
+
+window.onload=function()
+{
+	jasonsRequest.open("GET", "school.txt?a=b&c=d", true);
+	
+	jasonsRequest.onreadystatechange=function()
+	{
+		document.getElementById("t").value = 
+			jasonsRequest.responseText;
+	}
+	
+	jasonsRequest.send(null);
+}
+
+</script>
+</head>
+<body>
+
+<input type="text" id="t"/>
+
+</body>
+</html>

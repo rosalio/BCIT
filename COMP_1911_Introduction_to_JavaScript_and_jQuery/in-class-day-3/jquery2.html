@@ -1,0 +1,43 @@
+<html>
+	<head>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script>
+	
+	$(document).ready(function(){
+	
+		$('p').css('color', 'red');
+	
+		$('img').attr('width', '100');
+	
+		$('img').click(function(){
+			$(this).attr('width', '200');
+		});
+		
+		$('img:odd').click();
+	
+	});
+	
+	
+	</script>
+	
+	</head>
+	<body>
+		<div id="top">
+			<img src="cat.jpg" id="cat" name="cat" class="friendly"  /><br/>
+			<img src="bird.jpg" class="clickable" /><br/>
+		</div>
+		<div id="bottom">
+		
+			<img src="turtle.jpg" /><br/>
+			<p>hello</p>
+			<img src="dog.jpg" class="friendly clickable" />
+			<p>goodbye</p>	
+		</div>
+		
+		
+	
+		
+	</body>
+	</html>

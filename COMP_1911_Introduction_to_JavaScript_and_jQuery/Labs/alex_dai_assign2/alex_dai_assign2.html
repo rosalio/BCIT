@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>COMP 1911 Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="css/styles1.css" title="styles1" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="css/styles2.css" title="styles2" media="screen" />
+    <link rel="alternate stylesheet" type="text/css" href="css/styles3.css" title="styles3" media="screen" />
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/liteaccordion.jquery.js"></script>
+    <script src="js/jq.date.js"></script>
+    <script src="js/styleswitch.js"></script>
+    <script src="js/stylesheetToggle.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#divOne').liteAccordion({
+                containerWidth : 960,
+                containerHeight : 320,
+                autoPlay: true,
+                pauseOnHover: true,
+                theme: 'stitch',
+                rounded: true,
+                enumerateSlides: true
+            }).find('figcaption:first').show();
+
+            $('#trip input#leavedate, #trip input#returndate').datepicker({ dateFormat: 'D, M d, yy', showOn: 'button', buttonImage: 'pic/calendar.gif', buttonImageOnly: true });
+
+        })
+
+        $(function()
+                {
+                    // Call stylesheet init so that all stylesheet changing functions
+                    // will work.
+                    $.stylesheetInit();
+
+                    // This code loops through the stylesheets when you click the link with
+                    // an ID of "toggler" below.
+                    $('#toggler').bind(
+                            'click',
+                            function(e)
+                            {
+                                $.stylesheetToggle();
+                                return false;
+                            }
+                    );
+
+                    // When one of the styleswitch links is clicked then switch the stylesheet to
+                    // the one matching the value of that links rel attribute.
+                    $('.styleswitch').bind(
+                            'click',
+                            function(e)
+                            {
+                                $.stylesheetSwitch(this.getAttribute('rel'));
+                                return false;
+                            }
+                    );
+                }
+        );
+    </script>
+
+    <script src="js/jquery.jeditable.js" type="text/javascript"></script>
+    <script src="js/jquery.jeditable.autogrow.js" type="text/javascript" ></script>
+    <script src="js/jquery.jeditable.ajaxupload.js" type="text/javascript" ></script>
+    <script src="js/jquery.jeditable.masked.js" type="text/javascript" ></script>
+    <script src="js/jquery.jeditable.time.js" type="text/javascript" ></script>
+    <script src="js/jquery.jeditable.timepicker.js" type="text/javascript" ></script>
+    <script src="js/jquery.jeditable.datepicker.js" type="text/javascript" ></script>
+    <script src="js/jquery.jeditable.charcounter.js" type="text/javascript" ></script>
+
+    <script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+    <script type="text/javascript" src="js/jquery.timepicker.js"></script>
+    <script type="text/javascript" src="js/jquery.autogrow.js"></script>
+    <script type="text/javascript" src="js/jquery.charcounter.js"></script>
+
+    <script type="text/javascript" src="js/date.js"></script>
+    <!--
+    <script type="text/javascript" src="js/jquery.bgigframe.js"></script>
+    -->
+    <script type="text/javascript" src="js/jquery.dimensions.js"></script>
+    <script type="text/javascript" src="js/jquery.datePicker.js"></script>
+
+    <script type="text/javascript" src="js/jquery.ajaxfileupload.js"></script>
+
+
+    <script type="text/javascript" charset="utf-8">
+        // <![CDATA[
+        $(document).ready(function() {
+            $(".charcounter").editable("http://www.appelsiini.net/projects/jeditable/php/save.php", {
+                indicator : "<img src='img/indicator.gif'>",
+                type      : "charcounter",
+                submit    : 'OK',
+                tooltip   : "Click to edit...",
+                onblur    : "ignore",
+                charcounter : {
+                    characters : 60
+                }
+            });
+            $(".autogrow").editable("http://www.appelsiini.net/projects/jeditable/php/save.php", {
+                indicator : "<img src='img/indicator.gif'>",
+                type      : "autogrow",
+                submit    : 'OK',
+                cancel    : 'cancel',
+                tooltip   : "Click to edit...",
+                onblur    : "ignore",
+                autogrow : {
+                    lineHeight : 16,
+                    minHeight  : 32
+                }
+            });
+            $(".masked").editable("http://www.appelsiini.net/projects/jeditable/php/save.php", {
+                indicator : "<img src='img/indicator.gif'>",
+                type      : "masked",
+                mask      : "99/99/9999",
+                submit    : 'OK',
+                tooltip   : "Click to edit..."
+            });
+            $(".datepicker").editable("http://www.appelsiini.net/projects/jeditable/php/save.php", {
+                indicator : "<img src='img/indicator.gif'>",
+                type      : 'datepicker',
+                tooltip   : "Click to edit..."
+            });
+            $(".timepicker").editable("http://www.appelsiini.net/projects/jeditable/php/save.php", {
+                indicator : "<img src='img/indicator.gif'>",
+                type      : 'timepicker',
+                submit    : 'OK',
+                tooltip   : "Click to edit..."
+            });
+            $(".time").editable("http://www.appelsiini.net/projects/jeditable/php/save.php", {
+                indicator : "<img src='img/indicator.gif'>",
+                type      : 'time',
+                submit    : 'OK',
+                tooltip   : "Click to edit..."
+            });
+            $(".ajaxupload").editable("http://www.appelsiini.net/projects/jeditable/php/upload.php", {
+                indicator : "<img src='img/indicator.gif'>",
+                type      : 'ajaxupload',
+                submit    : 'Upload',
+                cancel    : 'Cancel',
+                tooltip   : "Click to upload..."
+            });
+        });
+        // ]]>
+    </script>
+    <style type="text/css">
+
+        textarea {
+            line-height: 16px;
+        }
+
+        #sidebar {
+            width: 0px;
+        }
+
+        #content {
+            width: 770px;
+        }
+
+        div.entry {
+            width: 385px;
+            float: left;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="js/jquery.corner.js"></script>
+    <script type="text/javascript">
+        // test auto-ready logic - call corner before DOM is ready
+        $('#readyTest').corner();
+
+        $(function(){
+            $('#dynCorner').click(function() {
+                $('#dynamic').corner();
+            });
+            $('#dynUncorner').click(function() {
+                $('#dynamic').uncorner();
+            });
+
+            $('div.inner').wrap('<div class="outer"></div>');
+            $('p').wrap("<code></code>");
+
+            $('div.demo, div.inner').each(function() {
+                var t = $('p', this).text();
+                eval(t);
+            });
+
+            // fixed/fluid tests
+            $("div.box, div.plain").corner();
+            $("#abs").corner("cc:#08e");
+
+            $('.myCorner').corner();
+        });
+    </script>
+
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="css/jq.css" />-->
+    <style type="text/css">
+        body, div, h1, .desc { font-family: 'trebuchet ms', verdana, arial; margin: 0; padding: 0 }
+        body { margin: 0; padding: 0; font-size: small; }
+        h1 { padding: 10px; margin: 0; font-size: large }
+        h2 { padding: 10px; background-color: #ddd; color: black; margin: 0; font-size: small; font-weight: normal }
+        #main { background: #fff; padding: 10px }
+
+        div.section { clear: left; }
+        div.section h1 { padding: 20px 20px 0 20px }
+        div.section h2 { background: #fff; padding: 1px 20px;  }
+        div.demo, div.inner { color: #000; text-align: center; font-family: verdana, arial, sans-serif;}
+        div.demo  { float: left; width: 18em; padding: 20px; margin: 1em; background: #6af; }
+        div.inner { margin: 0; background: #ffc; padding: 10px; border:0; zoom:1;}
+        div.outer { float: left; margin: 15px; background: #c82; padding: 8px; width: 22em }
+        div.fun   { margin: 2px; }
+        div#readyTest { background-color: #6af; float: right; padding: 10px; height: 20px }
+
+        #abs { position: absolute; width: 200px; background: #ffa;
+            padding: 5px; margin: 8px; top: 0; right: 0; text-align: center }
+
+        /* fixed height/width testing */
+        .box  { background-color: #6af; padding: 15px; text-align: center; margin: 25px }
+        #box1 { zoom:1 }                                       /* fluid (zoom for layout) */
+        #box2 { height: 150px;  }                              /* fixed height */
+        #box3 { width:  300px; margin:auto }                   /* fixed width */
+        #box4 { height: 150px; width: 300px; margin:auto }     /* fixed height and width */
+
+        div.plain  { background-color: #6af; text-align: center; }
+        b { color: #f44 }
+
+        #twitter { float:right; right: 20px; }
+        #twitter a { text-decoration: none; font-family: arial; vertical-align: top }
+        #twitter img { border: none; float: left }
+
+        div.desc { margin: 10px }
+    </style>
+
+    <!--<style type="text/css" media="all">-->
+        <!--@import "css/global.css";-->
+    <!--</style>-->
+    <script src="js/jtip.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<div id="divOne">
+    <ol>
+        <li>
+            <h2><span>Suzhou River</span></h2>
+            <div>
+                <img src="pic/pic1.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <h2><span>Afternoon</span></h2>
+            <div>
+                <img src="pic/pic2.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <h2><span>Shanghai</span></h2>
+            <div>
+                <img src="pic/pic3.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <h2><span>World Financial Center</span></h2>
+            <div>
+                <img src="pic/pic4.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <h2><span>Hazy Lujiazui</span></h2>
+            <div>
+                <img src="pic/pic5.jpg" alt="">
+            </div>
+        </li>
+        <li>
+            <h2><span>Rollercoaster</span></h2>
+            <div>
+                <img src="pic/pic6.jpg" alt="">
+            </div>
+        </li>
+    </ol>
+    <noscript>
+        <p>Please enable JavaScript to get the full experience.</p>
+    </noscript>
+</div>
+<hr>
+<form id="trip" action="#">
+    <fieldset>
+        <legend>Trip Length</legend>
+        <div class="fields">
+            <div><label for="leavedate">Departure Date:</label> <input type="text" id="leavedate" name="leavedate"/></div>
+            <div><label for="returndate">Return Date:</label> <input type="text" id="returndate" name="returndate"/></div>
+        </div>
+    </fieldset>
+</form>
+<hr>
+<p>
+    Currently active stylesheet:
+    <span id="st1">styles1</span>
+    <span id="st2">styles2</span>
+    <span id="st3">styles3</span>
+</p>
+<p><a href="serversideSwitch.html" id="toggler">Toggle</a> between stylesheets.</p>
+<p>Choose a specific different stylesheet:</p>
+<ul>
+    <li><a href="serversideSwitch.html%3Fstyle=style1.html" rel="styles1" class="styleswitch">styles1</a></li>
+    <li><a href="serversideSwitch.html%3Fstyle=style2.html" rel="styles2" class="styleswitch">styles2</a></li>
+    <li><a href="serversideSwitch.html%3Fstyle=style3.html" rel="styles3" class="styleswitch">styles3</a></li>
+</ul>
+<hr>
+<div id="wrap">
+    <div id="content">
+
+        <p>You might also want to check <a href="default.html">default inputs demo</a>.
+
+        <div class="entry">
+
+
+            <h2>Autogrow textarea</h2>
+            <p class="autogrow" style="width: 300px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <p>Depends on
+                <a href="http://plugins.jquery.com/project/autogrow">Autogrow</a>
+                by Chrys Bader.</p>
+
+        </div>
+
+        <div class="entry">
+            <h2>Ajax File Upload</h2>
+            <p class="ajaxupload" id="custom_6">Edit me!</p>
+            <p>
+                Fileupload which uses <a href="http://www.phpletter.com/Our-Projects/AjaxFileUpload/">Ajax File Upload</a> plugin.
+                For security reasons after uploading this demo only display file size and name.
+                <br/>
+                <br/>
+                <br/>
+            </p>
+        </div>
+
+
+        <div class="entry">
+
+            <h2>Masked Input</h2>
+            <p class="masked" id="custom_1">23/23/3523</p>
+            <p>Depends on
+                <a href="http://digitalbush.com/projects/masked-input-plugin">Masked Input</a> by Josh Bush.
+            </p>
+
+        </div>
+        <div class="entry">
+
+            <h2>Time Picker</h2>
+            <p class="timepicker" id="custom_4">undefined:undefinedundefined</p>
+            <p>
+                Depends on <a href="http://jquery.com/plugins/project/timepicker">Timepicker</a>
+                by Jason Huck.
+            </p>
+
+        </div>
+        <div class="entry">
+
+            <h2>Time Picker 2</h2>
+            <p class="time" id="custom_5">Edit me!</p>
+            <p>
+                Similar as previous but without dependenices. See <a href="http://www.appelsiini.net/2008/2/creating-inline-timepicker-with-javascript">how to create inputs tutorial</a>.
+            </p>
+
+        </div>
+
+        <div class="entry">
+
+            <h2>Character counter</h2>
+            <p class="charcounter" id="custom_5">Edit me!</p>
+            <p>
+                Using character counter.
+            </p>
+
+        </div>
+    </div>
+</div>
+<hr>
+<div class="demo"><h1>Round</h1> <p>$(this).corner();</p></div>
+<div class="demo"><h1>Bevel</h1> <p>$(this).corner("bevel");</p></div>
+<div class="demo"><h1>Notch</h1> <p>$(this).corner("notch");</p></div>
+<div class="demo"><h1>Bite</h1>  <p>$(this).corner("bite");</p></div>
+<div class="demo"><h1>Cool</h1>  <p>$(this).corner("cool");</p></div>
+<div class="demo"><h1>Sharp</h1> <p>$(this).corner("sharp");</p></div>
+<hr>
+
+<div id="contentPad">
+    <h1><strong>Deep Blue versus Garry Kasparov</strong></h1>
+    <br>
+    <p><a href="ajax.htm?width=475" class="jTip" id="six" name="Deep Blue">Deep Blue</a> versus <a href="ajax2.htm?width=500" class="jTip" id="four" name="Kasparov">Garry Kasparov</a> Deep Blue versus Garry Kasparov was a pair of famous six-game human–computer chess matches, in the format of machine and humans, versus a human. In this format, on the machine side a team of chess experts and programmers manually alter engineering between the games. The matches were played between the IBM supercomputer Deep Blue with a team of IBM programmers and chess experts who directed and reprogrammed the machine between games on the one side, and the World Chess Champion Garry Kasparov on the other side. The first match was played in February 1996 in Philadelphia, Pennsylvania. Kasparov won the match 4–2, losing one game, drawing in two and winning three. A rematch took place in 1997, with Deep Blue winning 3½–2½.</p>
+</div>
+
+</body>
+</html>

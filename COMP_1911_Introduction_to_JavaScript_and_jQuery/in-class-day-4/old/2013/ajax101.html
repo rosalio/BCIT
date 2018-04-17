@@ -1,0 +1,41 @@
+<html><head>
+
+<script src="jquery-1.10.1.min.js"></script>
+
+<script>
+
+var jasonsRequestObject = new XMLHttpRequest(); // the AJAX object
+
+window.onload=function()
+{
+	document.getElementById("b").onclick=function()
+	{
+		jasonsRequestObject.open("GET", "name.txt", true);
+
+		jasonsRequestObject.onreadystatechange=function()
+		{
+			document.getElementById("t").value = 
+				jasonsRequestObject.responseText;
+		}
+
+		jasonsRequestObject.send("c=d&e=f");
+	}
+
+	$('#t2').load('name.txt');
+}
+	
+</script>
+
+</head>
+<body>
+	
+
+
+<input type="text"   id="t"/><br/>
+<p   id="t2">hi</p><br/>
+<input type="button" id = "b"/>
+
+
+
+</body>
+</html>

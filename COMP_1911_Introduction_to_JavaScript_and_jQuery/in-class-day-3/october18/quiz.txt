@@ -1,0 +1,51 @@
+this
+refers to the current object
+
+window.onload=function(){
+	// this is the window
+
+	document.images[0].onclick=function(){
+		// this is document.images[0] which was just clicked
+	}
+}
+
+// make a blue border on an image when it's clicked:
+window.onload=function(){
+
+	for(i = 0; i < document.getElementsByTagName('img').length; i++)
+	{
+		document.getElementsByTagName('img')[i].onclick=function(){
+			this.style.border="solid blue 1px";
+		}
+	}
+}
+
+$(document).ready(function(){
+	$('img').click(function(){
+		$(this).css('border', 'solid blue 1px');
+	});
+});
+
+
+object detection: very good; detect objects before using them
+if(document.Math)
+{
+	document.Math.round(14.3);
+}
+
+browser detection: bad, wrong, incomplete, unnecessary
+
+
+prevent browser default behaviors:
+
+no hyperlinks will work:
+
+for(i = 0; i < document.links.length; i++)
+{
+	document.links[i].onclick=function(){
+		alert("i refuse to load " + this.href);
+		return false; // no visiting
+	}
+}
+
+

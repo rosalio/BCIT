@@ -1,0 +1,35 @@
+<html>
+<head>
+<script>
+
+	timer = null;
+
+	function move()
+	{
+		document.getElementById("myimage").style.left = 
+			parseInt(document.getElementById("myimage").style.left) +
+				1 + "px";
+	}
+
+	window.onload=function()
+	{
+		document.getElementById("myimage").onmouseover=function()
+		{
+			if(timer == null)
+			{
+				timer = setInterval("move()", 10);
+			}else{ // already running
+				clearInterval(timer); 
+				timer = null;
+			}
+		}
+	}
+
+</script>
+</head>
+<body>
+
+<img src="cat.jpg" id="myimage" width="200" 
+	 style="position:absolute;left:10px"/>
+</body>
+</html>

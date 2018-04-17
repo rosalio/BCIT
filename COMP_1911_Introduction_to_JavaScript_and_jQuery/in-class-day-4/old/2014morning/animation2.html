@@ -1,0 +1,54 @@
+<html><head>
+<script>
+
+	var timer = null;
+	
+	function moveImage()
+	{
+		document.getElementById("dog").style.left = 
+			parseInt(document.getElementById("dog").style.left) +
+				1 + "px";
+				
+//alert(document.getElementById('t').style.color);
+//alert(shadeColor2(document.getElementById('t').style.color, 1));
+				
+		document.getElementById('t').style.color = 
+			shadeRGBColor(document.getElementById('t').style.color, 0.03);
+			
+			
+	}
+	
+	
+function shadeRGBColor(color, percent) {
+    var f=color.split(","),t=percent<0?0:255,p=percent<0?percent*-1:percent,R=parseInt(f[0].slice(4)),G=parseInt(f[1]),B=parseInt(f[2]);
+    return "rgb("+(Math.round((t-R)*p)+R)+","+(Math.round((t-G)*p)+G)+","+(Math.round((t-B)*p)+B)+")";
+}
+
+	
+	window.onload=function()
+	{
+		document.getElementById("dog").onclick=function()
+		{
+			if(timer == null)
+			{
+				timer = setInterval("moveImage();", 10);
+			}else{
+				clearInterval(timer);
+				timer = null;
+			}
+			
+			
+		}
+	}
+	
+	
+	
+
+</script>
+
+</head><body>
+
+<img src="dog.jpg" id="dog" height="100" style="position:absolute;top:10px;left:1px"/><br/>
+<p style="position:absolute;top:140px;color:#8e1a00" id="t">hello there!</p>
+
+</body></html>

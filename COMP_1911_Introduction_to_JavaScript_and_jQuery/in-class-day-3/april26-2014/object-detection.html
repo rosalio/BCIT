@@ -1,0 +1,37 @@
+<html><head>
+<script>
+
+window.onload=function()
+{
+	if(document.getElementById)
+	{
+		alert('get element by id');
+		document.getElementById("cat").src="dog.jpg";
+	}else if(document.all){
+		alert('all');
+		document.all['cat'].src="dog.jpg";
+	}else if(document.layers){
+		alert('layers');
+		document.layers['cat'].src = 'dog.jpg';
+	}else if(document.images){
+		alert('images 0');
+		document.images[0].src = 'dog.jpg';
+	}else if(document.images['cat']){
+		alert('images cat');
+		document.images['cat'].src = 'dog.jpg';
+	}else if(document.cat){
+		alert('cat');
+		document.cat.src='dog.jpg';
+	}
+}
+
+
+</script>	
+
+</head>
+<body>
+	<img src="cat.jpg" id="cat" name="cat" /><br/>
+	<img src="turtle.jpg"  /><br/>
+	<img src="bird.jpg"  />	
+</body>
+</html>

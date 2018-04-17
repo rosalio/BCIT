@@ -1,0 +1,35 @@
+<html><head>
+<style type="text/css">
+	img{width:100px}
+</style>
+<script type='text/javascript'>
+
+// 1
+jasonsTimer = null;
+
+function move(){
+	document.images[0].style.left = 
+	    parseInt(document.images[0].style.left) + 1 + 'px';
+}
+
+window.onload=function(){
+	document.images[0].onclick=function(){
+		// 2
+		if(jasonsTimer == null){
+			// 3
+			jasonsTimer = setInterval("move()", 10);
+		}else{ 
+			// 4
+			clearInterval(jasonsTimer);
+			jasonsTimer = null;
+		}
+	}
+}
+
+</script></head>
+<body>
+
+<img src="dog.jpg" style="left:12px;position:absolute;"/>
+	
+</body>
+</html>

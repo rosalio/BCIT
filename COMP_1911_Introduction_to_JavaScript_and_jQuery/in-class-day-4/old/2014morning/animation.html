@@ -1,0 +1,36 @@
+<html><head>
+<script>
+
+	var jasonsTimer = null;
+	
+	window.onload=function()
+	{
+		document.getElementById("start").onclick=function()
+		{	
+			if(jasonsTimer == null)
+			{
+				jasonsTimer = setInterval("alert('hi');", 2000);
+			}
+		}
+		
+		document.getElementById("stop").onclick=function()
+		{
+			clearInterval(jasonsTimer);
+			jasonsTimer = null;
+		}
+		
+	}
+	
+	
+	
+
+</script>
+
+</head><body>
+
+<input type="button" value="start" id="start"/>
+<input type="button" value="stop" id="stop"/>
+
+
+
+</body></html>

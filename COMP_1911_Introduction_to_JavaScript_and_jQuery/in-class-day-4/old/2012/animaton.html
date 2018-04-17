@@ -1,0 +1,24 @@
+<html><head>
+<style type="text/css">
+	img{width:100px}
+</style>
+<script type='text/javascript'>
+
+jasonsTimer = null;
+
+
+window.onload=function(){
+	
+	document.images[0].onclick=function(){
+
+		jasonsTimer = setInterval("document.images[0].style.left = parseInt(document.images[0].style.left) + 1 + 'px'", 10);
+	}
+}
+
+</script></head>
+<body>
+
+<img src="dog.jpg" style="left:12px;position:absolute;"/>
+	
+</body>
+</html>

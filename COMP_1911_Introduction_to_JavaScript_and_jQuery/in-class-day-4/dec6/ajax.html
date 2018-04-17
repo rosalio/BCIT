@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+
+	<script>
+
+	r = new XMLHttpRequest();
+	
+	window.onload=function(){
+	
+		document.getElementById("t").onclick=function(){
+	
+			r.open("GET", "school.txt", true);		
+
+			r.onreadystatechange=function(){
+				document.getElementById("t").value=r.responseText;
+			};
+			
+			r.send(null);
+		}
+	}
+	
+	
+	</script>
+</head>
+<body>
+
+<input type="text" id="t"/>
+
+</body>
+</html>

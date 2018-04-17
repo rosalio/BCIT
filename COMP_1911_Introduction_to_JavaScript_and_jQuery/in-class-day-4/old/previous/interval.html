@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+
+	// 1
+	jasonsTimer = null;
+
+	function changeColor()
+	{
+		par = document.getElementById('p');
+		
+		if(par.style.color != 'red'){
+			par.style.color = 'red';
+		}else{
+			par.style.color = 'black';
+		}
+	}
+
+	window.onload=function()
+	{
+		// 2
+		jasonsTimer = window.setInterval("changeColor()", 1000);
+		
+		document.getElementById('p').onclick=function()
+		{
+			// 3
+			clearInterval(jasonsTimer);
+			jasonsTimer = null;
+		}
+	}
+
+</script>
+</head>
+<body>
+
+<p id="p">Hello.</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+	<head>
+
+	<script>
+	
+	window.onload=function()	{
+		for(var i = 0; i < document.images.length; i++)	{
+			document.images[i].ondblclick=function()	{
+				this.style.borderStyle="solid";
+				this.style.borderColor="green";
+			}
+		}
+	}
+	
+	</script>
+	
+	</head>
+	<body>
+		<img src="cat.jpg"  /><br/>
+		<img src="turtle.jpg"  /><br/>
+		<img src="dog.jpg"  />
+	
+	</body>
+	</html>

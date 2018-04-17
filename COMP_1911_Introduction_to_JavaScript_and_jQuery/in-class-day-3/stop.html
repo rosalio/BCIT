@@ -1,0 +1,33 @@
+<html>
+	<head>
+
+	<script>
+	
+	window.onload=function(){
+	
+		document.links[2].onclick=function(){
+			//alert(this.href);
+			return false;
+		}
+		
+		document.forms[0].onsubmit=function(){
+			return false;
+		}
+	}
+	</script>
+	
+	</head>
+	<body>
+		
+		<a href="http://pgatour.com">golf</a> | 
+		<a href="http://nhl.com">hockey</a> | 
+		<a href="http://nba.com">basketball</a> | 
+		<a href="http://nfl.com">football</a> | 
+		
+	<form action="whatever.php">
+		username:<input type="text" id="username"/><br/>
+		<input type="submit"/>
+	</form>
+		
+	</body>
+	</html>

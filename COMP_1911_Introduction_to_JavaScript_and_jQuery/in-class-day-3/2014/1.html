@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+window.onload=function()
+{
+	for(i = 0; i < document.images.length; i++)
+	{
+		document.images[i].onclick=function()
+		{
+			this.src = "bird.jpg";
+		}
+	}
+}
+</script>
+</head>
+<body>
+<img src="cat.jpg"/>
+<img src="dog.jpg"/>
+<img src="turtle.jpg"/>
+</body>
+</html>

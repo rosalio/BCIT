@@ -1,0 +1,28 @@
+<html>
+	<head>
+
+	<script>
+	
+	function disappear()
+	{
+		alert(x); // javascript closure
+		this.style.display="none";
+	}
+	
+	window.onload=function()
+	{
+		x = "hello";
+	
+		for (i = 0; i < document.images.length; i++) {
+			document.images[i].onclick=disappear;
+		}
+	}	
+	</script>
+	</head>
+	<body>
+		<img src="cat.jpg"  /><br/>
+		<img src="turtle.jpg"  /><br/>
+		<img src="dog.jpg"  />
+	
+	</body>
+	</html>

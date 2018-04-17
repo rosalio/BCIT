@@ -1,0 +1,67 @@
+<html><head>
+	<script>
+	window.onload=function(){
+	
+		document.forms[0].onsubmit=function(){
+		
+		
+		
+			for(i = 0; i < this.elements.length; i++)
+			{
+				if(this.elements[i].className.indexOf("required") != -1)
+				{
+					if(this.elements[i].value == "")
+					{
+						alert("MISSING REQUIRED FIELD");
+						this.elements[i].focus();
+						this.elements[i].style.backgroundColor="pink";
+						return false;
+					}else{
+					
+					}
+				}
+			}
+		
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			if(isNaN(document.getElementById("birthyear").value))
+			{
+				alert("birth year must be a number");
+				document.getElementById("birthyear").select();
+				return false;
+			}
+			
+			
+			if(document.getElementById("email").value.indexOf("@") == -1)
+			{
+				alert("your email address doesn't have @");
+				document.getElementById("email").select();
+				return false;
+			}			
+			
+			
+		}
+	}
+	</script>
+	
+	</head>
+	<body>
+	<form action="whatever.php">
+		username*:  <input type="text" class="required" id="username"/><br/>
+		birth year: <input type="text" class="numeric"  id="birthyear"/><br/>
+		email*:     <input type="text" class="required email"  id="email"/><br/>
+		home page*: <input type="text" class="required url"  id="homepage"/><br/>
+		<input type="submit"/>
+	</form>
+		
+	</body>
+	</html>

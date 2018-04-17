@@ -1,0 +1,22 @@
+<html><head>
+
+<script>
+onload=function(){
+	for(i=0; i<document.images.length; i++){
+		document.images[i].onmouseover=function(){
+			this.style.width = "300px";
+		}
+		document.images[i].onmouseout=function(){
+			this.style.width = "50px";
+		}		
+	}
+}
+</script>	
+
+</head>
+<body>
+	<img src="cat.jpg"  /><br/>
+	<img src="turtle.jpg"  /><br/>
+	<img src="bird.jpg"  />	
+</body>
+</html>

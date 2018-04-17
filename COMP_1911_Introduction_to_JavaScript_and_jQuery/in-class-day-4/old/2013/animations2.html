@@ -1,0 +1,25 @@
+<html><head>
+
+<script>
+
+	timer = "stopped";
+	
+	window.onload=function()
+	{
+		document.images[0].onclick=function()
+		{
+			if(timer=="stopped")
+			{
+				timer = window.setInterval("document.images[0].style.left = parseInt(document.images[0].style.left)+1+'px';",100);
+			}else{ // Timer is already running
+				window.clearInterval(timer);
+				timer = "stopped";
+			}
+		}
+	}
+	
+</script>
+
+</head><body>
+	<img src = "dog.jpg" style = "left: 10px; position: absolute"/>
+</body></html>

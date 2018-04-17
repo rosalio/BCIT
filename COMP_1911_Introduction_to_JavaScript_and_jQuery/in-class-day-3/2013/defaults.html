@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script> 	
+
+			window.onload=function()
+			{
+				document.links[1].onclick=function()
+				{
+					alert('hi!');
+					return false;
+				}
+				document.forms[0].onsubmit=function()
+				{
+					return false;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<a href="http://nhl.com">hockey</a> | 
+		<a href="http://pgatour.com">golf</a> | 
+		<a href="http://nfl.com">football</a> | 
+		<form action="pretend.php">
+			<input type="submit"/>
+		</form>
+	
+	
+	</body>
+	</html>

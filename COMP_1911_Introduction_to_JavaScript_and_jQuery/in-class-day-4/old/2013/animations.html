@@ -1,0 +1,41 @@
+<html><head>
+
+<script>
+
+
+	function move()
+	{
+		document.images[0].style.left = 
+			parseInt(document.images[0].style.left) + 1 + "px";
+	}
+
+
+	var jasonsTimer = null;
+
+
+	window.onload=function()
+	{
+		// document.images[0].onclick=move;
+	
+		document.images[0].onclick=function(){
+
+			if(jasonsTimer == null)
+			{
+				jasonsTimer = setInterval("move();", 10);		
+			}else{
+				clearInterval(jasonsTimer);
+				jasonsTimer = null;
+			}
+
+		}
+
+	}
+
+</script>
+
+</head><body>
+
+<img src='dog.jpg' style="height:100px;left:10px;position:absolute;"/><br/>
+
+
+</body></html>

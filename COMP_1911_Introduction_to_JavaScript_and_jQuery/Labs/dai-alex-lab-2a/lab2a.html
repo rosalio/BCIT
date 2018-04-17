@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>COMP 1911 Lab 2a</title>
+    <script>
+        var userAgent = navigator.userAgent.toLowerCase();
+        var browser = {
+            chrome:/chrome/.test(userAgent)
+        };
+
+        window.onload = function() {
+            for (i = 0; i < document.getElementsByTagName("img").length; i++) {
+                document.getElementsByTagName("img")[i].style.border = "solid green 2px";
+            }
+
+            if (browser.chrome) {
+                for (i = 0; i < document.images.length; i++) {
+                    document.images[i].style.width = "100px";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="a.jpg" alt=""/>
+    <img src="b.jpg" alt=""/>
+    <img src="c.jpg" alt=""/>
+    <img src="d.jpg" alt=""/>
+</body>
+</html>

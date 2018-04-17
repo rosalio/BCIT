@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+
+	<script>
+		function move(){
+			im = document.images[0];
+			im.style.left = parseInt(im.style.left) +1 + "px";
+		}
+		
+		window.onload=function(){
+			setInterval("move();", 10);
+		}
+	
+	</script>
+</head>
+<body>
+
+<img src="cat.jpg" style="position:absolute; left:10px"/>
+
+</body>
+</html>

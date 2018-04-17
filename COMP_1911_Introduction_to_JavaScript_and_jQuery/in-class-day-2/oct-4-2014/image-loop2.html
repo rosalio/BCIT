@@ -1,0 +1,27 @@
+<html><head><script>
+
+window.onload=function()
+{
+	for(i = 0; i < document.getElementsByTagName('img').length; i++)
+	{
+		// DOM 1
+		document.getElementsByTagName('img')[i].style.borderStyle="solid";
+		document.getElementsByTagName('img')[i].width=120;	
+	}
+	
+	for(j = 0; j < document.getElementsByTagName("p").length; j++)
+	{
+		document.getElementsByTagName("p")[j].style.color = "red";
+	}
+}
+</script>
+</head>
+<body>
+<img src="dog.jpg"/><br/> <!-- document.images[0] -->
+<img src="fish.jpg"/><br/><!-- document.images[1] -->
+<p>hi</p>
+<img src="cat.jpg"/><br/><!-- document.images[2] -->
+<img src="turtle.jpg"/><br/><!-- document.images[3] -->
+<p>bye</p>
+<img src="bird.jpg"/><br/><!-- document.images[4] -->
+</body></html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+
+<script>
+window.onload=function(){
+	document.links[1].onclick=function(){
+		return false;
+	}
+	
+	
+	document.forms[0].onsubmit=function(){
+		
+		
+		for(i = 0; i < this.elements.length; i++)
+		{
+			if(this.elements[i].className.indexOf("required") != -1)
+			{
+				
+			}
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		if(document.getElementById("u").value == "")
+		{
+			alert("missing username");
+			document.getElementById("u").focus();
+			document.getElementById("u").style.backgroundColor="yellow";
+			return false;
+		}else{
+			document.getElementById("u").style.backgroundColor="white";
+		}
+		
+		if(isNaN(document.getElementById("y").value))
+		{
+			document.getElementById("y").select();
+			return false;
+		}
+		
+		
+	}
+}
+
+
+
+</script>
+
+</head>
+<body>
+
+<form action="whatever.php">
+	username:
+	<input type="text" class="required" name="u" id="u"/><br/>
+	
+
+	year born:
+	<input type="text" class="required number" name="y" id="y"/><br/>
+	
+	email address:
+	<input type="text" class = "email required" name="e" id="e"/><br/>
+	
+	
+	home page:
+	<input type="text" class="url required" name="w" id="w"/><br/>	
+	
+	<input type="submit"/><br/>
+</form>
+
+<a href="http://www.nhl.com">hockey</a> | 
+<a href="http://www.pgatour.com">golf</a> | 
+<a href="http://www.mlb.com">baseball</a> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+	<head>
+
+	<script>
+	
+window.onload=function(){
+	var bottomImages = 
+	 document.getElementById("bottom").getElementsByTagName("img");
+	
+	for(i = 0; i < bottomImages.length; i++){
+		bottomImages[i].onmouseout = function(){
+			this.src="fish.jpg";
+		}
+	}
+	
+	var par=document.getElementsByTagName("p");
+	for(i=0;i<par.length;i++)
+	{
+		par[i].ondblclick=function(){
+			this.style.color="red";
+			this.style.display="none";
+		}
+	}
+}
+	
+	
+	</script>
+	
+	</head>
+	<body>
+		<div id="top">
+			<img src="cat.jpg"  /><br/>
+			<img src="bird.jpg"  /><br/>
+		</div>
+		<div id="bottom">
+		
+			<img src="turtle.jpg"  /><br/>
+			<p>hello</p>
+			<img src="dog.jpg"  />
+			<p>goodbye</p>	
+		</div>
+	</body>
+	</html>

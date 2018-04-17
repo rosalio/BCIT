@@ -1,0 +1,21 @@
+<html><head>
+<script>
+
+	kph = "-20";
+	
+	if(isNaN(kph)){
+		alert(kph + " is not a number");
+	}else if(kph > 100){
+		alert(kph + " too fast");
+	}else if(kph > 60){
+		alert(kph + " ok for highway");
+	}else if(kph > 30){
+		alert(kph + " ok for road");
+	}else if(kph >= 0){
+		alert(kph + " too slow");
+	}else{
+		alert("impossible to go " + kph);
+	}
+	
+</script>
+</head></body></html>

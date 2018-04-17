@@ -1,0 +1,57 @@
+<html><head>
+<script type='text/javascript'>
+
+window.onload=function() {
+	
+	document.forms[0].onsubmit=function(){
+	
+		elements = this.elements;
+	
+		for(i = 0; i < elements.length; i++){
+			if(elements[i].className.indexOf("required") != -1){
+				if(elements[i].value.length < 1){
+					alert('value cannot be empty');
+					elements[i].style.backgroundColor = 'yellow';
+					elements[i].focus();
+					return false;
+				}else{
+					elements[i].style.backgroundColor = 'white';
+				}
+			}
+			
+			if(elements[i].className.indexOf("number") != -1){
+				if(isNaN(elements[i].value)){
+					alert(elements[i].value + " is not a number");
+					elements[i].style.backgroundColor = 'pink';
+					elements[i].select();					
+					return false;
+				}else{
+					elements[i].style.backgroundColor = 'white';
+				}
+			}
+			
+			/*if(elements[i].className.indexOf("email") != -1){
+				if(elements[i].value.indexOf("@")
+			}*/
+			
+			
+			
+		}
+	}
+}
+
+</script></head><body>
+
+	<form action="x.php">
+		username*:   <input class="required" type='text'/><br/>
+		email*:      <input class="required email" type='text'/><br/>
+		birth year*: <input class="number required" type='text'/><br/>
+		shoe size:   <input class="number" type='text'/><br/>
+		web page*:   <input class="url required" type='text'/><br/>
+		
+		
+		<input type='submit'/>
+	</form>
+
+</body>
+</html>

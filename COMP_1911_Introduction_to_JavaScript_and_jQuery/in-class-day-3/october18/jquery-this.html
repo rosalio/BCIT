@@ -1,0 +1,24 @@
+<html><head>
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+	
+$(document).ready(function(){
+	$('img').click(function(){
+		$(this).attr('height', '100');
+		//$(this).css('height', '200%');
+	});
+	
+	//$('img').click(); // performs the click on every image
+});
+	
+</script>
+
+</head><body>
+	<img src='cat.jpg' id='cat'/>
+	<img src='dog.jpg' class='x'/>
+	<img src='turtle.jpg'/>
+	<img src='fish.jpg' class='x'/>
+	<img src='bird.jpg'/>
+	
+</body></html>

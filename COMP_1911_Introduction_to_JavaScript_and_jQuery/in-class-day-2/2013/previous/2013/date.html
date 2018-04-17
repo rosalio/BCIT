@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+
+	newYearsEve      = new Date(2053,11,31,23,59,59);
+	today            = new Date();
+	
+	millisecondsLeft = newYearsEve - today;
+	
+	secondsLeft      = millisecondsLeft / 1000;
+	minutesLeft      = secondsLeft      / 60;
+	hoursLeft        = minutesLeft      / 60;
+	daysLeft         = hoursLeft        / 24;
+	weeksLeft        = daysLeft         / 7;
+	alert(weeksLeft.toFixed(1) + " weeks remaining");
+
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,40 @@
+1. What is jsfiddle and why use it? What is your username there?
+
+jsfiddle is a browser based javascript IDE and web playground for developers. It allows users to edit javascript, css, and HTML online and see the results of executing the codes. The codes can be shared with others or embed into personal blogs. By using this tool, javascript developers can spot and resolve bugs.
+
+My username of jsfiddle is rosalio83.
+
+
+
+2. What are five very good Firefox or Chrome plugins for a javascript developer to use, along with a brief description of each in your own words.
+
+(1) Simple 3D Coverflow
+It is a fully responsive media 3D coverflow plugin. We can use it to display media content from a 3D perspective. It runs on all major browsers and mobile devices.
+
+(2) Simple Paginator
+It is a lightweight javascript tool based on jQuery. It helps users to create javascript pagination easily and quickly.
+
+(3) JSONViewer
+It is a tool to visualize ugly JSON text files in an interactive pleasant way.
+
+(4) jQuery Rain and Snow
+It can display 3 effects on screen: rain, snow and baloon.
+
+(5) Responsive Youtube & Vimeo Playlist
+It provides a professional, mobile-friendly solution for streaming online video players on our websites.
+
+
+
+3. List three things that JavaScript is not permitted to do, which we have not covered yet in class.
+
+(1) Javascript cannot access database. It needs server-side script
+
+(2) Javascript has no graphics capabilities. It cannot actually draw things
+
+(3) Javascript has no networking support. It cannot engage in any network activity of its own.
+
+
+
+4. Write a one-page HTML page with JavaScript in its head section that alerts a couple properties of the document object (investigate this yourself), and also has JavaScript in its body section that uses DOM 0 to change the document.body.bgColor of the page. Name this HTML page with your own name
+
+Please see the HTML file in the same folder.

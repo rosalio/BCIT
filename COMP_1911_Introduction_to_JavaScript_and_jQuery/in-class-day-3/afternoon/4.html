@@ -1,0 +1,40 @@
+<html>
+	<head>
+
+	<script>
+	
+	window.onload=function()
+	{
+		someImages = 
+		 document.getElementById("bottom").getElementsByTagName("img");
+		 
+		for(i = 0; i < someImages.length; i++)
+		{
+			someImages[i].onmouseout=function()
+			{
+				this.width=100;				// image attribute
+				this.style.width="400px";	// css property
+			}
+		}
+	}
+	
+	</script>
+	</head>
+	<body>
+	
+	<div id="top">
+		<img src="cat.jpg"  /><br/>
+		<p>hello</p>
+		<img src="turtle.jpg"  /><br/>
+	</div>	
+	
+	<div id="bottom">	
+		<img src="dog.jpg"  />
+		<img src="bird.jpg"  />
+		<p>goodbye</p>
+		<img src="fish.jpg"  />
+	</div>
+	
+	<p>the end</p>
+	</body>
+	</html>

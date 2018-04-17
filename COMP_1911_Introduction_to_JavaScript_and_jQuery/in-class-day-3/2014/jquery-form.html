@@ -1,0 +1,46 @@
+<html>
+<head>
+
+<script src="jquery-1.11.0.min.js"></script>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+
+<script>
+
+window.onload=function()
+{
+	$('form').validate();
+}
+
+
+</script>
+
+</head>
+<body>
+
+<form action="whatever.php">
+	username:
+	<input type="text" class="required" name="u" id="u"/><br/>
+	
+
+	year born:
+	<input type="text" class="required number" name="y" id="y"/><br/>
+	
+	email address:
+	<input type="text" class = "email required" name="e" id="e"/><br/>
+	
+	
+	home page:
+	<input type="text" class="url required" name="w" id="w"/><br/>	
+	
+	<input type="submit"/><br/>
+</form>
+
+<a href="http://www.nhl.com">hockey</a> | 
+<a href="http://www.pgatour.com">golf</a> | 
+<a href="http://www.mlb.com">baseball</a> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html><head>
+<script type='text/javascript'>
+
+
+
+window.onload = function(){
+
+	if(document.getElementById){
+		alert('getElementById');
+		im = document.getElementById('b');
+		// plug IE memory leaks if IE
+	}else if(document.all){
+		alert('all');
+		im = document.all['b'];
+	}else if(document.layers){
+		alert('layers');
+		im = document.layers['b'];
+	}else if(document.images){
+		alert('images');
+		im = document.images['b'];
+	}else if(document.body.b){
+		alert('document.b');
+		im = document.body.b;
+	}else{
+		im = null;
+	}
+	
+	
+	if(im != null){
+		im.onmouseover=function(){
+			this.width = 100;
+		}
+	}
+	
+}
+</script></head>
+<body>
+	<img src="bird.jpg" id='b' name='b'/>
+
+</body>
+</html>

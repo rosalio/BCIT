@@ -1,0 +1,57 @@
+<html><head>
+<style type="text/css">img{width:100px}</style>
+<script>
+window.onload=function()
+{
+	topPar  = document.createElement('p');
+	topText = document.createTextNode('All pictures');
+	topPar.appendChild(topText);
+	
+	document.body.appendChild(topPar);
+	
+	topDiv = document.createElement('div');
+	document.body.appendChild(topDiv);
+	
+	image1 = document.createElement('img');
+	image1.setAttribute('src', 'dog.jpg');
+
+	image2 = document.createElement('img');
+	image2.setAttribute('src', 'cat.jpg');
+	
+	image2.setAttribute("style", "border:red solid 2px");
+	
+	topDiv.appendChild(image1);
+	topDiv.appendChild(image2);
+	
+	topDiv.id = "all";
+	
+	document.body.appendChild(topDiv);
+	//
+		topParx  = document.createElement('p');
+	topTextx = document.createTextNode('Fave pictures');
+	topParx.appendChild(topTextx);
+	
+	document.body.appendChild(topParx);
+	
+	topDivx = document.createElement('div');
+	
+	topDivx.id = "fave";
+	
+	document.body.appendChild(topDivx);
+
+	document.body.appendChild(topDivx);
+
+	ims = document.getElementById("all").getElementsByTagName("img");
+
+	for(i = 0; i < ims.length; i++)
+	{
+		ims[i].onclick=function(){
+			document.getElementById("fave").appendChild(this);
+			this.onclick=null;
+		}
+	}
+	
+}
+</script></head><body>
+	
+</body></html>

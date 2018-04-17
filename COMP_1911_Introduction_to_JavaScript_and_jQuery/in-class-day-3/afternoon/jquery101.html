@@ -1,0 +1,46 @@
+<html>
+	<head>
+
+	<script src="jquery-2.1.0.min.js"></script>
+	
+	<script>
+	
+	$(document).ready(function(){
+	
+		$('img').css('border', 'red 2px solid');
+		
+		$('img').click(function(){
+			$(this).css('border-style', 'none');
+		});
+		
+		$('img:first').click();
+	
+	});
+	
+	</script>
+	
+	</head>
+	<body>
+	
+	<div id="top">
+		<img src="cat.jpg" name="cat" id="cat" class="meow" /><br/>
+		<p>hello</p>
+		<img src="turtle.jpg" class="beach resizable" /><br/>
+	</div>	
+	
+	<div id="bottom">	
+		<img src="dog.jpg" />
+		<img src="bird.jpg"  class="resizable" />
+		<p>goodbye</p>
+		<img src="fish.jpg" />
+	</div>
+	
+	<p>the end</p>
+	
+	
+	
+	
+	
+	
+	</body>
+	</html>

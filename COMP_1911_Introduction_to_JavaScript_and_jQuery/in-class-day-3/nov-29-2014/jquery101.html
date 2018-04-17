@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<script src="jquery-1.11.1.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+		$('img').click(function(){
+			$(this).attr('src', 'cat.jpg');
+			$(this).css('margin', '20px');
+		});
+		
+		$('img:nth-child(2)').click();
+	});
+	
+	</script>
+</head>
+<body>
+
+<img src="dog.jpg" id="a"/>
+<img src="bird.jpg" id="b" class="d"/>
+<img src="turtle.jpg" id="c" class="d"/>
+
+
+</body>
+</html>

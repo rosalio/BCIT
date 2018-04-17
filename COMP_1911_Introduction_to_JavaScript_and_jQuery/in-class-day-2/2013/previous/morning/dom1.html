@@ -1,0 +1,43 @@
+<html>
+<head>
+
+<script>
+
+
+
+</script>
+
+</head>
+<body>
+	<img src="cat.jpg"  id="image1">
+	<p>hi</p>
+	<img src="dog.jpg"  id="image2">
+	<p>whatever</p>
+	<img src="fish.jpg" id="image3">
+	<p>the end</p>
+	<p>bye</p>
+	
+<script>
+	
+	for(i = 0; i < document.images.length; i++)
+	{
+		document.images[i].width = 100;
+	}
+	
+	for(j = 0; j < document.getElementsByTagName("img").length;j++)
+	{
+		document.getElementsByTagName("img")[j].src="bird.jpg";
+	}
+	
+	for(k = 0; k < document.getElementsByTagName("p").length;k++)
+	{
+		document.getElementsByTagName("p")[k].style.color='green';
+	}
+	
+	alert(document.getElementById('image2').id);
+</script>	
+	
+
+
+</body>
+</html>

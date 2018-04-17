@@ -1,0 +1,41 @@
+<html>
+	<head>
+
+	<script>
+	
+	window.onload = function ()
+	{
+		var myImages = document.getElementsByTagName('img');
+		
+		for (i=0; i < myImages.length; i++)
+		{	
+			if(myImages[i].className.indexOf('resizable') >= 0)
+			{
+				myImages[i].onclick = function ()
+				{
+					this.width = Math.round(this.width/2);
+				}	
+			}
+		}
+	}
+	
+	</script>
+	</head>
+	<body>
+	
+	<div id="top">
+		<img src="cat.jpg" class="meow" /><br/>
+		<p>hello</p>
+		<img src="turtle.jpg" class="beach resizable" /><br/>
+	</div>	
+	
+	<div id="bottom">	
+		<img src="dog.jpg" />
+		<img src="bird.jpg"  class="resizable" />
+		<p>goodbye</p>
+		<img src="fish.jpg" />
+	</div>
+	
+	<p>the end</p>
+	</body>
+	</html>

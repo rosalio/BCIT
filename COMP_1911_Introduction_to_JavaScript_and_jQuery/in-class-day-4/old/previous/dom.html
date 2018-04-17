@@ -1,0 +1,33 @@
+<html>
+<head>
+
+<script>
+
+function change()
+{
+	this.src="dog.jpg";
+}
+
+window.onload=function()
+{
+	div = document.createElement("p");
+	div.setAttribute("width", "500px");
+	div.setAttribute("height", "500px");
+	div.setAttribute("style", "background-color:yellow");
+	
+	t = document.createTextNode("hi");
+	div.appendChild(t);
+	
+	im = document.createElement("img");
+	im.src="cat.jpg";
+	div.appendChild(im);
+	
+	im.onclick=change;
+	
+	document.body.appendChild(div);
+}
+
+</script>
+</head>
+<body></body>
+</html>

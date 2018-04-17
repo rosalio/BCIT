@@ -1,0 +1,39 @@
+<html><head>
+<script>
+
+window.onload = function() {
+
+	var myimage;
+
+	if(document.getElementById){
+		alert("document.getElementById");
+		myimage = document.getElementById('cat');
+	}else if(document.all){
+		alert("all");
+		myimage = document.all['cat'];
+	}else if(document.layers){
+		alert("layers");
+		myimage = document.layers;
+	}else if(document.images){
+		alert("images");
+		myimage = document.images[0];
+	}else if(document.cat){
+		alert("body.cat");
+		myimage = document.cat;
+	}else{
+		alert('upgrade your browser');
+	}
+	
+	myimage.src='dog.jpg';
+	
+	
+}
+
+	
+
+</script>
+
+</head><body>
+	<img src='cat.jpg' id="cat" name="cat"/>
+	
+</body></html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+	today = new Date();
+	xmas  = new Date(2014, 11, 25, 5, 30, 00);
+	
+	milliseconds = xmas - today;
+	
+	seconds      = milliseconds / 1000;
+	minutes      = seconds      / 60;
+	hours        = minutes      / 60;
+	days         = hours        / 24;
+	
+	alert("there are " + days.toFixed(2)  + " until xmas");
+	alert("there are " + Math.round(days) + " until xmas");
+</script>
+</head>
+<body>
+<!--	<img src='cat.jpg'/>
+	<img src='dog.jpg'/>
+	<img src='bird.jpg'/>
+	<img src='fish.jpg'/> -->
+</body>
+</html>

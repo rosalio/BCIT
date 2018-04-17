@@ -1,0 +1,32 @@
+<html>
+	<head>
+
+	<script>
+	
+	
+	window.onload=function()
+	{
+		// Q: what does "this" mean?
+		// A: "this" is a reference to the current object
+		alert(this); // window
+	
+		document.images[0].onclick=function()
+		{
+			alert(this);
+		}
+	}
+	
+	</script>	
+	
+	</head>
+	<body>
+		<img src="cat.jpg"  /><br/>
+		<img src="turtle.jpg"  /><br/>
+		<img src="dog.jpg"  />
+	
+	
+
+	
+	
+	</body>
+	</html>

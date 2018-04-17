@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+<img src="cat.jpg"/>
+<img src="dog.jpg"/>
+<img src="fish.jpg"/>
+<script>
+
+
+// DOM 0
+for(i = 0; i < document.images.length;i++)
+{
+	document.images[i].style.border="solid red 2px";
+	document.images[i].width=40;
+}
+
+// DOM 1
+for(i = 0; i < document.getElementsByTagName("img").length;i++)
+{
+	document.getElementsByTagName("img")[i].style.margin="400px";
+}
+
+
+</script>
+</body>
+</html>

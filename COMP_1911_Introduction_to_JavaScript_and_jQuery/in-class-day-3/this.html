@@ -1,0 +1,23 @@
+<html>
+	<head>
+
+	</head>
+	<body>
+		<img src="cat.jpg"  /><br/>
+		<img src="turtle.jpg"  /><br/>
+		<img src="dog.jpg"  />
+		<script> 	
+
+			// "this" refers to the current object
+		
+			alert(this);	 // window
+			
+			document.images[0].onclick=function()
+			{
+				alert(this); // the first image on the document
+			}
+			
+		
+		</script>		
+	</body>
+	</html>

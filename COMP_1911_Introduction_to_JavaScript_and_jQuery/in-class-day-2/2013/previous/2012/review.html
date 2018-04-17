@@ -1,0 +1,30 @@
+<html><head>
+
+<script>
+// if and only if this is firefox, resize the images to 100px
+// in all cases, thick green border around paragraphs
+window.onload=function(){
+	if (navigator.userAgent.indexOf('irefox') >= 0 ){
+		for (i = 0; i < document.images.length; i++) {
+			document.images[i].width=100;
+		}	
+	}
+	
+	for (i = 0; i < document.getElementsByTagName('p').length; i++) {
+	
+		document.getElementsByTagName('p')[i].style.borderStyle = "solid";
+		document.getElementsByTagName('p')[i].style.borderColor = "green";
+	}
+}
+
+</script>
+</head>
+<body>
+
+<p>hello</p>
+<img src="dog.jpg"/>
+<p>the end</p>
+<img src="cat.jpg"/>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+	<head>
+
+	<script>
+	
+	window.onload=function()
+	{
+		p = document.getElementsByTagName("p");
+		
+		for(i = 0; i < p.length; i++)
+		{
+			p[i].onmouseover=function()
+			{
+				this.style.color="red";
+			}
+		}
+	}
+	
+	</script>
+	</head>
+	<body>
+	
+	<div id="top">
+		<img src="cat.jpg"  /><br/>
+		<p>hello</p>
+		<img src="turtle.jpg"  /><br/>
+	</div>	
+	
+	<div id="bottom">	
+		<img src="dog.jpg"  />
+		<img src="bird.jpg"  />
+		<p>goodbye</p>
+		<img src="fish.jpg"  />
+	</div>
+	
+	<p>the end</p>
+	</body>
+	</html>

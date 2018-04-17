@@ -1,0 +1,19 @@
+<html><head><script>
+
+	
+</script></head><body>
+	<img src='cat.jpg'/>
+	<img src='dog.jpg'/>
+	<img src='bird.jpg'/>
+	<img src='fish.jpg'/> 
+	<img src='turtle.jpg'/> 	
+<script>
+
+	// DOM 0
+	for(i = 0; i < document.images.length; i++)
+	{
+		alert("changing " + document.images[i].src + " to  turtle");
+		document.images[i].src="turtle.jpg";
+	}
+	
+</script></body></html>

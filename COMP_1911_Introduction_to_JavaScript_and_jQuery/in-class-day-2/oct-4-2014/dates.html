@@ -1,0 +1,18 @@
+<html><head><script>
+
+today = new Date();
+xmas  = new Date(2014, 11, 25);
+
+ms    = xmas - today;
+sec   = ms    / 1000;
+min   = sec   / 60;
+hours = min   / 60;
+days  = hours / 24;
+
+days2 = Math.round(days);
+days3 = days.toFixed(3);
+
+alert("there are " + days3 + " days until xmas");
+
+</script>
+</head></body></html>
