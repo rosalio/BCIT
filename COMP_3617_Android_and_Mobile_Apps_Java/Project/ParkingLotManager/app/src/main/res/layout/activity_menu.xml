@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".activity.MenuActivity">
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/dashboardButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp" />
+
+    <Button
+        android:id="@+id/eventReportButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/event_report"
+        android:background="@color/orange"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/dashboardButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/locationConfigButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/location_config"
+        android:background="@color/orange"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/eventReportButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/deviceConfigButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/device_config"
+        android:background="@color/orange"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/locationConfigButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/userConfigButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/user_config"
+        android:background="@color/orange"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/deviceConfigButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageButton
+        android:id="@+id/logoutImageButton"
+        android:src="@drawable/ic_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logoutLabelTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/logoutLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/log_out"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

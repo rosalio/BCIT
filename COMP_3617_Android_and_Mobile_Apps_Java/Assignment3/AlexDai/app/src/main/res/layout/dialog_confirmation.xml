@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/confirmationDialogBackgroundLayout"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/confirmationDialogHeaderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/do_you_want_to_remove_the_task"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/confirmationDialogSpacer"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp"
+        android:layout_alignLeft="@+id/confirmationDialogHeaderTextView"
+        android:layout_alignRight="@+id/confirmationDialogHeaderTextView"
+        android:layout_below="@+id/confirmationDialogHeaderTextView"
+        android:background="@color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/pickupReviewButtonsLinearView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmationDialogSpacer"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/no"
+            android:textStyle="bold"
+            android:id="@+id/confirmationDialogNoButton"
+            android:background="@color/green"
+            android:visibility="visible"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/yes"
+            android:textStyle="bold"
+            android:id="@+id/confirmationDialogYesButton"
+            android:background="@color/green"
+            android:visibility="visible"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

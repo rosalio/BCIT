@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/deviceIdLabelTextView"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:textSize="18sp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/deviceIdTextView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/deviceIdLabelTextView" />
+
+    <TextView
+        android:id="@+id/deviceIMEILabelTextView"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="@string/imei"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/deviceIdTextView" />
+
+    <TextView
+        android:id="@+id/deviceIMEITextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="000000000000000"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/deviceIMEILabelTextView"/>
+
+    <ImageButton
+        android:id="@+id/removeDeviceImageButton"
+        android:src="@drawable/ic_remove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"/>
+
+</RelativeLayout>

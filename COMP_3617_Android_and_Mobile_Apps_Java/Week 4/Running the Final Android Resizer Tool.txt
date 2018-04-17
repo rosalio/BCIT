@@ -1,0 +1,9 @@
+Download the jar file somewhere on your desktop (Eg: C:\Tools)
+
+cd to C:\Tools
+
+Open a command prompt
+
+To run the program
+
+java -jar "Final Android Resizer.jar"

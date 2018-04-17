@@ -1,0 +1,46 @@
+<resources>
+    <string name="add">Add</string>
+    <string name="app_name">Parking Lot Manager</string>
+    <string name="back">Back</string>
+    <string name="device_config">Device Config</string>
+    <string name="device_imei">Device IMEI</string>
+    <string name="event_report">Event Report</string>
+    <string name="name">Name:</string>
+    <string name="badgeId">Badge ID:</string>
+    <string name="admin">Admin</string>
+    <string name="id">ID:</string>
+    <string name="imei">IMEI:</string>
+    <string name="scan_badge">Scan Badge to Login</string>
+    <string name="no_data">No scan data received!</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="location_config">Location Config</string>
+    <string name="log_out">Log Out</string>
+    <string name="please_provide_imei">Please provide IMEI.</string>
+    <string name="save">Save</string>
+    <string name="user_config">User Config</string>
+
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="cancel">Cancel</string>
+    <string name="unauthorized_user">User is not authorized!</string>
+    <string name="unregistered_device">Device is not registered!</string>
+
+    <string name="multi">Multi</string>
+    <string name="code">Code:</string>
+    <string name="order">Order:</string>
+
+    <string name="type">Type</string>
+    <string name="make">Make</string>
+    <string name="model">Model</string>
+    <string name="plate">Plate</string>
+    <string name="tag">Tag</string>
+    <string name="arrival_time">Arrival Time</string>
+
+    <string name="check_in">Check In</string>
+    <string name="check_out">Check Out</string>
+    <string name="assigned">Assigned</string>
+    <string name="not_assigned">Not assigned</string>
+    <string name="tag_does_not_match">Tag does not match!</string>
+
+</resources>

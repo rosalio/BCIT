@@ -1,0 +1,45 @@
+<resources>
+    <string name="add">Add</string>
+    <string name="app_name">AlexDai</string>
+    <string name="cancel">Cancel</string>
+    <string name="category">Category</string>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="description">Description</string>
+    <string name="dueDate">Due Date</string>
+    <string name="home">Home</string>
+    <string name="personal">Personal</string>
+    <string name="priority">Priority</string>
+    <string name="reminder">Reminder</string>
+    <string name="save">Save</string>
+    <string name="status">Status</string>
+    <string name="title">Title</string>
+    <string name="work">Work</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="warning_message_title">Title cannot be empty!</string>
+    <string name="warning_message_description">Description cannot be empty!</string>
+    <string name="warning_message_due_date">Due date cannot be empty!</string>
+    <string name="warning_message_no_email_application">There are no email applications installed.</string>
+    <string name="send_email">Send email...</string>
+    <string name="email">Email</string>
+    <string name="do_you_want_to_remove_the_task">Do you want to remove this task?</string>
+
+    <string-array name="categories">
+        <item>Home</item>
+        <item>Personal</item>
+        <item>Work</item>
+    </string-array>
+
+    <string-array name="status">
+        <item>Completed</item>
+        <item>Pending</item>
+    </string-array>
+
+    <string-array name="priorities">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+</resources>

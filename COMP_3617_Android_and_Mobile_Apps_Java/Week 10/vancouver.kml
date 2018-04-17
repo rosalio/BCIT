@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.x"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>HSBC Bank locations in Vancouver</name>
+    <description><![CDATA[Find a HSBC branch at your location to save on banking fees and costs from using other banks]]></description>
+    <atom:link href="http://hsbc.banklocationmaps.com/" />  
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: Granville Street, Vancouver</name>
+        <description>
+          2735 Granville Street, V6H3J1, Vancouver, British Columbia, Landmark: Across from the Stanley Theatre, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1386705, 49.2612063,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: West 10th Avenue, Vancouver</name>
+        <description>
+          4498 West 10th Avenue, V6R2H9, Vancouver, British Columbia, Landmark: Safeway on 10th Avenue, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.2091386, 49.2638173,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: West 41st Avenue, Vancouver</name>
+        <description>
+          2164 West 41st Avenue, V6M1Z1, Vancouver, British Columbia, Landmark: Clock on Corner of W 41st &amp;amp; Yew, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1575976, 49.2346012,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: Denman Street, Vancouver</name>
+        <description>
+          1010 Denman Street, V6G2M5, Vancouver, British Columbia, Landmark: Coast Plaza Hotel, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1386129, 49.2892145,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: Pacific Boulevard, Vancouver</name>
+        <description>
+          1196 Pacific Boulevard, V6Z2X7, Vancouver, British Columbia, Landmark: Roundhouse Community Centre, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1212017, 49.2739721,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: West Broadway Street, Vancouver</name>
+        <description>
+          601 West Broadway Street, V5Z4C2, Vancouver, British Columbia, Landmark: 2 blocks from City Hall, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1179907, 49.2634241,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: Granville Street, Vancouver</name>
+        <description>
+          5688 Granville Street, V6M3C5, Vancouver, British Columbia, Landmark: Esso and Shell on the same intersection, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1393632, 49.2346455,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: Granville Street, Vancouver</name>
+        <description>
+          8118 Granville Street, V6P4Z4, Vancouver, British Columbia, Landmark: Next to Petro Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1403979, 49.2119998,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: Cambie Street, Vancouver</name>
+        <description>
+          5812 Cambie Street, V5Z3A8, Vancouver, British Columbia, Landmark: Across from Cambie side of Oakridge Centre Mall, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1159475, 49.2324081,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: W. Georgia St., Vancouver</name>
+        <description>
+          885 W. Georgia St., V6C3G1, Vancouver, British Columbia, Landmark: Across from the Vancouver Art Gallery, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.119255, 49.2837077,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC ATM Only, no branch office: West Georgia Street, Vancouver</name>
+        <description>
+          885 West Georgia Street, V6C3G1, Vancouver, British Columbia, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1197445, 49.2836617,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: West Hastings Street, Vancouver</name>
+        <description>
+          999 West Hastings Street, V6C1M3, Vancouver, British Columbia, Landmark: Marine Bldg and  Waterfront Centre, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.1169403, 49.2871187,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: West Georgia St., Vancouver</name>
+        <description>
+          1188 West Georgia St., V6E4A2, Vancouver, British Columbia, Landmark: Across  Fitness World, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.125174, 49.286686,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: Main Street, Vancouver</name>
+        <description>
+          608 Main Street, V6A2V3, Vancouver, British Columbia, Landmark: Close to Floata Restaurant, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.0997277, 49.2792834,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: Fraser Street, Vancouver</name>
+        <description>
+          6373 Fraser Street, V5W3A3, Vancouver, British Columbia, Landmark: Between Knight St &amp;amp;  Oak St on Vancouver side of the Fraser River, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.0907474, 49.2267225,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: 3366 Kingsway, Vancouver</name>
+        <description>
+          3366 Kingsway, V5R5L2, Vancouver, British Columbia, Landmark: Across from London Drugs, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.0340536, 49.2330972,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HSBC Branch &amp; ATM: East Hastings, Vancouver</name>
+        <description>
+          2590 East Hastings, V5K1Z3, Vancouver, British Columbia, Landmark: 3 blocks west of the PNE, Canada
+          &lt;br/&gt;
+          (&lt;a href="http://hsbc.banklocationmaps.com//canada/british_columbia_vancouver.html"&gt;more info&lt;/a&gt;)
+        </description>
+        <Point>
+          <coordinates>-123.0524426, 49.2809114,0</coordinates>
+        </Point>
+      </Placemark>
+  </Document>
+</kml>

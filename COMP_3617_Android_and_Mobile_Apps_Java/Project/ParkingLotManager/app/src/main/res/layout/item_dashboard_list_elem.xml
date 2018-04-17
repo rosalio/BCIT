@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/locationCodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:text="A001"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/vehicleInfoRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_toRightOf="@+id/locationCodeTextView">
+
+        <TextView
+            android:id="@+id/vehicleTypeLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/vehicleTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:text="Car"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/vehicleTypeLabelTextView" />
+
+        <TextView
+            android:id="@+id/vehicleModelLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/model"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/vehicleTypeTextView" />
+
+        <TextView
+            android:id="@+id/vehicleModelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CX5"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/vehicleModelLabelTextView" />
+
+        <TextView
+            android:id="@+id/vehicleMakeLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/make"
+            android:textStyle="bold"
+            android:layout_below="@+id/vehicleTypeLabelTextView"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/vehicleMakeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mazda"
+            android:layout_alignLeft="@+id/vehicleTypeTextView"
+            android:layout_alignBottom="@+id/vehicleMakeLabelTextView"
+            android:layout_alignTop="@+id/vehicleMakeLabelTextView"
+            android:layout_toRightOf="@+id/vehicleMakeLabelTextView"
+            android:layout_below="@+id/vehicleTypeTextView" />
+
+        <TextView
+            android:id="@+id/vehicleLicensePlateLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plate"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/vehicleMakeTextView"
+            android:layout_below="@+id/vehicleModelLabelTextView"
+            android:layout_alignLeft="@+id/vehicleModelLabelTextView" />
+
+        <TextView
+            android:id="@+id/vehicleLicensePlateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JWK 434"
+            android:layout_alignBaseline="@+id/vehicleLicensePlateLabelTextView"
+            android:layout_alignLeft="@+id/vehicleModelTextView"
+            android:layout_below="@+id/vehicleModelTextView"
+            android:layout_toRightOf="@+id/vehicleLicensePlateLabelTextView" />
+
+        <TextView
+            android:id="@+id/vehicleArrivalTimeLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/arrival_time"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/vehicleMakeLabelTextView"
+            android:layout_alignLeft="@+id/vehicleModelLabelTextView" />
+
+        <TextView
+            android:id="@+id/vehicleArrivalTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vehicleMakeLabelTextView"
+            android:layout_marginLeft="20dp"
+            android:layout_alignBaseline="@+id/vehicleArrivalTimeLabelTextView"
+            android:layout_toRightOf="@id/vehicleArrivalTimeLabelTextView"
+            android:text="2016-05-01 13:23:53" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

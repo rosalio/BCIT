@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/userIdLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:text="@string/id"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/userIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="100"
+        android:layout_toRightOf="@+id/userIdLabelTextView" />
+
+    <RelativeLayout
+        android:id="@+id/userInfoRelativeLayout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/userIsAdminCheckBox"
+        android:layout_toRightOf="@+id/userIdTextView">
+
+        <TextView
+            android:id="@+id/userNameLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alex Dai"
+            android:layout_toRightOf="@+id/userNameLabelTextView"/>
+
+        <TextView
+            android:id="@+id/userBadgeIdLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userNameLabelTextView"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentLeft="true"
+            android:text="@string/badgeId" />
+
+        <TextView
+            android:id="@+id/userBadgeIdTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userNameTextView"
+            android:layout_toRightOf="@+id/userBadgeIdLabelTextView"
+            android:text="00000" />
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/userIsAdminCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin"
+        android:clickable="false"
+        android:layout_toLeftOf="@+id/removeUserImageButton"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <ImageButton
+        android:id="@+id/removeUserImageButton"
+        android:src="@drawable/ic_remove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"/>
+
+</RelativeLayout>

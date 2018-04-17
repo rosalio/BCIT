@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="finalproject.comp3617.com.parkinglotmanager.activity.user.UserDetailActivity">
+
+    <EditText
+        android:id="@+id/userFirstNameEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="@string/first_name" />
+
+    <EditText
+        android:id="@+id/userLastNameEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userFirstNameEditText"
+        android:hint="@string/last_name" />
+
+    <EditText
+        android:id="@+id/userBadgeIdEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userLastNameEditText"
+        android:hint="@string/badgeId" />
+
+    <CheckBox
+        android:id="@+id/userIsAdminCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userBadgeIdEditText"
+        android:text="@string/admin" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>
