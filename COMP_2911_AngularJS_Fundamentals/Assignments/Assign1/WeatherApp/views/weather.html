@@ -1,0 +1,17 @@
+﻿<h1 style="margin-left: 50px;">{{cityName}}</h1>
+<table>
+    <tr>
+        <td colspan="3" class="tableRow"></td>
+        <td class="tableRow" style="font-weight:bold">High</td>
+        <td class="tableRow" style="font-weight:bold">Low</td>
+    </tr>
+    <tr  ng-repeat="fc in cityData">
+        <td class="tableRow">{{fc.date}}</td>
+        <td class="tableRow"><img src="http://l.yimg.com/a/i/us/we/52/{{fc.code}}.gif"></td>
+        <td class="tableRow">{{fc.text}}</td>
+        <td class="tableRow" ng-if="temperatureUnit==='fahrenheit'">{{fc.high}}</td>
+        <td class="tableRow" ng-if="temperatureUnit==='celsius'">{{fc.highCelsius}}</td>
+        <td class="tableRow" ng-if="temperatureUnit==='fahrenheit'">{{fc.low}}</td>
+        <td class="tableRow" ng-if="temperatureUnit==='celsius'">{{fc.lowCelsius}}</td>
+    </tr>
+</table>

@@ -1,0 +1,42 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+        var myApp = angular.module('myApp', []);
+        myApp.controller('ExampleController', ['$scope', function ($scope) {
+            $scope.update = function (input) {
+                $scope.mailService = "";
+            }
+        }]);
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="ExampleController">
+    <form name="myForm">
+        Mail hard copy?
+        <input name="mailHardCopy" type="checkbox" ng-model="checked" ng-change="update(checked)" required><br />
+        <span ng-show="myForm.mailHardCopy.$valid">Mail hard copy selected!</span>
+        <span ng-show="!myForm.mailHardCopy.$valid">Mail hard copy not selected!</span>
+        <br />
+
+        Select Mail Service:
+        <select name="mailService" id="transferTo" ng-disabled="!checked" ng-model="mailService"
+                ng-required="!mailService">
+            <option>UPS</option>
+            <option>Fedex</option>
+        </select>
+        <br />
+        myForm.mailHardCopy.$valid = {{myForm.mailHardCopy.$valid}}<br>
+        myForm.mailHardCopy.$error = {{myForm.mailHardCopy.$error}}<br>
+        myForm.mailService.$valid = {{myForm.mailService.$valid}}<br>
+        myForm.mailService.$error = {{myForm.mailService.$error}}<br>
+        myForm.$valid = {{myForm.$valid}}<br>
+        <br />
+        <!-- Only show if checkbox is checked and mailService is selected -->
+        <div ng-show="checked && mailService" ng-disabled="!checked">
+            Thank you for choosing {{mailService}}.
+        </div>
+    </form>
+</body>
+</html>

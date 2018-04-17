@@ -1,0 +1,15 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Starting Angular</title>
+</head>
+<body ng-app='myApp'>
+    <div ng-controller="AppCtrl">
+        <div ng-include="'./views/partialView.html'"></div>
+        <div ng-include="'./views/anotherPartial.html'"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

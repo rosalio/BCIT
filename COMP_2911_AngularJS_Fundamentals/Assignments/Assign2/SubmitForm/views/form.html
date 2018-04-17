@@ -1,0 +1,32 @@
+﻿<form name="myForm" class="css-form">
+    <table>
+        <tr>
+            <td><label for="username" style="width:500px;">Name:</label></td>
+            <td><input type="text" name="username" ng-model="username" required></td>
+            <td><span class="errorMsg" ng-show="myForm.username.$error.required && myForm.username.$dirty">Name is required!</span></td>
+        </tr>
+        <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" name="password" ng-model="password" required ng-minlength="8" ng-maxlength="20"></td>
+            <td>
+                <span class="errorMsg" ng-show="myForm.password.$error.required && myForm.password.$dirty">Password is required!</span>
+                <span class="errorMsg" ng-show="!myForm.password.$error.required && (myForm.password.$error.minlength || myForm.password.$error.maxlength) && myForm.password.$dirty">Passwords must be between 8 and 20 characters!</span>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="verifiedPassword">Password verify:</label></td>
+            <td><input ng-class="{'redBg':!match}" type="password" name="verifiedPassword" ng-model="verifiedPassword" required ng-change="checkPassword()"></td>
+            <td>
+                <span class="errorMsg" ng-show="myForm.verifiedPassword.$error.required && myForm.verifiedPassword.$dirty">Please verify your password!</span>
+                <span class="errorMsg" ng-show="!myForm.verifiedPassword.$error.required && !match">Passwords don't match!</span>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button name="submitForm" ng-disabled="!myForm.$valid || !match" ng-click="submitForm()">Submit</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</form>

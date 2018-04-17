@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>Starting Angular</title>
+</head>
+<!-- The ng-app directive triggers load and setup of AngularJS
+     after the DOM is loaded.
+     It sets the tag as the root of the AngularJS app.  -->
+<body ng-app="cardApp">
+<!-- Identify the controller and model to be used. -->
+    <div ng-controller="MainController">
+        <!-- The ng-bind gets data from the model. -->
+        <h1 ng-bind="greeting"></h1>
+        <table>
+            <tr><th>Number</th><th>Suit</th></tr>
+            <!-- Populate the HTML with each object in the cards model. -->
+            <tr ng-repeat="card in cards">
+                <td ng-bind ="card.number"></td>
+                <td ng-bind ="card.suit"></td>
+            </tr>
+        </table>
+        <br />
+        <ul ng-repeat="card in cards">
+            <li>{{card.number}} {{card.suit}}</li>
+        </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+</body>
+</html>

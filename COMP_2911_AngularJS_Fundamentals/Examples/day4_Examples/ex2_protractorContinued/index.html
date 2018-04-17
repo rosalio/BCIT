@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Starting Angular</title>
+</head>
+<!-- Notice here that ng-app references our 'myApp' module. -->
+<body ng-app='myApp' ng-controller="AppCtrl">
+    <h1 ng-bind="title"></h1>
+
+    <!-- Name input. -->
+    <input type="text" id="nameInput" ng-model="firstName" />
+    <p id="greeting" ng-bind="submittedName"></p>
+    <button id="btnName" class="nameInput" ng-click="add(firstName)">Upddate</button>
+
+    <!-- Reference the application level controller for the title model. -->
+    <ul ng-repeat="number in numbers">
+        <li ng-bind="number"></li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
+

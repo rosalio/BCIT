@@ -1,0 +1,25 @@
+﻿<div style="margin-top: 30px;">
+    <t style="margin: 50px;">{{forecast[0]['date'] | date:'medium'}}</t>
+    View by:
+    <select ng-model="orderOptions">
+        <option value="cityName">City</option>
+        <option value="high">High</option>
+        <option value="low">Low</option>
+    </select>
+</div>
+<table>
+    <tr>
+        <td colspan="3" class="tableRow"></td>
+        <td class="tableRow" style="font-weight:bold">High</td>
+        <td class="tableRow" style="font-weight:bold">Low</td>
+    </tr>
+    <tr  ng-repeat="fc in forecast | orderBy:orderOptions">
+        <td class="tableRow"><a href="#weather/{{fc.cityName}}">{{fc.cityName}}</a></td>
+        <td class="tableRow"><img src="http://l.yimg.com/a/i/us/we/52/{{fc.code}}.gif"></td>
+        <td class="tableRow">{{fc.text}}</td>
+        <td class="tableRow" ng-if="temperatureUnit==='fahrenheit'">{{fc.high}}</td>
+        <td class="tableRow" ng-if="temperatureUnit==='celsius'">{{fc.highCelsius}}</td>
+        <td class="tableRow" ng-if="temperatureUnit==='fahrenheit'">{{fc.low}}</td>
+        <td class="tableRow" ng-if="temperatureUnit==='celsius'">{{fc.lowCelsius}}</td>
+    </tr>
+</table>

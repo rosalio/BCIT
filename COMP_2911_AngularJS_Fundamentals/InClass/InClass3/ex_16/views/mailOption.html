@@ -1,0 +1,13 @@
+﻿<div ng-form="myform">
+    <div class="control-group" class="{{options.class}}">
+        <div class="control-label">{{options.label || "Radio"}} {{ options.required ? "*" : ""}} </div>
+        <div class="controls">
+            <div class="radio" ng-repeat="(key, option) in options.valueList">
+                <label> <input type="radio" name="myfield" ng-value="option.value" ng-model="$parent.ngModel" ng-required="options.required" />{{option.text}} </label>
+                </div>
+            <div class="field-validation-error" data-ng-show="myform.myfield.$invalid && myform.myfield.$dirty">
+                <div data-ng-show="myform.myfield.$error.required">{{options.label}} is required!!!</div>
+                </div>
+            </div>
+        </div>
+    </div>

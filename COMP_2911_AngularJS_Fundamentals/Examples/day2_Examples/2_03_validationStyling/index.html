@@ -1,0 +1,64 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+        var myApp = angular.module('myApp', []);
+        myApp.controller('ExampleController', ['$scope', function ($scope) {
+            $scope.userAddress = 'Vancouver';
+
+            $scope.update = function (input) {
+                alert("Updated address to: " + input);
+            };
+            $scope.cancel = function (input) {
+                alert("Cancelled changes to: " + input);
+            };
+        }]);
+    </script>
+    <style type="text/css">
+        .css-form input.ng-invalid {
+            background-color: #FA787E;
+        }
+
+        .css-form input.ng-valid {
+            background-color: #78FA89;
+        }
+    </style>
+
+</head>
+<body ng-app="myApp">
+    <form name="myForm" ng-controller="ExampleController" class="css-form">
+        <!-- Input with validation -->
+        City: <input name="city" ng-model="userAddress"
+                     ng-minlength="3"
+                     ng-maxlength="10"
+                     ng-pattern="/^[A-z]+$/"
+                     required><br />
+
+        <!-- Show validation error messages -->
+        <span ng-show="myForm.city.$error.minlength">Minimum 3 characters required for city!</span>
+        <span ng-show="myForm.city.$error.maxlength">More than 10 characters not permitted for city!</span>
+        <span ng-show="myForm.city.$error.pattern">Only alphabetical characters allowed for city!</span>
+        <span ng-show="myForm.city.$error.required">City required!</span>
+        <span ng-show="myForm.city.$valid">City valid!</span>
+        <span ng-show="!myForm.city.$valid">City not valid!</span><br>
+
+        Mail dvd?
+        <input type="radio" name="mail" ng-model="dvd" value="yes" ng-required="!dvd">Yes
+        <input type="radio" name="mail" ng-model="dvd" value="no" ng-required="!dvd">No<br />
+
+        <!-- Validation message for mail -->
+        <span ng-show="!dvd">Mail DVD not selected<br></span>
+
+        <!-- Show input and form validation status -->
+        City               = {{userAddress}}<br>
+        myForm.city.$valid = {{myForm.city.$valid}}<br>
+        myForm.city.$error = {{myForm.city.$error}}<br>
+        myForm.$valid      = {{myForm.$valid}}<br>
+
+        <button ng-click="update(userAddress)" ng-disabled="myForm.$invalid">Update</button>
+        <button ng-click="cancel('Cancelled')" ng-hide="myForm.$invalid">Cancel</button>
+    </form>
+</body>
+</html>

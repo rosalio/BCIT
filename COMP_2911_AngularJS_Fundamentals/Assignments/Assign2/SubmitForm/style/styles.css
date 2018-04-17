@@ -1,0 +1,23 @@
+﻿.css-form input.ng-invalid.ng-dirty {
+    background-color: red;
+}
+
+.redBg.ng-dirty {
+    background-color: red;
+}
+
+.errorMsg {
+    color: red;
+}
+
+.nameList {
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.formStyle {
+    font-size: 16px;
+
+}

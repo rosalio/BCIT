@@ -1,0 +1,28 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+        var myApp = angular.module('myApp', []);
+        myApp.controller('ExampleController', ['$scope', function ($scope) {
+            $scope.update = function (input) {
+                $scope.mailService = "";
+            }
+        }]);
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="ExampleController">
+    Mail hard copy?
+    <input type="checkbox" ng-model="checked" ng-change="update(checked)"><br />
+    Select Mail Service:
+    <select id="transferTo" ng-disabled="!checked" ng-model="mailService">
+        <option>UPS</option>
+        <option>Fedex</option>
+    </select>
+    <br />
+    <!-- Only show if checkbox is checked and mailService is selected -->
+    <div ng-show="checked && mailService"
+         ng-disabled="!checked">Thank you for choosing {{mailService}}.</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+        var myApp = angular.module('myApp', []);
+        myApp.controller('ExampleController', ['$scope', function ($scope) {
+            $scope.selectedEmployee = "";
+        }]);
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="ExampleController">
+    Select an Employee :
+    <select ng-model="selectedEmployee">
+        <option>John</option>
+        <option>Paul</option>
+        <option>Ringo</option>
+    </select>
+    <br />
+
+    <!-- Show employee that is selected. -->
+    Selected employee : {{selectedEmployee}}
+</body>
+</html>

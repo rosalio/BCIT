@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <title>Starting Angular</title>
+</head>
+<!-- The ng-app directive -->
+<body ng-app='' ng-init="message='Hello world!'; ajsMessage='Hello from AngularJS'">
+    Message: <input type="text" ng-model="message">
+    <p ng-bind="message"></p>
+    <p> {{message}}</p>
+    AngularJS Message: <input type="text" ng-model="ajsMessage">
+    <h1 ng-bind="ajsMessage"></h1>
+    <h1>{{ajsMessage}}</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</body>
+</html>

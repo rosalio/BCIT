@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+        var myApp = angular.module('myApp', []);
+        myApp.controller('ExampleController', ['$scope', function ($scope) {
+            $scope.color = "blue";
+        }]);
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="ExampleController">
+    <input type="radio" ng-model="color" value="blue" />blue<br />
+    <input type="radio" ng-model="color" value="red" />red<br />
+    <input type="radio" ng-model="color" value="yellow" />yellow<br />
+    <p ng-bind="color"></p>
+</body>
+</html>

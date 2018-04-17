@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script>
+        var myApp = angular.module('myApp', []);
+        myApp.controller('ExampleController', ['$scope', function ($scope) {
+            $scope.employees = ["john", "paul", "ringo"];
+        }]);
+    </script>
+</head>
+<body ng-app="myApp" ng-controller="ExampleController">
+    Select an Employee :
+    <select ng-model="selectedEmployee">
+        <option ng-repeat="emp in employees"
+                ng-model="selectedEmployee">
+            {{emp}}
+        </option>
+    </select>
+    <p ng-bind="selectedEmployee"></p>
+</body>
+</html>

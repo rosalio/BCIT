@@ -1,0 +1,13 @@
+<h3>Delete Card</h3>
+<table>
+    <th>Number</th>
+    <th>Suit</th>
+    <th></th>
+    <tr ng-model="card">
+        <td>{{card.number}}</td>
+        <td>{{card.suit}}</td>
+        <td><button type="button" ng-click="delete()">Delete</button></td>
+    </tr>
+</table>
+<br>
+<p>{{message.Msg}}</p>

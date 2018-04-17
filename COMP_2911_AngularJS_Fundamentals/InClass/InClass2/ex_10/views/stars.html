@@ -1,0 +1,9 @@
+﻿<ul class="rating">
+    <p>{{rating}} out of {{max}} stars</p>
+    <li ng-repeat="star in stars" class="filled">
+        <span ng-switch on="star.filled">
+            <div ng-switch-when="true" class="filled">&#9733;</div>
+            <div ng-switch-default class="rating">&#9733;</div>
+        </span>
+    </li>
+</ul>

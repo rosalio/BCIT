@@ -1,0 +1,5 @@
+﻿<form name="myForm">
+    Text Data:
+    <input name="textData" type="text" ng-model="textData" required>
+    <button ng-click="showAlert()" ng-disabled="myForm.textData.$invalid">Submit</button>
+</form>
