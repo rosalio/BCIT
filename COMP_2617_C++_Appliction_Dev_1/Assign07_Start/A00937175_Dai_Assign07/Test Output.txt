@@ -1,0 +1,50 @@
+/Users/xiaoched/Library/Caches/CLion2016.1/cmake/generated/Assign07-5d3d311f/5d3d311f/Debug/Assign07
+ 123456321	INPUT DATA ERROR:	Invalid pay rate: -10.50
+ 213345657	INPUT DATA ERROR:	Invalid numbers of exemptions: -2
+ 123533212	INPUT DATA ERROR:	Invalid hours worked: -25.00
+ 423556578	INPUT DATA ERROR:	Invalid hours worked: 65.00
+  12345678	INPUT DATA ERROR:	Invalid social security #
+  12345678	INPUT DATA ERROR:	Invalid pay rate: -6.50
+  12345678	INPUT DATA ERROR:	Invalid numbers of exemptions: 24
+  12345678	INPUT DATA ERROR:	Invalid hours worked: 99.90
+1234567890	INPUT DATA ERROR:	Invalid social security #
+1234567890	INPUT DATA ERROR:	Invalid numbers of exemptions: 20
+1234567890	INPUT DATA ERROR:	Invalid hours worked: 99.90
+
+
+Type any key to continue ... 
+
+
+
+Process finished with exit code 0
+
+
+
+
+
+Rogers Hospital Supplies Company
+---------------------------------
+
+Social insurance no.   gross pay    net pay    pension    deductions
+--------------------------------------------------------------------
+123456789                 620.00     396.51      16.50         206.99
+213456782                1421.62     593.69      16.50         811.43
+123452345                 612.50     385.48      16.50         210.52
+555555125                1065.00     539.24      16.50         509.26
+293049506                   0.00       0.00       0.00           0.00
+938950677                   0.00       0.00       0.00           0.00
+234987654                 211.53     153.39      16.29          41.85
+123321123                  10.00       9.23       0.77           0.00
+766445667                1020.00     604.78      16.50         398.72
+321321321                 663.00     391.28      16.50         255.22
+
+
+
+Summary
+-------
+
+Number of employees processed: 			      10
+Total gross pay for all employees: 		 5623.65
+Total net pay for all employees: 		 3073.61
+Total pension withheld for all employees: 	  116.06
+Total deductions for all employees: 		 2433.99

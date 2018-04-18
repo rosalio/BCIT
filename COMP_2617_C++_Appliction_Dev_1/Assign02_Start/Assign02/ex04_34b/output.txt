@@ -1,0 +1,18 @@
+(1)
+The number of terms to compute is (5 to 13 are valid values): 4
+The number of terms to compute is (5 to 13 are valid values): 5
+
+The value of e is 2.70833333333
+
+Process finished with exit code 0
+
+(2)
+The number of terms to compute is (5 to 13 are valid values): 13
+
+The value of e is 2.71828182829
+
+Process finished with exit code 0
+
+(3)
+The number of terms to compute is (5 to 13 are valid values): 14
+The number of terms to compute is (5 to 13 are valid values): 

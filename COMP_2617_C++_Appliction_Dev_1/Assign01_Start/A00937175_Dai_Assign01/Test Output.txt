@@ -1,0 +1,36 @@
+Error: Initial balance cannot be negative.
+
+account1 balance: $50
+account2 balance: $25
+
+Enter deposit amount for account1: 20
+
+deposit 20 into account1 balance
+
+account1 balance: $70
+account2 balance: $25
+
+Enter deposit amount for account2: -10
+
+deposit -10 into account2 balance
+
+Error: Credit amount cannot be negative.
+
+account1 balance: $70
+account2 balance: $25
+
+Enter withdrawal amount for account1: 10
+
+attempting to subtract 10 from account1 balance
+
+account1 balance: $60
+account2 balance: $25
+
+Enter withdrawal amount for account2: 30
+
+attempting to subtract 30 from account2 balance
+
+Debit amount exceeded account balance.
+
+account1 balance: $60
+account2 balance: $25

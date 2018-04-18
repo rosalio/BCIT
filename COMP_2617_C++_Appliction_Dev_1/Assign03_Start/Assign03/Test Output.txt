@@ -1,0 +1,66 @@
+Enter -1 to End.
+How much is 3 times 2 (-1 to End)? 6
+Very good!
+
+How much is 3 times 8 (-1 to End)? 0
+Don't give up!
+? 1
+No. Keep trying.
+? 3
+No. Keep trying.
+? 6
+No. Keep trying.
+? 8
+No. Please try again.
+? 24
+Keep up the good work
+
+How much is 2 times 7 (-1 to End)? 14
+Nice work!
+
+How much is 4 times 4 (-1 to End)? 3
+No. Please try again.
+? 0
+Wrong. Try once more.
+? 16
+Keep up the good work
+
+How much is 0 times 5 (-1 to End)? adf
+Invalid input entered - try again: 0
+Excellent!
+
+How much is 0 times 7 (-1 to End)? 1dfd
+No. Please try again.
+? Invalid input entered - try again: 0df
+Keep up the good work
+
+How much is 9 times 4 (-1 to End)? Invalid input entered - try again: 36
+Very good!
+
+How much is 6 times 9 (-1 to End)? 54
+Excellent!
+
+How much is 9 times 8 (-1 to End)? 72
+Excellent!
+
+How much is 2 times 4 (-1 to End)? 8
+Nice work!
+
+How much is 1 times 7 (-1 to End)? 7
+Keep up the good work
+
+How much is 5 times 3 (-1 to End)? 1
+Don't give up!
+? 6
+No. Please try again.
+? 75457
+Don't give up!
+? 7
+No. Please try again.
+? 15
+Keep up the good work
+
+How much is 8 times 3 (-1 to End)? -1
+That's all for now. Bye.
+
+Process finished with exit code 0
